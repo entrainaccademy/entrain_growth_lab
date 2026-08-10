@@ -3,7 +3,9 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from './Button';
-import logoImg from '../assets/entrain-growth-logo.png';
+// import logoImg from '../assets/entrain-growth-logo.png';
+// import logo_curved from '../assets/logo_curved.png'
+import logo from '../assets/logo.jpeg'
 import { mainNavigation } from '../data/navigation';
 
 export default function Navbar({ onOpenConsultation }) {
@@ -41,9 +43,9 @@ export default function Navbar({ onOpenConsultation }) {
 
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3 group">
-            <div className="p-1.5 rounded-xl  shadow-sm transition-transform group-hover:scale-105">
+            <div className="   shadow-sm transition-transform group-hover:scale-105">
               <img
-                src={logoImg}
+                src={logo}
                 alt="Entrain Growth Lab"
                 className="h-7 sm:h-8 w-auto object-contain"
               />
