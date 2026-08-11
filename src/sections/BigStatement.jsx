@@ -11,12 +11,6 @@ export default function BigStatement({ onOpenConsultation }) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         
-        <Reveal direction="up" delay={0.1}>
-          <span className="text-xs font-mono font-bold tracking-widest text-[#7E91F2] uppercase bg-white/5 px-4 py-1.5 rounded-full border border-white/10 mb-8 inline-block">
-            // NEXT STAGE OF GROWTH
-          </span>
-        </Reveal>
-
         {/* Oversized Statement */}
         <Reveal direction="up" delay={0.2}>
           <h2 className="font-display text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] leading-[1.05] text-white mb-8">
@@ -45,7 +39,7 @@ export default function BigStatement({ onOpenConsultation }) {
               showArrow={true}
               onClick={onOpenConsultation}
             >
-              Let's Talk
+              Book a Free Consultation
             </Button>
           </div>
         </Reveal>
