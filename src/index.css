@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* Explicit source registration keeps Tailwind's dev compiler in sync when
+   section files are replaced while Vite is already running. */
+@source "./components";
+@source "./pages";
+@source "./sections";
+@source "./data";
+
 @theme {
   --color-lime-accent: #C7FF3D;
   --color-lime-hover: #B0F025;

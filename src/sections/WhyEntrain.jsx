@@ -49,14 +49,14 @@ export default function WhyEntrain() {
   const ActiveIcon = activePrinciple.icon;
 
   return (
-    <section className="py-20 sm:py-28 bg-[#0A0A0A] text-[#F5F5F0] relative">
+    <section className="py-20 sm:py-28 bg-white text-[#101827] relative border-b border-[#101827]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <SectionLabel label="WHY ENTRAIN" className="mb-4" />
 
         <Reveal direction="up" delay={0.15} className="mb-16">
-          <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-            Strategy first. <span className="text-[#C7FF3D]">Execution always.</span>
+          <h2 className="font-display text-3xl sm:text-5xl font-semibold text-[#101827] tracking-tight">
+            Strategy first. <span className="text-[#4355A5]">Execution always.</span>
           </h2>
         </Reveal>
 
@@ -74,26 +74,26 @@ export default function WhyEntrain() {
                     onMouseEnter={() => setActiveIndex(index)}
                     onClick={() => setActiveIndex(index)}
                     className={`p-6 rounded-2xl transition-all duration-300 cursor-pointer border ${isSelected
-                        ? 'bg-[#141414] border-[#C7FF3D] shadow-lg shadow-[#C7FF3D]/10'
-                        : 'bg-[#0A0A0A] border-[#282828] hover:border-slate-700'
+                        ? 'bg-[#F3F1EE] border-[#4355A5] shadow-lg shadow-[#4355A5]/10'
+                        : 'bg-white border-[#101827]/15 hover:border-[#4355A5]/50'
                       }`}
                   >
                     <div className="flex items-start gap-4">
                       <span
-                        className={`font-mono text-xl font-bold transition-colors ${isSelected ? 'text-[#C7FF3D] scale-110' : 'text-[#9A9A94]'
+                        className={`font-mono text-xl font-bold transition-colors ${isSelected ? 'text-[#4355A5] scale-110' : 'text-[#101827]/40'
                           }`}
                       >
                         {item.number}
                       </span>
                       <div className="flex-1">
-                        <h3 className={`font-display text-xl font-bold transition-colors ${isSelected ? 'text-white' : 'text-[#F5F5F0]'}`}>
+                        <h3 className="font-display text-xl font-bold text-[#101827] transition-colors">
                           {item.title}
                         </h3>
-                        <p className="text-[#9A9A94] text-sm mt-1">
+                        <p className="text-[#101827]/55 text-sm mt-1">
                           {item.desc}
                         </p>
                       </div>
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isSelected ? 'bg-[#C7FF3D] text-[#0A0A0A]' : 'bg-[#141414] text-[#9A9A94]'}`}>
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${isSelected ? 'bg-[#4355A5] text-white' : 'bg-[#F3F1EE] text-[#101827]/45'}`}>
                         <ArrowRight className="w-4 h-4" />
                       </div>
                     </div>
@@ -112,18 +112,18 @@ export default function WhyEntrain() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.25 }}
-                className="p-8 rounded-3xl bg-[#141414] border border-[#C7FF3D]/50 text-white relative overflow-hidden"
+                className="p-8 rounded-3xl bg-[#101827] border border-[#4355A5]/50 text-white relative overflow-hidden"
               >
-                <div className="flex items-center justify-between mb-8 pb-6 border-b border-[#282828]">
-                  <span className="font-mono text-3xl font-extrabold text-[#C7FF3D]">
+                <div className="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
+                  <span className="font-mono text-3xl font-extrabold text-[#7E91F2]">
                     {activePrinciple.number}
                   </span>
-                  <div className="w-12 h-12 rounded-2xl bg-[#C7FF3D] text-[#0A0A0A] flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-2xl bg-[#4355A5] text-white flex items-center justify-center">
                     <ActiveIcon className="w-6 h-6" />
                   </div>
                 </div>
 
-                <span className="text-xs font-mono font-bold tracking-widest text-[#C7FF3D] uppercase block mb-2">
+                <span className="text-xs font-mono font-bold tracking-widest text-[#7E91F2] uppercase block mb-2">
                   // CORE PRINCIPLE {activePrinciple.number}
                 </span>
 
@@ -135,7 +135,7 @@ export default function WhyEntrain() {
                   "{activePrinciple.desc}"
                 </p>
 
-                <div className="p-4 rounded-xl bg-[#0A0A0A] border border-[#282828] text-sm text-[#9A9A94] leading-relaxed">
+                <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white/65 leading-relaxed">
                   {activePrinciple.detail}
                 </div>
               </motion.div>

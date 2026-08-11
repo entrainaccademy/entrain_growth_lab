@@ -4,7 +4,7 @@ import Button from '../components/Button';
 
 export default function CTA({ onOpenConsultation }) {
   return (
-    <section className="py-20 sm:py-28 bg-gradient-to-r from-[#2596BE] via-[#34448F] to-[#4355A5] text-white relative overflow-hidden">
+    <section className="py-20 sm:py-28 bg-gradient-to-br from-[#2596BE] via-[#4355A5] to-[#34448F] text-white relative overflow-hidden">
       {/* Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-white/10 rounded-full blur-[150px] pointer-events-none" />
 
@@ -31,7 +31,7 @@ export default function CTA({ onOpenConsultation }) {
         <Reveal direction="up" delay={0.25}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
-              variant="primary"
+              variant="white"
               size="lg"
               showArrow={true}
               onClick={onOpenConsultation}

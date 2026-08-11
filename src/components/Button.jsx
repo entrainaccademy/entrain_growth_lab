@@ -25,13 +25,13 @@ export default function Button({
 
   const variantStyles = {
     primary:
-      'bg-[#C7FF3D] text-[#0A0A0A] hover:bg-[#B0F025] hover:shadow-lg hover:shadow-[#C7FF3D]/20 active:scale-[0.98]',
+      'bg-[#4355A5] text-white hover:bg-[#34448F] hover:shadow-lg hover:shadow-[#4355A5]/20 active:scale-[0.98]',
     secondary:
-      'bg-[#141414] text-[#F5F5F0] border border-[#282828] hover:border-[#C7FF3D] hover:text-[#C7FF3D] active:scale-[0.98]',
+      'bg-transparent text-[#101827] border border-[#101827]/20 hover:border-[#4355A5] hover:text-[#4355A5] active:scale-[0.98]',
     outline:
-      'bg-transparent border border-white/20 text-[#F5F5F0] hover:border-[#C7FF3D] hover:text-[#C7FF3D] hover:bg-[#C7FF3D]/5 active:scale-[0.98]',
+      'bg-transparent border border-white/30 text-white hover:border-white hover:bg-white/10 active:scale-[0.98]',
     white:
-      'bg-[#F5F5F0] text-[#0A0A0A] hover:bg-white active:scale-[0.98]',
+      'bg-white text-[#101827] hover:bg-[#F3F1EE] active:scale-[0.98]',
   };
 
   const combinedClasses = `${baseStyles} ${sizeStyles[size] || sizeStyles.md} ${variantStyles[variant] || variantStyles.primary} ${className}`;

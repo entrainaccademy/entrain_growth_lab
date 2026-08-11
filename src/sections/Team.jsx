@@ -39,14 +39,14 @@ export default function Team() {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#F6FAFC] text-[#101827] relative border-b border-[#101827]/10">
+    <section className="py-20 sm:py-28 bg-white text-[#101827] relative border-b border-[#101827]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionLabel label="TEAM & EXPERTISE" variant="light" className="mb-4" />
 
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <Reveal direction="up" delay={0.15}>
-            <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#101827] tracking-tight">
+            <h2 className="font-display text-3xl sm:text-5xl font-semibold text-[#101827] tracking-tight">
               The minds behind <br />
               <span className="text-[#4355A5]">your growth.</span>
             </h2>

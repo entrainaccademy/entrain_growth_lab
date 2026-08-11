@@ -30,14 +30,14 @@ export default function Work({ onOpenConsultation }) {
   ];
 
   return (
-    <section id="work-section" className="py-20 sm:py-28 bg-white text-[#101827] relative border-b border-[#101827]/10 bg-grid-light">
+    <section id="work-section" className="py-20 sm:py-28 bg-white text-[#101827] relative border-b border-[#101827]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionLabel label="SELECTED WORK" variant="light" className="mb-4" />
 
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <Reveal direction="up" delay={0.15}>
-            <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#101827] tracking-tight">
+            <h2 className="font-display text-3xl sm:text-5xl font-semibold text-[#101827] tracking-tight">
               Growth looks better <br />
               <span className="text-[#4355A5]">when you can measure it.</span>
             </h2>
@@ -53,7 +53,7 @@ export default function Work({ onOpenConsultation }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {caseStudies.map((item, index) => (
             <Reveal key={item.id} delay={index * 0.1} direction="up">
-              <div className="group rounded-3xl bg-[#F6FAFC] border border-slate-200 p-7 flex flex-col justify-between h-full hover:border-[#4355A5] hover:shadow-xl transition-all duration-300">
+              <div className="group rounded-3xl bg-[#F3F1EE] border border-[#101827]/10 p-7 flex flex-col justify-between h-full hover:border-[#4355A5] hover:shadow-xl transition-all duration-300">
                 <div>
                   <div className="w-full h-48 rounded-2xl bg-[#101827] border border-slate-200 p-6 text-white relative overflow-hidden flex flex-col justify-between mb-6">
                     <div className="flex items-center justify-between">
@@ -100,7 +100,7 @@ export default function Work({ onOpenConsultation }) {
 
         {/* CTA Banner */}
         <Reveal direction="up" delay={0.4} className="mt-16 text-center">
-          <div className="p-8 rounded-3xl bg-[#F6FAFC] border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="p-8 rounded-3xl bg-[#F3F1EE] border border-[#101827]/10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="text-left">
               <h4 className="font-display text-xl font-bold text-[#101827]">
                 Want to become our next featured case study?

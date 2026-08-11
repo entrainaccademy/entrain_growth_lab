@@ -5,14 +5,14 @@ import { Quote } from 'lucide-react';
 
 export default function Testimonials() {
   return (
-    <section id="testimonials-section" className="py-20 sm:py-28 bg-[#F6FAFC] text-[#101827] relative border-b border-[#101827]/10">
+    <section id="testimonials-section" className="py-20 sm:py-28 bg-[#F3F1EE] text-[#101827] relative border-b border-[#101827]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionLabel label="CLIENT STORIES" variant="light" className="mb-4" />
 
         <div className="text-center max-w-3xl mx-auto mb-16">
           <Reveal direction="up" delay={0.15}>
-            <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#101827] tracking-tight mb-4">
+            <h2 className="font-display text-3xl sm:text-5xl font-semibold text-[#101827] tracking-tight mb-4">
               Built with our <span className="text-[#4355A5]">first growth partners.</span>
             </h2>
           </Reveal>
