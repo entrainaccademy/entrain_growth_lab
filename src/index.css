@@ -24,6 +24,15 @@
     color: #F5F5F0;
     overflow-x: hidden;
     font-family: var(--font-sans);
+    cursor: default;
+  }
+
+  a, button, [role="button"], select, input[type="submit"], input[type="button"] {
+    cursor: pointer;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="number"], input[type="password"], textarea {
+    cursor: text;
   }
 }
 
@@ -57,16 +66,3 @@
   background: radial-gradient(circle at 50% 50%, rgba(199, 255, 61, 0.12) 0%, rgba(10, 10, 10, 0) 70%);
 }
 
-/* Hide default cursor on desktop when custom cursor is active */
-@media (hover: hover) and (pointer: fine) {
-  .custom-cursor-active {
-    cursor: none;
-  }
-  .custom-cursor-active a, 
-  .custom-cursor-active button, 
-  .custom-cursor-active input, 
-  .custom-cursor-active select, 
-  .custom-cursor-active textarea {
-    cursor: none;
-  }
-}
