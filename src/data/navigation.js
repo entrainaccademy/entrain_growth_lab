@@ -2,7 +2,7 @@ export const mainNavigation = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Services', path: '/services' },
-  { name: 'Work', path: '/work' },
+  { name: 'Work', path: '/workdetails' },
   { name: 'Contact', path: '/contact' },
 ];
 

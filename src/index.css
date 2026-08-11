@@ -19,6 +19,7 @@
 
   --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
   --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
 }
 
 @layer base {

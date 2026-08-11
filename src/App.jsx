@@ -13,6 +13,11 @@ import TestimonialsPage from './pages/TestimonialsPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import WorkDetails from './pages/WorkDetails';
+import Buckeez from './pages/Buckeez';
+import Cobolt from './pages/cobolt';
+import Culinary from './pages/culinary';
+import Entrainlabs from './pages/Entrainlabs';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -49,6 +54,11 @@ export default function App() {
             <Route path="/about" element={<About onOpenConsultation={handleOpenConsultation} />} />
             <Route path="/services" element={<ServicesPage onOpenConsultation={handleOpenConsultation} />} />
             <Route path="/work" element={<WorkPage onOpenConsultation={handleOpenConsultation} />} />
+            <Route path="/workdetails" element={<WorkDetails onOpenConsultation={handleOpenConsultation} />} />
+            <Route path="/buckeez" element={<Buckeez onOpenConsultation={handleOpenConsultation} />} />
+            <Route path="/cobolt" element={<Cobolt onOpenConsultation={handleOpenConsultation} />} />
+            <Route path="/culinary" element={<Culinary onOpenConsultation={handleOpenConsultation} />} />
+            <Route path="/entrainlabs" element={<Entrainlabs onOpenConsultation={handleOpenConsultation} />} />
             <Route path="/testimonials" element={<TestimonialsPage onOpenConsultation={handleOpenConsultation} />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
