@@ -118,9 +118,13 @@ export default function Footer({ onOpenConsultation }) {
             </h4>
             <div className="space-y-3 text-sm text-[#9A9A94]">
               <p>Email:</p>
-              <p className="text-white font-medium">[EMAIL ADDRESS]</p>
+              <a href="mailto:entraingrowthpartners@gmail.com" className="text-white font-medium hover:text-[#C7FF3D] transition-colors block cursor-pointer">
+                entraingrowthpartners@gmail.com
+              </a>
               <p className="pt-2">Phone:</p>
-              <p className="text-white font-medium">[PHONE NUMBER]</p>
+              <a href="tel:9745235226" className="text-white font-medium hover:text-[#C7FF3D] transition-colors block cursor-pointer">
+                +91 9745235226
+              </a>
               <div className="pt-2">
                 <Link
                   to="/contact"
