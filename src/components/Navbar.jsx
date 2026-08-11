@@ -12,14 +12,7 @@ export default function Navbar({ onOpenConsultation }) {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -29,14 +22,8 @@ export default function Navbar({ onOpenConsultation }) {
   }, [location]);
 
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
+    document.body.style.overflow = isMobileMenuOpen ? 'hidden' : 'unset';
+    return () => { document.body.style.overflow = 'unset'; };
   }, [isMobileMenuOpen]);
 
   return (
@@ -49,19 +36,12 @@ export default function Navbar({ onOpenConsultation }) {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-
-          {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3 group">
             <div className="shadow-sm transition-transform group-hover:scale-105">
-              <img
-                src={logo}
-                alt="Entrain Growth Lab"
-                className="h-7 sm:h-8 lg:h-9 w-auto object-contain"
-              />
+              <img src={logo} alt="Entrain Growth Lab" className="h-7 sm:h-8 lg:h-9 w-auto object-contain" />
             </div>
           </NavLink>
 
-          {/* Desktop Navigation */}
           <nav
             className={`hidden md:flex items-center gap-1 lg:gap-1.5 p-1 sm:p-1.5 rounded-full border backdrop-blur-md transition-all duration-300 ${
               isScrolled
@@ -88,23 +68,16 @@ export default function Navbar({ onOpenConsultation }) {
             ))}
           </nav>
 
-          {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button
-              variant={isScrolled ? 'primary' : 'white'}
-              size="sm"
-              showArrow={true}
-              onClick={onOpenConsultation}
-            >
+            <Button variant={isScrolled ? 'primary' : 'white'} size="sm" showArrow onClick={onOpenConsultation}>
               Book a Call
             </Button>
           </div>
 
-          {/* Mobile Actions: Call Button & Hamburger */}
           <div className="flex items-center gap-2 md:hidden">
             <a
               href="tel:9745235226"
-              className={`p-2.5 rounded-xl border transition-all cursor-pointer shadow-sm flex items-center justify-center ${
+              className={`p-2.5 rounded-xl border transition-all shadow-sm flex items-center justify-center ${
                 isScrolled
                   ? 'bg-[#4355A5] text-white border-[#4355A5] hover:bg-[#34458F]'
                   : 'bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-md'
@@ -116,7 +89,7 @@ export default function Navbar({ onOpenConsultation }) {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2.5 rounded-xl border transition-colors focus:outline-none cursor-pointer flex items-center justify-center ${
+              className={`p-2.5 rounded-xl border transition-colors focus:outline-none flex items-center justify-center ${
                 isScrolled
                   ? 'bg-white text-[#101827] border-slate-200 hover:border-[#4355A5]'
                   : 'bg-white/15 text-white border-white/20 hover:bg-white/30'
@@ -127,11 +100,9 @@ export default function Navbar({ onOpenConsultation }) {
               {isMobileMenuOpen ? <X className="w-5 h-5 text-[#4355A5]" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
-
         </div>
       </header>
 
-      {/* Mobile Fullscreen Animated Drawer */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -147,16 +118,11 @@ export default function Navbar({ onOpenConsultation }) {
               </span>
               <div className="flex flex-col space-y-2 sm:space-y-3">
                 {mainNavigation.map((link, idx) => (
-                  <motion.div
-                    key={link.path}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: idx * 0.05 }}
-                  >
+                  <motion.div key={link.path} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: idx * 0.05 }}>
                     <NavLink
                       to={link.path}
                       className={({ isActive }) =>
-                        `text-2xl sm:text-3xl font-display font-extrabold block py-2.5 border-b border-white/10 transition-colors cursor-pointer ${
+                        `text-2xl sm:text-3xl font-display font-extrabold block py-2.5 border-b border-white/10 transition-colors ${
                           isActive ? 'text-[#4355A5]' : 'text-white hover:text-[#4355A5]'
                         }`
                       }
@@ -169,19 +135,15 @@ export default function Navbar({ onOpenConsultation }) {
             </div>
 
             <div className="space-y-3 pt-6">
-              <a
-                href="tel:9745235226"
-                className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full bg-[#4355A5] text-white font-bold text-sm hover:bg-[#34458F] transition-all cursor-pointer shadow-lg shadow-[#4355A5]/25"
-              >
+              <a href="tel:9745235226" className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full bg-[#4355A5] text-white font-bold text-sm hover:bg-[#34458F] transition-all shadow-lg shadow-[#4355A5]/25">
                 <Phone className="w-4 h-4" />
                 <span>Call Us: +91 9745235226</span>
               </a>
-
               <Button
                 variant="white"
                 size="lg"
                 className="w-full justify-center py-3.5"
-                showArrow={true}
+                showArrow
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   onOpenConsultation();
@@ -189,9 +151,7 @@ export default function Navbar({ onOpenConsultation }) {
               >
                 Book a Call
               </Button>
-              <p className="text-center text-xs font-mono text-[#9AA8B5]">
-                Growth Isn't Luck. It's Strategy.
-              </p>
+              <p className="text-center text-xs font-mono text-[#9AA8B5]">Growth Isn't Luck. It's Strategy.</p>
             </div>
           </motion.div>
         )}

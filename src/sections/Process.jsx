@@ -19,8 +19,13 @@ const cardStyles = [
 
 export default function Process() {
   return (
-    <section className="py-10 md:py-20 bg-white text-[#101827] border-b border-[#101827]/10 overflow-hidden">
-      <div className="max-w-[90rem] mx-auto px-8">
+    <section className="process-section">
+      <div className="process-container">
+        <div className="process-heading">
+          <span>Our process</span>
+          <h2>How we turn strategy<br />into measurable growth.</h2>
+        </div>
+
         <div className="relative">
           <svg className="absolute left-[7%] top-1/2 hidden lg:block w-[86%] h-12 -translate-y-1/2 pointer-events-none" viewBox="0 0 1000 48" preserveAspectRatio="none" aria-hidden="true">
             <motion.path

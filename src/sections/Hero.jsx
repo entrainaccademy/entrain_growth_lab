@@ -5,7 +5,7 @@ import Reveal from '../components/Reveal';
 
 export default function Hero({ onOpenConsultation }) {
   return (
-    <section className="relative min-h-[100svh] flex items-center bg-[#F3F1EE] text-[#101827] overflow-hidden border-b border-[#101827]/15">
+    <section className="relative min-h-[100svh] flex items-center bg-[#F3F1EE] text-[#101827] overflow-hidden">
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <MeshGradient
           className="h-full w-full"
