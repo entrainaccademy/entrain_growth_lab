@@ -10,6 +10,7 @@ export default function Navbar({ onOpenConsultation }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const hasReadableBackground = isScrolled || location.pathname !== '/';
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -30,7 +31,7 @@ export default function Navbar({ onOpenConsultation }) {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
+          hasReadableBackground
             ? 'py-3 sm:py-3.5 bg-white/55 backdrop-blur-xl border-b border-white/50 shadow-[0_8px_30px_rgba(16,24,39,0.08)]'
             : 'py-4 sm:py-5 bg-transparent'
         }`}
@@ -44,7 +45,7 @@ export default function Navbar({ onOpenConsultation }) {
 
           <nav
             className={`hidden md:flex items-center gap-1 lg:gap-1.5 p-1 sm:p-1.5 rounded-full border backdrop-blur-md transition-all duration-300 ${
-              isScrolled
+              hasReadableBackground
                 ? 'bg-[#F6FAFC] border-slate-200 shadow-inner'
                 : 'bg-white/10 border-white/20'
             }`}
@@ -57,7 +58,7 @@ export default function Navbar({ onOpenConsultation }) {
                   `px-3 lg:px-4 py-1.5 lg:py-2 text-xs lg:text-sm font-bold rounded-full transition-all duration-200 ${
                     isActive
                       ? 'bg-[#4355A5] text-white shadow-md'
-                      : isScrolled
+                      : hasReadableBackground
                       ? 'text-[#101827] hover:text-[#4355A5] hover:bg-[#4355A5]/10'
                       : 'text-white hover:bg-white/20'
                   }`
@@ -69,7 +70,7 @@ export default function Navbar({ onOpenConsultation }) {
           </nav>
 
           <div className="hidden md:block">
-            <Button variant={isScrolled ? 'primary' : 'white'} size="sm" showArrow onClick={onOpenConsultation}>
+            <Button variant={hasReadableBackground ? 'primary' : 'white'} size="sm" showArrow onClick={onOpenConsultation}>
               Book a Call
             </Button>
           </div>
@@ -78,7 +79,7 @@ export default function Navbar({ onOpenConsultation }) {
             <a
               href="tel:9745235226"
               className={`p-2.5 rounded-xl border transition-all shadow-sm flex items-center justify-center ${
-                isScrolled
+                hasReadableBackground
                   ? 'bg-[#4355A5] text-white border-[#4355A5] hover:bg-[#34458F]'
                   : 'bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-md'
               }`}
@@ -90,7 +91,7 @@ export default function Navbar({ onOpenConsultation }) {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`p-2.5 rounded-xl border transition-colors focus:outline-none flex items-center justify-center ${
-                isScrolled
+                hasReadableBackground
                   ? 'bg-white text-[#101827] border-slate-200 hover:border-[#4355A5]'
                   : 'bg-white/15 text-white border-white/20 hover:bg-white/30'
               }`}
