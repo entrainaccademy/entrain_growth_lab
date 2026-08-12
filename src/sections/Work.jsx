@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, ImagePlus } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Reveal from '../components/Reveal';
 
 const projects = [
@@ -83,6 +84,13 @@ export default function Work() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal direction="up" className="work-more-row">
+          <Link to="/workdetails" className="work-more-link">
+            <span>More Works</span>
+            <ArrowUpRight />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );
