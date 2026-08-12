@@ -1,30 +1,27 @@
 import React from 'react';
-import { MeshGradient } from '@paper-design/shaders-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Reveal from '../components/Reveal';
 import CTA from '../sections/CTA';
 
 const PAPER = '#F3F1EE';
 
 export default function About({ onOpenConsultation }) {
+  const { scrollYProgress } = useScroll();
+  const ringY = useTransform(scrollYProgress, [0, 0.45], [0, 120]);
+
   return (
     <main className="overflow-hidden bg-[#F3F1EE] text-[#101827]">
       {/* Hero */}
-      <section className="relative min-h-[100svh] flex items-center sm:items-end py-24 sm:pt-36 sm:pb-20 bg-[#F3F1EE] border-b border-[#101827]/15">
-        {/* Animated brand mesh */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          <MeshGradient
-            className="absolute inset-0 h-full w-full"
-            colors={['#F3F1EE', '#4355A5', '#2596BE', '#7E91F2', '#F3F1EE']}
-            speed={0.24}
-            distortion={0.82}
-            swirl={0.65}
-            grainMixer={0.08}
-            grainOverlay={0.04}
-            minPixelRatio={1}
-            maxPixelCount={1920 * 1080}
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#F3F1EE] via-[#F3F1EE]/70 to-[#F3F1EE]/5" />
-        </div>
+      <section className="relative min-h-[100svh] flex items-center sm:items-end py-24 sm:pt-36 sm:pb-20 bg-[#F1EFE7] border-b border-[#101827]/15 overflow-hidden">
+        <motion.div
+          style={{ y: ringY }}
+          className="absolute -right-36 top-16 sm:right-[-3rem] sm:top-24 w-[390px] h-[390px] sm:w-[650px] sm:h-[650px] rounded-full border border-[#4355A5]/20 pointer-events-none"
+          aria-hidden="true"
+        >
+          <div className="absolute inset-[12%] rounded-full border border-[#4355A5]/25" />
+          <div className="absolute inset-[27%] rounded-full border border-[#4355A5]/35" />
+          <div className="absolute inset-[43%] rounded-full bg-[#4355A5] shadow-[0_0_80px_rgba(67,85,165,0.35)]" />
+        </motion.div>
 
         <div className="relative z-10 max-w-[90rem] mx-auto w-full px-5 sm:px-8 lg:px-12 text-center sm:text-left">
           <Reveal direction="up" delay={0.1}>

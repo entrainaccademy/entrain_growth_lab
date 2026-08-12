@@ -759,20 +759,20 @@
 .client-logo-card {
   position: relative;
   display: flex;
-  height: 150px;
+  height: 108px;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  background: rgb(255 255 255 / 0.42);
-  border: 1px solid rgb(255 255 255 / 0.48);
-  border-radius: 16px;
+  padding: 0.65rem 0.85rem;
+  background: transparent;
+  border: 0;
+  border-radius: 12px;
   transition: background 300ms ease;
 }
 
-.client-logo-card:hover { background: rgb(255 255 255 / 0.72); }
+.client-logo-card:hover { background: transparent; }
 .client-logo-card img {
-  width: 70%;
-  height: 72px;
+  width: 92%;
+  height: 88px;
   object-fit: contain;
   filter: saturate(0.75);
   transition: transform 350ms ease, filter 350ms ease;
@@ -835,8 +835,8 @@
   .clients-header { align-items: flex-start; margin-bottom: 2.5rem; }
   .clients-header > span { margin-top: 0.5rem; }
   .clients-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .client-logo-card { height: 125px; padding: 1.25rem; }
-  .client-logo-card img { width: 82%; height: 65px; }
+  .client-logo-card { height: 94px; padding: 0.5rem 0.65rem; }
+  .client-logo-card img { width: 94%; height: 78px; }
   .philosophy-scroll { height: 240vh; }
   .philosophy-sticky { min-height: 620px; height: 100svh; padding: 2rem 1.25rem; }
   .philosophy-topline span:last-child { display: none; }
