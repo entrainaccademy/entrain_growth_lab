@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 import ConsultationModal from './components/ConsultationModal';
+import SEO from './components/SEO';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -77,9 +78,10 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <SEO />
       <CustomCursor />
 
-      <div className="flex flex-col min-h-screen relative font-sans text-[#101827] bg-[#2596BE] selection:bg-[#4355A5] selection:text-white">
+      <div className="flex flex-col min-h-screen relative font-sans text-[#101827] bg-[#F3F1EE] selection:bg-[#4355A5] selection:text-white">
         <Navbar onOpenConsultation={handleOpenConsultation} />
 
         <div className="flex-grow">
