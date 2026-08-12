@@ -6,6 +6,7 @@ const clients = [
   { name: 'Entrain Lab', logo: '/images/logolab-trimmed.png' },
   { name: 'Entrain Academy', logo: '/images/academy-logo-trimmed.png' },
   { name: 'Buckeez', logo: '/images/logo-transparent.png' },
+  { name: 'Cobolt Machineries', logo: '/images/cobolt-logo-cropped.png' },
 ];
 
 export default function Clients() {

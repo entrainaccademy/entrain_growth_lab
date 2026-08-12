@@ -10,12 +10,6 @@ export default function CTA({ onOpenConsultation }) {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         
-        <Reveal direction="up" delay={0.1}>
-          <span className="text-xs font-mono font-bold tracking-widest text-white uppercase bg-white/15 px-4 py-1.5 rounded-full border border-white/20 mb-6 inline-block">
-            // START YOUR GROWTH ENGINE
-          </span>
-        </Reveal>
-
         <Reveal direction="up" delay={0.15}>
           <h2 className="font-display text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">
             Ready to <span className="text-[#4355A5] bg-white px-4 py-0.5 rounded-2xl shadow-lg inline-block">Grow?</span>

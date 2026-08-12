@@ -625,7 +625,7 @@
 .why-entrain-heading p { max-width: 430px; color: rgb(16 24 39 / 0.58); font-size: 1.05rem; line-height: 1.65; }
 .why-principles-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
 }
 .why-principle-card {
@@ -835,6 +835,7 @@
   .clients-header { align-items: flex-start; margin-bottom: 2.5rem; }
   .clients-header > span { margin-top: 0.5rem; }
   .clients-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .clients-grid > :last-child { grid-column: 1 / -1; width: 50%; justify-self: center; }
   .client-logo-card { height: 94px; padding: 0.5rem 0.65rem; }
   .client-logo-card img { width: 94%; height: 78px; }
   .philosophy-scroll { height: 240vh; }
@@ -845,4 +846,3 @@
   .philosophy-foot span { display: block; margin-bottom: 0.8rem; }
   .philosophy-foot p { font-size: 0.95rem; }
 }
-

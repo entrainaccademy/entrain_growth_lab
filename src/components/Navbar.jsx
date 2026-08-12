@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from './Button';
-import logo from '../assets/logo.jpeg';
+import logo from '../assets/entrain-growth-logo-cropped.png';
 import { mainNavigation } from '../data/navigation';
 
 export default function Navbar({ onOpenConsultation }) {
@@ -31,13 +31,13 @@ export default function Navbar({ onOpenConsultation }) {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'py-3 sm:py-3.5 bg-white/95 backdrop-blur-md border-b border-[#4355A5]/15 shadow-sm'
+            ? 'py-3 sm:py-3.5 bg-white/55 backdrop-blur-xl border-b border-white/50 shadow-[0_8px_30px_rgba(16,24,39,0.08)]'
             : 'py-4 sm:py-5 bg-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <NavLink to="/" className="flex items-center gap-3 group">
-            <div className="shadow-sm transition-transform group-hover:scale-105">
+            <div className="transition-transform group-hover:scale-105">
               <img src={logo} alt="Entrain Growth Lab" className="h-7 sm:h-8 lg:h-9 w-auto object-contain" />
             </div>
           </NavLink>
