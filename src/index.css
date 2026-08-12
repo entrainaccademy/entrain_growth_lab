@@ -259,19 +259,19 @@
 @media (max-width: 639px) {
   .about-hero {
     min-height: 100svh;
-    padding-top: 8.5rem;
-    padding-bottom: 5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 2.5rem;
   }
   .about-hero-title {
-    max-width: 22rem;
-    font-size: clamp(2.65rem, 11.5vw, 3.65rem);
-    line-height: 0.94;
+    max-width: 25rem;
+    font-size: clamp(3.15rem, 13.7vw, 4.5rem);
+    line-height: 0.91;
   }
   .about-hero-rings {
-    top: 7rem;
-    right: -7.5rem;
-    width: 320px;
-    height: 320px;
+    top: 8rem;
+    right: -9.5rem;
+    width: 410px;
+    height: 410px;
   }
 }
 
