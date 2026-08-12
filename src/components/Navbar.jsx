@@ -113,10 +113,7 @@ export default function Navbar({ onOpenConsultation }) {
             transition={{ duration: 0.25 }}
             className="fixed inset-0 z-40 bg-[#101827] text-white pt-24 sm:pt-28 px-6 sm:px-8 pb-8 sm:pb-12 flex flex-col justify-between overflow-y-auto"
           >
-            <div className="space-y-6">
-              <span className="text-xs font-mono font-bold tracking-widest text-[#4355A5] uppercase bg-[#4355A5]/15 px-3 py-1 rounded-full border border-[#4355A5]/25">
-                // MENU
-              </span>
+            <div>
               <div className="flex flex-col space-y-2 sm:space-y-3">
                 {mainNavigation.map((link, idx) => (
                   <motion.div key={link.path} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: idx * 0.05 }}>
