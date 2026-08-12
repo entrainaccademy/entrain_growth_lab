@@ -226,30 +226,53 @@
   .services-mobile-number strong.is-active { color: #111827; }
   .services-mobile-visual {
     display: flex;
+    position: absolute;
+    top: -1.1rem;
+    right: 0;
     justify-content: center;
-    margin-top: 2.25rem;
   }
   .services-mobile-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 112px;
-    height: 112px;
+    width: 78px;
+    height: 78px;
     border-radius: 38%;
     color: white;
     background: #4a56b2;
     box-shadow: 0 22px 55px rgb(52 61 139 / 0.25);
   }
-  .services-mobile-icon svg { width: 48px; height: 48px; }
+  .services-mobile-icon svg { width: 34px; height: 34px; }
   .services-title {
     font-size: clamp(2.35rem, 8vw, 4.5rem);
   }
 }
 
 @media (max-width: 639px) {
-  .services-stage { padding: 9rem 1.25rem 1.5rem; }
+  .services-stage { padding: 10rem 1.25rem 1.5rem; }
+  .services-kicker { margin-bottom: 3.75rem; }
   .services-layout > div { min-height: 0; }
-  .services-title { font-size: clamp(2.1rem, 10vw, 2.9rem); }
+  .services-title { max-width: calc(100% - 84px); font-size: clamp(2.1rem, 10vw, 2.9rem); }
+}
+
+/* Compact About hero on phones */
+@media (max-width: 639px) {
+  .about-hero {
+    min-height: 74svh;
+    padding-top: 8.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .about-hero-title {
+    max-width: 22rem;
+    font-size: clamp(2.65rem, 11.5vw, 3.65rem);
+    line-height: 0.94;
+  }
+  .about-hero-rings {
+    top: 7rem;
+    right: -7.5rem;
+    width: 320px;
+    height: 320px;
+  }
 }
 
 /* Selected work gallery — explicit layout avoids dev-compiler utility drift. */
@@ -651,12 +674,31 @@
 .why-principle-card:hover .why-principle-bottom > svg { color: #4355a5; transform: translate(3px, -3px); }
 
 @media (max-width: 767px) {
-  .why-entrain-section { padding: 5rem 0; }
+  .hero-actions {
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin-top: 1.75rem;
+  }
+  .hero-actions > a,
+  .hero-actions > button {
+    min-height: 42px;
+    padding: 0.7rem 1.05rem;
+    gap: 0.45rem;
+    font-size: 0.76rem;
+  }
+  .hero-actions svg { width: 15px; height: 15px; }
+
+  .why-entrain-section { padding: 4rem 0; }
   .why-entrain-container { padding: 0 1.25rem; }
-  .why-entrain-heading { display: block; margin-bottom: 3.5rem; }
-  .why-entrain-heading p { margin-top: 1.5rem; font-size: 0.95rem; }
-  .why-principles-grid { grid-template-columns: 1fr; }
-  .why-principle-card { min-height: 190px; }
+  .why-entrain-heading { display: block; margin-bottom: 2rem; }
+  .why-entrain-heading h2 { font-size: clamp(2.6rem, 13vw, 3.7rem); }
+  .why-entrain-heading p { margin-top: 1rem; font-size: 0.88rem; line-height: 1.55; }
+  .why-principles-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
+  .why-principle-card { min-height: 124px; padding: 0.85rem; border-radius: 14px; }
+  .why-principle-top > div { width: 31px; height: 31px; border-radius: 9px; }
+  .why-principle-top svg { width: 15px; height: 15px; }
+  .why-principle-bottom h3 { max-width: 90%; font-size: 0.95rem; line-height: 1.08; }
+  .why-principle-bottom > svg { display: none; }
   .why-entrain-bg-word { font-size: 30vw; bottom: 0; }
 }
 

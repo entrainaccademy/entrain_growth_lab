@@ -35,7 +35,7 @@ export default function Services() {
     >
       <div className="services-sticky overflow-hidden">
         <div className="services-stage">
-          <div className="lg:absolute lg:top-9 xl:top-12 left-5 sm:left-8 lg:left-12 xl:left-20 z-20 flex items-center gap-3 mb-12 lg:mb-0">
+          <div className="services-kicker lg:absolute lg:top-9 xl:top-12 left-5 sm:left-8 lg:left-12 xl:left-20 z-20 flex items-center gap-3 mb-12 lg:mb-0">
             <span className="w-2 h-2 rounded-full bg-[#FF6B57] ring-4 ring-[#111827]/10" />
             <span className="font-mono text-[11px] font-bold tracking-[0.22em] uppercase">What we do</span>
           </div>
@@ -96,11 +96,21 @@ export default function Services() {
                   key={activeService.id}
                   {...panelMotion}
                   transition={{ duration: 0.48, ease: [0.22, 1, 0.36, 1] }}
-                  className="w-full"
+                  className="relative w-full"
                 >
                   <span className="font-mono text-xs tracking-[0.2em] text-[#4A56B2] uppercase">
                     {activeService.number} / {String(services.length).padStart(2, '0')}
                   </span>
+                  <div className="services-mobile-visual">
+                    <motion.div
+                      key={`mobile-${activeService.id}`}
+                      initial={{ opacity: 0, scale: 0.82, rotate: -12 }}
+                      animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                      className="services-mobile-icon"
+                    >
+                      <ActiveIcon strokeWidth={1.25} />
+                    </motion.div>
+                  </div>
                   <h2 className="services-title font-display font-semibold mt-5 max-w-[760px]">
                     {activeService.title}
                   </h2>
@@ -118,16 +128,6 @@ export default function Services() {
                     Explore this service
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </Link>
-                  <div className="services-mobile-visual">
-                    <motion.div
-                      key={`mobile-${activeService.id}`}
-                      initial={{ opacity: 0, scale: 0.82, rotate: -12 }}
-                      animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                      className="services-mobile-icon"
-                    >
-                      <ActiveIcon strokeWidth={1.25} />
-                    </motion.div>
-                  </div>
                 </motion.div>
               </AnimatePresence>
             </div>

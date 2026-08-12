@@ -12,10 +12,10 @@ export default function About({ onOpenConsultation }) {
   return (
     <main className="overflow-hidden bg-[#F3F1EE] text-[#101827]">
       {/* Hero */}
-      <section className="relative min-h-[100svh] flex items-center sm:items-end py-24 sm:pt-36 sm:pb-20 bg-[#F1EFE7] border-b border-[#101827]/15 overflow-hidden">
+      <section className="about-hero relative min-h-[100svh] flex items-center sm:items-end py-24 sm:pt-36 sm:pb-20 bg-[#F1EFE7] border-b border-[#101827]/15 overflow-hidden">
         <motion.div
           style={{ y: ringY }}
-          className="absolute -right-36 top-16 sm:right-[-3rem] sm:top-24 w-[390px] h-[390px] sm:w-[650px] sm:h-[650px] rounded-full border border-[#4355A5]/20 pointer-events-none"
+          className="about-hero-rings absolute -right-36 top-16 sm:right-[-3rem] sm:top-24 w-[390px] h-[390px] sm:w-[650px] sm:h-[650px] rounded-full border border-[#4355A5]/20 pointer-events-none"
           aria-hidden="true"
         >
           <div className="absolute inset-[12%] rounded-full border border-[#4355A5]/25" />
@@ -25,7 +25,7 @@ export default function About({ onOpenConsultation }) {
 
         <div className="relative z-10 max-w-[90rem] mx-auto w-full px-5 sm:px-8 lg:px-12 text-center sm:text-left">
           <Reveal direction="up" delay={0.1}>
-            <h1 className="max-w-6xl mx-auto sm:mx-0 font-display text-[clamp(3rem,13vw,4.8rem)] sm:text-[clamp(3.4rem,8.4vw,8.8rem)] leading-[0.92] font-semibold tracking-[-0.055em]">
+            <h1 className="about-hero-title max-w-6xl mx-auto sm:mx-0 font-display text-[clamp(3rem,13vw,4.8rem)] sm:text-[clamp(3.4rem,8.4vw,8.8rem)] leading-[0.92] font-semibold tracking-[-0.055em]">
               We believe growth should be <span className="text-[#4355A5]">engineered,</span> not guessed.
             </h1>
           </Reveal>

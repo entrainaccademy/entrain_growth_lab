@@ -33,7 +33,7 @@ export default function Hero({ onOpenConsultation }) {
           </p>
         </Reveal>
         <Reveal direction="up" delay={0.3}>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <div className="hero-actions mt-10 flex flex-col sm:flex-row gap-4">
             <Button size="lg" onClick={onOpenConsultation}>Book a Free Consultation</Button>
             <Button variant="secondary" size="lg" to="/services">Explore Our Services</Button>
           </div>
