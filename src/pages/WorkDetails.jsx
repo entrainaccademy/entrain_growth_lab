@@ -29,15 +29,15 @@ export default function WorkDetails({ onOpenConsultation }) {
     },
     {
       id: 4,
-      title: 'enTrain Growth Labs', 
+      title: 'enTrain Growth Labs',
       featuredImage: '/images/labs-laptop-mockup.png',
       link: '/entrainlabs'
     }
   ];
 
   return (
-    <main className="pt-24 sm:pt-32 pb-0 bg-[#E2E3E6] text-[#111111] min-h-screen">
-      <section id="work-details-section" className="py-12 sm:py-20 bg-[#E2E3E6] text-[#101827] relative">
+    <main className="pt-24 sm:pt-32 pb-0 bg-[#F3F1EE] text-[#111111] min-h-screen">
+      <section id="work-details-section" className="py-12 sm:py-20 bg-[#F3F1EE] text-[#101827] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <SectionLabel label="PORTFOLIO SHOWCASE" variant="light" className="mb-4" />
@@ -54,7 +54,7 @@ export default function WorkDetails({ onOpenConsultation }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
             {caseStudies.map((project, index) => (
               <Reveal key={project.id} direction="up" delay={index * 0.1}>
-                <div 
+                <div
                   onClick={() => navigate(project.link)}
                   className="group cursor-pointer flex flex-col justify-between h-full"
                 >

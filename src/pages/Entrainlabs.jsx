@@ -47,14 +47,7 @@ export default function Entrainlabs({ onOpenConsultation }) {
 
                 {/* 2. BRAND COLOR SYSTEM & LOGO USAGE (colorpattern.png & entrain-three.png) */}
                 <div className="mb-20 space-y-10">
-                    <div className="max-w-3xl">
-                        {/* <span className="text-xs font-mono text-[#005C55] uppercase tracking-widest block mb-2 font-bold">
-              // BRAND ASSETS & LOGO GUIDELINES
-            </span> */}
-                        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#101827]">
-                            Color Topology & Logo Usage Rules
-                        </h2>
-                    </div>
+
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Color System Board */}
@@ -81,10 +74,7 @@ export default function Entrainlabs({ onOpenConsultation }) {
                                         className="w-full h-auto object-contain block"
                                     />
                                 </div>
-                                <div className="px-3 pb-2">
-                                    <h3 className="font-display font-bold text-xl text-[#101827]">Logo Safety & Contrast Panels</h3>
-                                    <p className="text-xs text-neutral-500 font-mono mt-1">White Background • Light Grey Background • Dark Surface</p>
-                                </div>
+
                             </div>
                         </Reveal>
                     </div>
@@ -92,14 +82,7 @@ export default function Entrainlabs({ onOpenConsultation }) {
 
                 {/* 3. FULL BRAND IDENTITY SYSTEM BOARD (entrain.png) */}
                 <div className="mb-20 space-y-8">
-                    <div className="max-w-3xl">
-                        <span className="text-xs font-mono text-[#005C55] uppercase tracking-widest block mb-2 font-bold">
-          
-                        </span>
-                        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#101827]">
-                            Corporate Master Identity Specification
-                        </h2>
-                    </div>
+
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Color System Board */}
@@ -126,81 +109,73 @@ export default function Entrainlabs({ onOpenConsultation }) {
                                         className="w-full h-auto object-contain block"
                                     />
                                 </div>
-                                <div className="px-3 pb-2">
-                                    <h3 className="font-display font-bold text-xl text-[#101827]">Logo Safety & Contrast Panels</h3>
-                                    <p className="text-xs text-neutral-500 font-mono mt-1">White Background • Light Grey Background • Dark Surface</p>
-                                </div>
+
                             </div>
                         </Reveal>
                     </div>
-                    <Reveal direction="up" delay={0.2}>
+                    {/* <Reveal direction="up" delay={0.2}>
                         <div className="w-full  overflow-hidden  group h-full flex flex-col justify-between p-3 sm:p-4">
                             <div className=" overflow-hidden mb-4">
                                 <img
-                                    src="/images/logo-card.png"
+                                    src="/images/logo-card-1.png"
                                     alt="enTrain Correct Logo Usage"
-                                    className="w-[25px] h-auto object-contain block"
+                                    className="w-full h-auto object-contain block"
                                 />
                             </div>
-                            <div className="px-3 pb-2">
-                                <h3 className="font-display font-bold text-xl text-[#101827]">Logo Safety & Contrast Panels</h3>
-                                <p className="text-xs text-neutral-500 font-mono mt-1">White Background • Light Grey Background • Dark Surface</p>
-                            </div>
+
                         </div>
-                    </Reveal>
+                    </Reveal> */}
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {/* Color System Board */}
+                        <Reveal direction="up" delay={0.1}>
+                            <div className="w-full  overflow-hidden     group h-full flex flex-col justify-between p-3 sm:p-4">
+                                <div className=" overflow-hidden mb-4">
+                                    <img
+                                        src="/images/logo-card-2.png"
+                                        alt="enTrain Corporate Color System"
+                                        className="w-full h-auto object-contain block"
+                                    />
+                                </div>
+
+                            </div>
+                        </Reveal>
+
+                        {/* Logo Usage Board */}
+                        <Reveal direction="up" delay={0.2}>
+                            <div className="w-full rounded-3xl overflow-hidden  border border-slate-300/60 group h-full flex flex-col justify-between p-3 sm:p-4">
+                                <div className=" overflow-hidden mb-4">
+                                    <img
+                                        src="/images/logo-card-1.png"
+                                        alt="enTrain Correct Logo Usage"
+                                        className="w-full h-auto object-contain block"
+                                    />
+                                </div>
+
+                            </div>
+                        </Reveal>
+                    </div>
                 </div>
 
                 {/* 4. DIGITAL INTERFACE PREVIEWS (LAPTOP & WEBSITE) */}
                 <div className="mb-20 space-y-8">
-                    <div className="max-w-3xl">
-                        <span className="text-xs font-mono text-[#005C55] uppercase tracking-widest block mb-2 font-bold">
-              // DIGITAL INTERFACE ARCHITECTURE
-                        </span>
-                        <h2 className="font-display text-3xl sm:text-5xl font-extrabold text-[#101827]">
-                            Web Platform & Application Execution
-                        </h2>
-                    </div>
+                  
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 gap-8">
                         <Reveal direction="up" delay={0.1}>
-                            <div className="bg-white rounded-3xl p-4 sm:p-6 shadow-xl border border-slate-300/60 h-full flex flex-col justify-between group">
-                                <div className="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-6">
+                            <div className="  p-4 sm:p-6 lg:p-8  h-full flex flex-col justify-between group">
+                                <div className="w-full rounded-2xl overflow-hidden">
                                     <img
                                         src="/images/labs-laptop-mockup.png"
                                         alt="enTrain Laptop Mockup"
-                                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                        className="w-full h-auto object-contain block transform group-hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
-                                <div>
-                                    <h3 className="font-display text-2xl font-bold text-[#101827] mb-2">
-                                        Enterprise Advisory Portal
-                                    </h3>
-                                    <p className="text-neutral-600 text-sm leading-relaxed font-light">
-                                        High-trust web dashboard built for automated consulting appointment triggers and client telemetry.
-                                    </p>
-                                </div>
+
                             </div>
                         </Reveal>
 
-                        <Reveal direction="up" delay={0.2}>
-                            <div className="bg-white rounded-3xl p-4 sm:p-6 shadow-xl border border-slate-300/60 h-full flex flex-col justify-between group">
-                                <div className="aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 mb-6">
-                                    <img
-                                        src="/images/labswebsite.jpg"
-                                        alt="enTrain Web System"
-                                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                                    />
-                                </div>
-                                <div>
-                                    <h3 className="font-display text-2xl font-bold text-[#101827] mb-2">
-                                        Topical Authority Engine
-                                    </h3>
-                                    <p className="text-neutral-600 text-sm leading-relaxed font-light">
-                                        SEO-optimized web architecture engineered for organic traffic expansion and high conversion rates.
-                                    </p>
-                                </div>
-                            </div>
-                        </Reveal>
+
                     </div>
                 </div>
 
