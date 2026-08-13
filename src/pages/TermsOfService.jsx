@@ -4,12 +4,12 @@ import Reveal from '../components/Reveal';
 
 export default function TermsOfService() {
   return (
-    <main className="pt-32 pb-20 bg-[#2596BE] text-white">
+    <main className="pt-32 pb-20 bg-[#F3F1EE] text-[#101827]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionLabel label="LEGAL TERMS" variant="blue" className="mb-4" />
 
         <Reveal direction="up" delay={0.15}>
-          <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-8">
+          <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-[#101827] tracking-tight leading-tight mb-8">
             Terms of Service
           </h1>
         </Reveal>
