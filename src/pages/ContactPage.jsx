@@ -245,7 +245,7 @@ export default function ContactPage() {
                       {/* Message */}
                       <div>
                         <label className="block text-xs font-mono font-bold uppercase tracking-wider text-[#202124]/70 mb-2">
-                          Growth Goals / Message *
+                          Growth Goals / Message 
                         </label>
                         <textarea
                           name="message"

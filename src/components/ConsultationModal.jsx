@@ -237,7 +237,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                 {/* Growth Goals / Message */}
                 <div>
                   <label className="block text-[11px] font-mono font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
-                    Growth Goals / Message *
+                    Growth Goals / Message 
                   </label>
                   <textarea
                     name="message"
