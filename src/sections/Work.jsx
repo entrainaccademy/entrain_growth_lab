@@ -6,9 +6,10 @@ import Reveal from '../components/Reveal';
 const projects = [
   {
     id: 1,
-    title: 'Cobolt Engineering',
+    title: 'Cobolt Machineries',
     image: '/images/cobolt_tablet_mockup.png',
     tone: '#EFEFF5',
+    link: '/workdetails',
   },
   {
     id: 2,
@@ -16,18 +17,21 @@ const projects = [
     image: '/images/minimalistic-macbook-pro-mockup.png',
     tone: '#E9E9E9',
     contain: true,
+    link: '/entrainlabs',
   },
   {
     id: 3,
     title: 'Entrain Academy',
     image: '/images/mockup1.png',
     tone: '#E8E2D8',
+    link: '/culinary',
   },
   {
     id: 4,
     title: 'Buckeez',
     image: '/images/buckeez_tablet_mockup.png',
     tone: '#E9EBF2',
+    link: '/buckeez',
   },
 ];
 
@@ -49,7 +53,11 @@ export default function Work() {
         <div className="work-grid">
           {projects.map((project, index) => (
             <Reveal key={project.id} delay={(index % 2) * 0.1} direction="up">
-              <article className="work-card group">
+              <Link
+                to={project.link}
+                className="work-card group block"
+                aria-label={`View ${project.title} case study`}
+              >
                 <div
                   className="work-media"
                   style={{ backgroundColor: project.tone }}
@@ -80,7 +88,7 @@ export default function Work() {
                     {project.title}
                   </h3>
                 </div>
-              </article>
+              </Link>
             </Reveal>
           ))}
         </div>
