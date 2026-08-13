@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import WhatWeOffer from '../sections/WhatWeOffer';
+import { Globe, ExternalLink } from 'lucide-react';
 
 export default function Buckeez({ onOpenConsultation }) {
   return (
@@ -16,6 +17,18 @@ export default function Buckeez({ onOpenConsultation }) {
           <p className="font-sans text-neutral-700 text-lg sm:text-2xl font-light mt-4 max-w-3xl leading-relaxed">
             High-conversion food & beverage web app featuring interactive digital menus, online store location finder, and instant order triggers.
           </p>
+          <div className="mt-6">
+            <a
+              href="https://www.buckeezfried.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-slate-300/80 text-sm sm:text-base font-semibold text-[#4355A5] hover:bg-[#4355A5] hover:text-white transition-all shadow-sm group"
+            >
+              <Globe className="w-4 h-4 sm:w-5 sm:h-5 text-[#4355A5] group-hover:text-white transition-colors" />
+              <span>www.buckeezfried.com</span>
+              <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 text-[#4355A5] group-hover:text-white transition-colors" />
+            </a>
+          </div>
         </div>
 
         {/* Hero & Interface Visual Showcase */}
@@ -87,7 +100,17 @@ export default function Buckeez({ onOpenConsultation }) {
         <WhatWeOffer bg="bg-[#F3F1EE]" />
 
         {/* Action CTA */}
-        <div className="text-center pt-8 pb-12">
+        <div className="text-center pt-8 pb-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Button
+            href="https://www.buckeezfried.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="secondary"
+            size="lg"
+            showArrow={true}
+          >
+            Visit Live Website
+          </Button>
           <Button variant="primary" size="lg" onClick={onOpenConsultation} showArrow={true}>
             Book Strategy Call
           </Button>

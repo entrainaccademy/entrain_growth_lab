@@ -97,21 +97,6 @@ export default function PerformanceMarketing({ onOpenConsultation }) {
           </div>
         </div>
 
-        {/* Business Benefits */}
-        <div className="mb-16 bg-white p-8 sm:p-12 rounded-3xl border border-neutral-200/90 shadow-sm">
-          <h2 className="font-display text-3xl font-extrabold text-[#101827] tracking-tight mb-8">
-            Why Choose Our Performance Marketing System
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {benefits.map((b, idx) => (
-              <div key={idx} className="space-y-2">
-                <div className="font-mono text-sm font-bold text-[#4355A5] uppercase">0{idx + 1}.</div>
-                <h3 className="font-display text-xl font-bold text-[#101827]">{b.title}</h3>
-                <p className="text-sm text-neutral-600 font-light leading-relaxed">{b.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Action Call */}
         <div className="text-center py-10 bg-white rounded-3xl border border-neutral-200/90 shadow-sm mb-16 px-6">

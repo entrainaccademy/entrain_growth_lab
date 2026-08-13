@@ -10,42 +10,42 @@ export default function WhatWeOffer({ bg = "bg-[#F3F1EE]" }) {
       number: '01',
       title: 'Search Engine Optimization',
       route: '/services/seo',
-      desc: 'We build sustainable organic traffic through technical SEO, strategic keywords, authoritative content, and continuous search performance optimization.',
+      // desc: 'We build sustainable organic traffic through technical SEO, strategic keywords, authoritative content, and continuous search performance optimization.',
       accent: 'text-[#D62828]'
     },
     {
       number: '02',
       title: 'Branding',
       route: '/services/branding-creative-design',
-      desc: 'We shape distinctive brand identities that clarify your positioning, create instant credibility, and give your business a consistent presence everywhere.',
+      // desc: 'We shape distinctive brand identities that clarify your positioning, create instant credibility, and give your business a consistent presence everywhere.',
       accent: 'text-[#D62828]'
     },
     {
       number: '03',
       title: 'Meta Ads',
       route: '/services/performance-marketing',
-      desc: 'We plan, launch, and optimize Facebook and Instagram campaigns with precise audiences, compelling creative, and conversion-focused funnels.',
+      // desc: 'We plan, launch, and optimize Facebook and Instagram campaigns with precise audiences, compelling creative, and conversion-focused funnels.',
       accent: 'text-[#D62828]'
     },
     {
       number: '04',
       title: 'Google Ads',
       route: '/services/performance-marketing',
-      desc: 'We create high-intent Google Search, Display, and Performance Max campaigns engineered to generate qualified traffic and measurable returns.',
+      // desc: 'We create high-intent Google Search, Display, and Performance Max campaigns engineered to generate qualified traffic and measurable returns.',
       accent: 'text-[#D62828]'
     },
     {
       number: '05',
       title: 'Social Media Marketing',
       route: '/services/social-media-marketing',
-      desc: 'We create platform-specific content and social strategies that grow your audience, strengthen brand authority, and turn engagement into business opportunities.',
+      // desc: 'We create platform-specific content and social strategies that grow your audience, strengthen brand authority, and turn engagement into business opportunities.',
       accent: 'text-[#D62828]'
     },
     {
       number: '06',
       title: 'Web Design & Development',
       route: '/services/website-design-development',
-      desc: 'We design and develop responsive, high-performing websites that communicate your value clearly and turn more visitors into qualified enquiries.',
+      // desc: 'We design and develop responsive, high-performing websites that communicate your value clearly and turn more visitors into qualified enquiries.',
       accent: 'text-[#D62828]'
     }
   ];
@@ -81,7 +81,7 @@ export default function WhatWeOffer({ bg = "bg-[#F3F1EE]" }) {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               viewport={{ once: true }}
               whileHover={{ x: 6 }}
-              className="group py-5 px-4 sm:px-8 rounded-2xl bg-white/70 backdrop-blur-md border border-neutral-200/80 hover:border-[#D62828]/40 hover:bg-white shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center cursor-pointer"
+              className="group py-5 px-4 sm:px-8 rounded-2xl  backdrop-blur-md border  hover:border-[#D62828]/40 hover:bg-white shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center cursor-pointer"
             >
               {/* Number Column */}
               <div className="md:col-span-2">
