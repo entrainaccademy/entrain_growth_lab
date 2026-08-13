@@ -24,6 +24,16 @@ import BlogPage from './pages/BlogPage';
 import BlogPost from './pages/BlogPost';
 import CareersPage from './pages/CareersPage';
 
+// Dedicated 8 Service Detail Pages
+import DigitalMarketing from './pages/DigitalMarketing';
+import SocialMediaMarketing from './pages/SocialMediaMarketing';
+import SeoService from './pages/SEO';
+import PerformanceMarketing from './pages/PerformanceMarketing';
+import ContentMarketing from './pages/ContentMarketing';
+import BrandingCreativeDesign from './pages/BrandingCreativeDesign';
+import WebsiteDesignDevelopment from './pages/WebsiteDesignDevelopment';
+import MarketingStrategyConsulting from './pages/MarketingStrategyConsulting';
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -51,6 +61,23 @@ function AnimatedRoutes({ onOpenConsultation }) {
           <Route path="/" element={<Home onOpenConsultation={onOpenConsultation} />} />
           <Route path="/about" element={<About onOpenConsultation={onOpenConsultation} />} />
           <Route path="/services" element={<ServicesPage onOpenConsultation={onOpenConsultation} />} />
+
+          {/* Service Detail Routes */}
+          <Route path="/services/digital-marketing" element={<DigitalMarketing onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/social-media-marketing" element={<SocialMediaMarketing onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/seo" element={<SeoService onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/performance-marketing" element={<PerformanceMarketing onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/content-marketing" element={<ContentMarketing onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/branding-creative-design" element={<BrandingCreativeDesign onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/website-design-development" element={<WebsiteDesignDevelopment onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/marketing-strategy-consulting" element={<MarketingStrategyConsulting onOpenConsultation={onOpenConsultation} />} />
+
+          {/* Alias Service Routes */}
+          <Route path="/services/branding" element={<BrandingCreativeDesign onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/meta-ads" element={<PerformanceMarketing onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/google-ads" element={<PerformanceMarketing onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/services/web-design-development" element={<WebsiteDesignDevelopment onOpenConsultation={onOpenConsultation} />} />
+
           <Route path="/work" element={<WorkPage onOpenConsultation={onOpenConsultation} />} />
           <Route path="/workdetails" element={<WorkDetails onOpenConsultation={onOpenConsultation} />} />
           <Route path="/buckeez" element={<Buckeez onOpenConsultation={onOpenConsultation} />} />

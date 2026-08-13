@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import SectionLabel from '../components/SectionLabel';
 import Reveal from '../components/Reveal';
 import CTA from '../sections/CTA';
 import { ArrowUpRight } from 'lucide-react';
@@ -39,8 +38,6 @@ export default function WorkDetails({ onOpenConsultation }) {
     <main className="pt-24 sm:pt-32 pb-0 bg-[#F3F1EE] text-[#111111] min-h-screen">
       <section id="work-details-section" className="py-12 sm:py-20 bg-[#F3F1EE] text-[#101827] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <SectionLabel label="PORTFOLIO SHOWCASE" variant="light" className="mb-4" />
 
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
             <Reveal direction="up" delay={0.15}>

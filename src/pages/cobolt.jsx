@@ -1,5 +1,4 @@
 import React from 'react';
-import SectionLabel from '../components/SectionLabel';
 import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
@@ -7,18 +6,13 @@ import { Target, CheckCircle2 } from 'lucide-react';
 
 export default function Cobolt({ onOpenConsultation }) {
   return (
-    <main className="pt-24 sm:pt-32 pb-0 bg-[#E2E3E6] text-[#111111] min-h-screen">
+    <main className="pt-24 sm:pt-32 pb-0 bg-[#F3F1EE] text-[#101827] min-h-screen font-sans">
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <SectionLabel label="CASE STUDY" variant="light" className="mb-4" />
-        
         <div className="mb-12">
-          <span className="text-xs font-mono font-bold tracking-widest text-[#4355A5] uppercase bg-[#4355A5]/10 px-3.5 py-1.5 rounded-full border border-[#4355A5]/20 inline-block mb-3">
-            PAID MEDIA & VIRAL GROWTH
-          </span>
           <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight">
             Cobolt Campaign
           </h1>
-          <p className="text-neutral-700 text-lg sm:text-2xl font-light mt-4 max-w-3xl">
+          <p className="font-sans text-neutral-700 text-lg sm:text-2xl font-light mt-4 max-w-3xl leading-relaxed">
             Viral social media ad creative system and multi-channel customer acquisition engine built for gourmet food chain expansion across Meta & Instagram.
           </p>
         </div>
@@ -38,7 +32,7 @@ export default function Cobolt({ onOpenConsultation }) {
             <h3 className="font-display font-bold text-xl text-neutral-900 mb-3 flex items-center gap-2">
               <Target className="w-5 h-5 text-amber-600" /> The Challenge
             </h3>
-            <p className="text-neutral-600 text-base leading-relaxed">
+            <p className="font-sans text-neutral-600 text-base leading-relaxed font-light">
               Driving hyper-local store footfall and building brand affinity across paid social media channels with high conversion velocity.
             </p>
           </div>
@@ -47,7 +41,7 @@ export default function Cobolt({ onOpenConsultation }) {
             <h3 className="font-display font-bold text-xl text-neutral-900 mb-3 flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5 text-emerald-600" /> The Growth Solution
             </h3>
-            <p className="text-neutral-600 text-base leading-relaxed">
+            <p className="font-sans text-neutral-600 text-base leading-relaxed font-light">
               Engineered high-converting vertical video creatives, UGC campaigns, and localized geo-targeted audience funnels to maximize ROAS.
             </p>
           </div>
