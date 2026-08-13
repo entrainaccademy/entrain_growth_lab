@@ -52,7 +52,7 @@ export default function WorkPage({ onOpenConsultation }) {
       id: 3,
       title: 'Buckeez Campaign',
       client: 'Buckeez Franchise',
-      category: 'FEATURED PROJECT // PAID MEDIA & VIRAL GROWTH',
+      category: 'FEATURED PROJECT',
       featuredImage: '/images/buckeezinstagram-mockup.png',
       technologies: 'Meta Ads • Creative Strategy • Geo-Targeting • Funnel UI',
       description: 'Viral social media ad creative system and multi-channel customer acquisition engine built for gourmet food chain expansion.',
