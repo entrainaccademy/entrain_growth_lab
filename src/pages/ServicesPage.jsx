@@ -113,85 +113,8 @@ export default function ServicesPage({ onOpenConsultation }) {
       {/* Editorial Overview Section (WhatWeOffer - Untouched Source) */}
       <WhatWeOffer bg="bg-[#F3F1EE]" />
 
-      {/* Showcase Service Cards linked to Detail Pages */}
-      <section className="py-16 sm:py-28 bg-[#F3F1EE] text-[#101827] relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-24">
-
-          {serviceShowcase.map((service) => (
-            <Reveal key={service.number} delay={0.1} direction="up">
-              <div
-                onClick={() => navigate(service.route)}
-                className="bg-white rounded-3xl p-6 sm:p-12 lg:p-14 border border-neutral-200/90 shadow-xl relative overflow-hidden group cursor-pointer hover:border-[#4355A5]/50 transition-all duration-300"
-              >
-                {/* Device Wireframe Line Art SVG */}
-                <div className="mb-8 opacity-40 group-hover:opacity-70 transition-opacity">
-                  <svg className="w-48 sm:w-64 h-auto text-neutral-400" viewBox="0 0 240 120" fill="none" stroke="currentColor" strokeWidth="1.5" strokeDasharray="3 3">
-                    <rect x="10" y="10" width="120" height="90" rx="4" />
-                    <rect x="140" y="40" width="90" height="60" rx="4" />
-                    <line x1="20" y1="25" x2="110" y2="25" />
-                    <line x1="20" y1="40" x2="80" y2="40" />
-                    <line x1="20" y1="55" x2="100" y2="55" />
-                  </svg>
-                </div>
-
-                {/* Number & Title */}
-                <div className="flex flex-wrap items-baseline gap-3 mb-6">
-                  <span className="font-display font-extrabold text-4xl sm:text-6xl text-[#F05365] tracking-tight">
-                    {service.number}
-                  </span>
-                  <h2 className="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl text-[#101827] tracking-tight group-hover:text-[#4355A5] transition-colors">
-                    {service.title}
-                  </h2>
-                </div>
-
-                {/* Stacked Vertical Tagline */}
-                <div className="mb-8">
-                  {service.tagline.map((line, idx) => (
-                    <div key={idx} className="font-display font-semibold text-2xl sm:text-3xl text-neutral-800 leading-tight">
-                      {line}
-                    </div>
-                  ))}
-                </div>
-
-                {/* Stacked Headline Statements with Highlighted Accent Word */}
-                <div className="mb-10 space-y-2">
-                  {service.headlines.map((item, idx) => (
-                    <div key={idx} className="font-display text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#101827] tracking-tight leading-tight">
-                      {item.text}
-                      {item.highlight && (
-                        <span className="text-[#F05365] underline decoration-[#F05365]/30 underline-offset-4">
-                          {item.highlightText}
-                        </span>
-                      )}
-                    </div>
-                  ))}
-                </div>
-
-                {/* Bottom Tech Note & View Service Details Action */}
-                <div className="pt-6 border-t border-neutral-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-                  <p className="text-xs sm:text-sm text-neutral-500 font-sans font-normal max-w-xl leading-relaxed">
-                    {service.techNote} <span className="text-[#F05365] font-bold">»»»</span>
-                  </p>
-                  <Button
-                    variant="primary"
-                    size="md"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      navigate(service.route);
-                    }}
-                    showArrow={true}
-                    className="shrink-0"
-                  >
-                    View {service.title} Details
-                  </Button>
-                </div>
-
-              </div>
-            </Reveal>
-          ))}
-
-        </div>
-      </section>
+      
+     
 
       {/* Process Component */}
       <Process />
