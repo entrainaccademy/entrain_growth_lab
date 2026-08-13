@@ -38,13 +38,10 @@ export default function SEO({ onOpenConsultation }) {
         </div>
 
         {/* Hero Header */}
-        <div className="mb-14 pb-8 border-b border-neutral-300/80">
-          <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight mb-4">
+        <div className="mb-10 pb-8 border-b border-neutral-300/80">
+          <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight">
             Search Engine Optimization (SEO)
           </h1>
-          <p className="text-neutral-700 text-lg sm:text-2xl font-light max-w-3xl leading-relaxed">
-            Rank higher on search engines, drive qualified organic traffic, and get discovered by ready-to-buy customers.
-          </p>
         </div>
 
         {/* Detailed Service Overview */}

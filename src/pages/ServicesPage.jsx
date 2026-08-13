@@ -97,15 +97,12 @@ export default function ServicesPage({ onOpenConsultation }) {
      
 
       {/* Hero Header */}
-      <section className="py-14 sm:py-24 bg-[#F3F1EE] relative z-10 border-b border-neutral-200/90">
+      <section className="pt-14 sm:pt-24 pb-10 sm:pb-16 bg-[#F3F1EE] relative z-10 border-b border-neutral-200/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal direction="up" delay={0.1}>
             <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#101827] tracking-tight leading-none max-w-5xl">
               Growth services built for modern brands.
             </h1>
-            <p className="font-sans text-neutral-700 text-lg sm:text-2xl font-light mt-6 max-w-3xl leading-relaxed">
-              Click any service below to view its dedicated scope of work, key deliverables, and business benefits.
-            </p>
           </Reveal>
         </div>
       </section>
