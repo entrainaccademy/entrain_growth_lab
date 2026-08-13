@@ -5,7 +5,7 @@ export const mainNavigation = [
   { name: 'Work', path: '/workdetails' },
   { name: 'Blog', path: '/blog' },
   { name: 'Careers', path: '/careers' },
-  { name: 'Contact', path: '/contact' },
+  // { name: 'Contact', path: '/contact' },
 ];
 
 export const legalNavigation = [
