@@ -53,6 +53,10 @@ const pages = {
     title: 'Contact Entrain Growth Lab | Book a Consultation',
     description: 'Contact Entrain Growth Lab to discuss SEO, paid advertising, social media, web development or a tailored strategy for your business.',
   },
+  '/careers': {
+    title: 'Careers at Entrain Growth Lab',
+    description: 'Explore career opportunities at Entrain Growth Lab and learn about joining our team of strategists, creatives and digital growth specialists.',
+  },
   '/privacy': {
     title: 'Privacy Policy | Entrain Growth Lab',
     description: 'Read the Entrain Growth Lab privacy policy and learn how information submitted through this website is handled.',

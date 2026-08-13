@@ -22,6 +22,7 @@ import Culinary from './pages/culinary';
 import Entrainlabs from './pages/Entrainlabs';
 import BlogPage from './pages/BlogPage';
 import BlogPost from './pages/BlogPost';
+import CareersPage from './pages/CareersPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -60,6 +61,7 @@ function AnimatedRoutes({ onOpenConsultation }) {
           <Route path="/blog/:slug" element={<BlogPost onOpenConsultation={onOpenConsultation} />} />
           <Route path="/testimonials" element={<TestimonialsPage onOpenConsultation={onOpenConsultation} />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/careers" element={<CareersPage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
         </Routes>

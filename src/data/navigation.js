@@ -4,6 +4,7 @@ export const mainNavigation = [
   { name: 'Services', path: '/services' },
   { name: 'Work', path: '/workdetails' },
   { name: 'Blog', path: '/blog' },
+  { name: 'Careers', path: '/careers' },
   { name: 'Contact', path: '/contact' },
 ];
 
