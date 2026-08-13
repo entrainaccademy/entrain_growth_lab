@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Entrain Careers',
+    title: 'Entrain Labs',
     image: '/images/minimalistic-macbook-pro-mockup.png',
     tone: '#E9E9E9',
     contain: true,

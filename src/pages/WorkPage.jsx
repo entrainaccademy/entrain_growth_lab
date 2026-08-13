@@ -66,8 +66,8 @@ export default function WorkPage({ onOpenConsultation }) {
     },
     {
       id: 4,
-      title: 'Entrain Growth Labs',
-      client: 'enTrain Growth Labs',
+      title: 'Entrain Labs',
+      client: 'Entrain  Labs',
       category: 'FEATURED PROJECT // ENTERPRISE GROWTH PORTAL',
       featuredImage: '/images/labswebsite.jpg',
       technologies: 'React • Node.js • PostgreSQL • Tailwind CSS',

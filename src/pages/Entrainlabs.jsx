@@ -11,7 +11,7 @@ export default function Entrainlabs({ onOpenConsultation }) {
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="mb-12">
           <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight">
-            Entrain Growth Labs
+            Entrain Labs
           </h1>
           <p className="font-sans text-neutral-700 text-lg sm:text-2xl font-light mt-4 max-w-3xl leading-relaxed">
             Digital marketing agency website with custom branding, logo design, color system, and a modern conversion-focused user experience.
