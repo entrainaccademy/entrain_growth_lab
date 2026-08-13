@@ -16,22 +16,28 @@ export default function WorkDetails({ onOpenConsultation }) {
     },
     {
       id: 2,
-      title: 'Buckeez Digital',
+      title: 'Buckeez ',
       featuredImage: '/images/buckeezmockup.png',
       link: '/buckeez'
     },
     {
       id: 3,
-      title: 'Buckeez Campaign',
+      title: 'Cobolt machineries ',
       featuredImage: '/images/coboldipad.png',
       link: '/cobolt'
     },
     {
       id: 4,
-      title: 'enTrain Growth Labs',
+      title: 'Entrain Growth Labs',
       featuredImage: '/images/labs-laptop-mockup.png',
       link: '/entrainlabs'
+    }, {
+      id: 5,
+      title: 'Entrain Edu hub',
+      featuredImage: '/images/eduhub-mockup.png',
+      link: ''
     }
+
   ];
 
   return (

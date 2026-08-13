@@ -34,7 +34,7 @@ export default function WorkPage({ onOpenConsultation }) {
     },
     {
       id: 2,
-      title: 'Buckeez Digital',
+      title: 'Buckeez ',
       client: 'Buckeez Gourmet Group',
       category: 'FEATURED PROJECT // FOOD & BEVERAGE FRANCHISE',
       featuredImage: '/images/buckeezmockup.png',
@@ -50,10 +50,10 @@ export default function WorkPage({ onOpenConsultation }) {
     },
     {
       id: 3,
-      title: 'Buckeez Campaign',
-      client: 'Buckeez Franchise',
+      title: 'Cobolt Machineries',
+      client: 'Cobolt Machineries',
       category: 'FEATURED PROJECT',
-      featuredImage: '/images/buckeezinstagram-mockup.png',
+      featuredImage: '/images/coboltmockup.png',
       technologies: 'Meta Ads • Creative Strategy • Geo-Targeting • Funnel UI',
       description: 'Viral social media ad creative system and multi-channel customer acquisition engine built for gourmet food chain expansion.',
       challenge: 'Driving hyper-local store footfall and building brand affinity across Meta & Instagram channels.',
@@ -66,7 +66,7 @@ export default function WorkPage({ onOpenConsultation }) {
     },
     {
       id: 4,
-      title: 'enTrain Growth Labs',
+      title: 'Entrain Growth Labs',
       client: 'enTrain Growth Labs',
       category: 'FEATURED PROJECT // ENTERPRISE GROWTH PORTAL',
       featuredImage: '/images/labswebsite.jpg',
