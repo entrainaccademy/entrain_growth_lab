@@ -1,0 +1,157 @@
+export const blogCategories = ['Case Studies', 'SEO', 'Web Design', 'Branding', 'Strategy'];
+
+export const categoryIcons = {
+  'Case Studies': 'Sparkles',
+  SEO: 'Search',
+  'Web Design': 'Layout',
+  Branding: 'Palette',
+  Strategy: 'Target',
+};
+
+export const blogPosts = [
+  {
+    slug: 'organic-instagram-growth-case-study',
+    title: 'Two Brands, Zero Ad Spend: How We Built Instagram Audiences That Actually Convert',
+    excerpt:
+      'How Entrain Growth Lab took two client Instagram accounts from a near-blank slate to thriving, highly engaged communities — without putting a single rupee behind ads.',
+    category: 'Case Studies',
+    date: '2026-08-13',
+    readTime: '6 min read',
+    author: 'Entrain Growth Lab',
+    image: '/images/blog/instagram-organic-growth.png',
+    featured: true,
+    content: [
+      { type: 'p', text: "Most brands assume that meaningful Instagram growth requires a media budget. Two of our clients proved otherwise. Working with a food & beverage brand and a lifestyle brand, we built organic content systems that turned both accounts into genuinely active, fast-growing communities — with no paid promotion at any stage." },
+      { type: 'h2', text: 'The Challenge' },
+      { type: 'p', text: 'Both brands came to us with the same problem: inconsistent posting, low engagement, and no real content strategy behind what was going up. Follower counts were stagnant, and what growth existed wasn’t translating into comments, saves, shares, or actual customer action. Running ads would have been the easy lever to pull. We chose not to.' },
+      { type: 'p', text: 'The goal wasn’t vanity growth. It was building audiences that would actually convert into customers, and that meant earning attention rather than buying it.' },
+      { type: 'h2', text: 'Our Approach' },
+      { type: 'p', text: 'We rebuilt each account around a repeatable organic system rather than one-off viral bets:' },
+      { type: 'list', items: [
+        'Content pillars mapped to what each brand’s audience actually searches and saves for — not just what looks good on a grid.',
+        'A consistent posting rhythm, because the algorithm and the audience both reward reliability over sporadic bursts.',
+        'Hook-first Reels built around the first two seconds, since retention in the opening moments drives distribution.',
+        'Active community management — replying to every comment and DM to turn casual viewers into a genuine following.',
+        'Weekly performance reviews, using retention, saves, and shares (not just likes) to decide what to double down on.',
+      ] },
+      { type: 'h2', text: 'The Result' },
+      { type: 'p', text: 'Within months, both accounts moved from stagnant to consistently compounding growth — scaling into two of the most engaged pages in their respective categories, entirely through organic reach. More importantly, the engagement translated into real business outcomes: inbound inquiries, direct messages from potential customers, and a following that actually pays attention when a new post goes up.' },
+      { type: 'quote', text: 'Paid ads can buy you reach. They can’t buy you an audience that sticks around, engages, and trusts the brand enough to buy from it. That only comes from organic strategy done consistently.' },
+      { type: 'p', text: 'This is the same organic-first framework we bring to every client engagement — content built on strategy, not guesswork, and growth that compounds instead of switching off the moment the ad budget does.' },
+    ],
+  },
+  {
+    slug: 'seo-compounding-growth-channel',
+    title: 'Why SEO Is the Growth Channel Most Businesses Underinvest In',
+    excerpt:
+      'Paid traffic disappears the moment you stop paying for it. SEO keeps working long after the effort is in — here’s how we approach it for clients.',
+    category: 'SEO',
+    date: '2026-08-13',
+    readTime: '5 min read',
+    author: 'Entrain Growth Lab',
+    image: '/images/blog/seo-growth.png',
+    featured: false,
+    content: [
+      { type: 'p', text: 'Ask most business owners about SEO and you’ll hear the same complaint: it’s slow, hard to measure, and the results take too long to show up. All three are true in the short term — and exactly why SEO ends up being the most underinvested channel in most marketing budgets.' },
+      { type: 'h2', text: 'Traffic That Doesn’t Switch Off' },
+      { type: 'p', text: 'Every rupee spent on ads buys attention for as long as the campaign runs. SEO works differently — a well-optimized page keeps generating traffic months and years after the work was done, without an ongoing bill attached to every click.' },
+      { type: 'h2', text: 'It Captures Demand That Already Exists' },
+      { type: 'p', text: 'Unlike most social content, search traffic is intent-driven. Someone typing a query into Google has already decided they have a problem and are actively looking for a solution — SEO simply makes sure your business is the answer they find.' },
+      { type: 'h2', text: 'Our Approach to SEO' },
+      { type: 'list', items: [
+        'Technical audits to fix the crawlability and speed issues holding a site back before any content work begins.',
+        'Keyword and competitor research focused on intent, not just search volume.',
+        'On-page optimization and content built around topics your audience is actually searching for.',
+        'Authority building through consistent, earned link growth rather than shortcuts that risk penalties.',
+        'Local SEO and Google Business optimization for businesses that depend on nearby customers finding them.',
+      ] },
+      { type: 'h2', text: 'Why It Matters Long-Term' },
+      { type: 'p', text: 'The businesses that treat SEO as a core channel — not an afterthought — end up with a growing asset that reduces how dependent they are on paid acquisition over time. It’s slower to start, but it’s the channel that keeps compounding while everything else has to be paid for again every month.' },
+    ],
+  },
+  {
+    slug: 'signs-your-website-is-losing-customers',
+    title: '5 Signs Your Website Is Losing You Customers (And How to Fix Them)',
+    excerpt:
+      'Traffic without conversions usually points to the same handful of website problems. Here’s what we check first on every client audit.',
+    category: 'Web Design',
+    date: '2026-08-13',
+    readTime: '5 min read',
+    author: 'Entrain Growth Lab',
+    image: '/images/blog/website-conversion.png',
+    featured: false,
+    content: [
+      { type: 'p', text: 'A website that gets visitors but not enquiries isn’t a traffic problem — it’s almost always a conversion problem. These are the five issues we see most often when auditing a client’s site for the first time.' },
+      { type: 'h2', text: '1. It Takes Too Long to Say What You Do' },
+      { type: 'p', text: 'If a first-time visitor can’t tell what your business offers within a few seconds of landing on the homepage, they leave before finding out. Clarity above the fold matters more than clever copy.' },
+      { type: 'h2', text: '2. It’s Slow on Mobile' },
+      { type: 'p', text: 'Most traffic today is mobile-first. A site that loads slowly or renders awkwardly on a phone is quietly turning away the majority of its visitors before they see anything else.' },
+      { type: 'h2', text: '3. There’s No Clear Next Step' },
+      { type: 'p', text: 'Every page should have one obvious action — book a call, request a quote, make a purchase. Sites with too many competing calls to action end up with visitors who take none of them.' },
+      { type: 'h2', text: '4. Trust Signals Are Missing' },
+      { type: 'p', text: 'Testimonials, case studies, certifications, and real client results build the confidence a visitor needs before they’ll reach out. Without them, even a well-designed site can feel risky to act on.' },
+      { type: 'h2', text: '5. It Isn’t Built for Search' },
+      { type: 'p', text: 'A beautiful site that isn’t technically optimized for search engines is invisible to the people who would have found it. Design and SEO have to be built together, not bolted on afterward.' },
+      { type: 'p', text: 'Most of these fixes don’t require a full rebuild — just a focused audit and a clear priority list, which is exactly where we start with every web project.' },
+    ],
+  },
+  {
+    slug: 'brand-positioning-101',
+    title: 'Brand Positioning 101: Why "We Do Everything" Is Costing You Customers',
+    excerpt:
+      'Trying to appeal to everyone usually means standing out to no one. Here’s how clear positioning changes the way customers choose you.',
+    category: 'Branding',
+    date: '2026-08-13',
+    readTime: '4 min read',
+    author: 'Entrain Growth Lab',
+    image: '/images/blog/brand-positioning.png',
+    featured: false,
+    content: [
+      { type: 'p', text: 'When a brand describes itself as doing "a bit of everything for everyone," it’s usually trying to avoid losing potential customers. In practice, it does the opposite — it makes the business forgettable to all of them.' },
+      { type: 'h2', text: 'Positioning Is a Filter, Not a Limitation' },
+      { type: 'p', text: 'Clear positioning doesn’t shrink your market — it tells the right customers, instantly, that you understand their specific problem better than a generalist ever could. That specificity is what earns attention in a crowded feed or search results page.' },
+      { type: 'h2', text: 'What Strong Positioning Actually Requires' },
+      { type: 'list', items: [
+        'A clearly defined audience — who you serve best, not everyone you could theoretically serve.',
+        'A specific problem you solve, stated in language your customers already use.',
+        'A consistent visual identity that reinforces the same message everywhere it shows up.',
+        'Proof points — case studies, results, and testimonials that back up the claim.',
+      ] },
+      { type: 'h2', text: 'Consistency Compounds Trust' },
+      { type: 'p', text: 'A brand that says the same clear thing across its website, social presence, and ad creative builds recognition faster than one that reinvents itself with every campaign. That recognition is what eventually shortens the sales conversation, because trust was already built before the first call.' },
+      { type: 'p', text: 'Sharper positioning is often the fastest, lowest-cost growth lever available to a business — it doesn’t require a bigger budget, just a clearer decision about who you’re actually talking to.' },
+    ],
+  },
+  {
+    slug: 'paid-ads-vs-organic-which-first',
+    title: 'Paid Ads vs Organic: Which Growth Channel Should You Invest In First?',
+    excerpt:
+      'Not every business should start with the same channel. Here’s the framework we use to decide where a client’s first growth dollar should go.',
+    category: 'Strategy',
+    date: '2026-08-13',
+    readTime: '5 min read',
+    author: 'Entrain Growth Lab',
+    image: '/images/blog/paid-vs-organic.png',
+    featured: false,
+    content: [
+      { type: 'p', text: 'One of the most common questions we get from new clients is whether to start with paid ads or organic growth. The honest answer is: it depends on what the business needs right now, not on which channel sounds more exciting.' },
+      { type: 'h2', text: 'When Paid Ads Make Sense First' },
+      { type: 'p', text: 'If a business needs leads fast, has a validated offer, and a landing page that already converts, paid media on Meta or Google can generate demand quickly and predictably. It’s the right first move when speed matters more than long-term efficiency.' },
+      { type: 'h2', text: 'When Organic Should Come First' },
+      { type: 'p', text: 'If the offer or messaging isn’t proven yet, organic content and SEO are a cheaper way to test what resonates before spending on ads to promote it. Organic also builds a durable audience and search presence that continues to pay off long after the initial effort.' },
+      { type: 'h2', text: 'The Framework We Use' },
+      { type: 'list', items: [
+        'Validate the offer organically first if messaging is untested — it’s the lowest-risk way to learn what works.',
+        'Use paid media to accelerate content or offers that are already proven to convert.',
+        'Let SEO run in the background from day one — it takes time to compound, so the earlier it starts, the sooner it pays off.',
+        'Reassess the mix quarterly as the business and its customer acquisition costs evolve.',
+      ] },
+      { type: 'h2', text: 'They Work Best Together' },
+      { type: 'p', text: 'In practice, the strongest growth engines use both — organic and SEO building a durable foundation, with paid media layered on top to scale what’s already working. The question isn’t really "paid or organic," it’s which one your business needs to prove first.' },
+    ],
+  },
+];
+
+export function getPostBySlug(slug) {
+  return blogPosts.find((post) => post.slug === slug);
+}

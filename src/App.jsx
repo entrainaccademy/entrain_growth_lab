@@ -20,6 +20,8 @@ import Buckeez from './pages/Buckeez';
 import Cobolt from './pages/cobolt';
 import Culinary from './pages/culinary';
 import Entrainlabs from './pages/Entrainlabs';
+import BlogPage from './pages/BlogPage';
+import BlogPost from './pages/BlogPost';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -54,6 +56,8 @@ function AnimatedRoutes({ onOpenConsultation }) {
           <Route path="/cobolt" element={<Cobolt onOpenConsultation={onOpenConsultation} />} />
           <Route path="/culinary" element={<Culinary onOpenConsultation={onOpenConsultation} />} />
           <Route path="/entrainlabs" element={<Entrainlabs onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/blog" element={<BlogPage onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/blog/:slug" element={<BlogPost onOpenConsultation={onOpenConsultation} />} />
           <Route path="/testimonials" element={<TestimonialsPage onOpenConsultation={onOpenConsultation} />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
