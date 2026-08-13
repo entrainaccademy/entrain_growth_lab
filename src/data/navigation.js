@@ -3,8 +3,9 @@ export const mainNavigation = [
   { name: 'About', path: '/about' },
   { name: 'Services', path: '/services' },
   { name: 'Work', path: '/workdetails' },
-  { name: 'Blog', path: '/blog' }
-  
+  { name: 'Blog', path: '/blog' },
+  { name: 'Careers', path: '/careers' },
+  { name: 'Contact', path: '/contact' },
 ];
 
 export const legalNavigation = [
