@@ -41,6 +41,10 @@ const pages = {
     title: 'Entrain Labs Project Case Study | Entrain Growth Lab',
     description: 'Explore the Entrain Labs digital project, including strategy, design and execution by Entrain Growth Lab.',
   },
+  '/blog': {
+    title: 'The Growth Journal | Entrain Growth Lab Blog',
+    description: 'Strategy notes, case studies and organic growth playbooks from Entrain Growth Lab, covering SEO, social media, content and paid-free customer acquisition.',
+  },
   '/testimonials': {
     title: 'Client Testimonials | Entrain Growth Lab',
     description: 'Read what clients say about working with Entrain Growth Lab on strategy, marketing, campaigns and digital growth.',

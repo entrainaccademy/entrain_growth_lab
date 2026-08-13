@@ -16,7 +16,7 @@ export default function OfficeHours() {
                 <Clock3 aria-hidden="true" />
                 <span>Our working hours</span>
               </div>
-              <h2>We operate<br /><em>9:00 to 5:00.</em></h2>
+              <h2>We operate<br /><em>9:00 to 5:00</em></h2>
               <p>Monday to Saturday</p>
             </div>
           </div>
