@@ -39,7 +39,9 @@ export default function Entrainlabs({ onOpenConsultation }) {
                 <div className="overflow-hidden mb-4">
                   <img
                     src="/images/colorpattern.png"
-                    alt="enTrain Corporate Color System"
+                    alt="enTrain Corporate Color System and Palette"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block"
                   />
                 </div>
@@ -52,7 +54,9 @@ export default function Entrainlabs({ onOpenConsultation }) {
                 <div className="overflow-hidden mb-4">
                   <img
                     src="/images/entrain-three.png"
-                    alt="enTrain Correct Logo Usage"
+                    alt="enTrain Logo Variations and Icon System"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block"
                   />
                 </div>
@@ -69,7 +73,9 @@ export default function Entrainlabs({ onOpenConsultation }) {
                 <div className="overflow-hidden mb-4">
                   <img
                     src="/images/logo-font.png"
-                    alt="enTrain Corporate Font System"
+                    alt="enTrain Corporate Typography and Typeface Guidelines"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block"
                   />
                 </div>
@@ -81,7 +87,9 @@ export default function Entrainlabs({ onOpenConsultation }) {
                 <div className="overflow-hidden mb-4">
                   <img
                     src="/images/logomain.png"
-                    alt="enTrain Correct Logo Usage"
+                    alt="enTrain Primary Brandmark and Signature Logo"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block"
                   />
                 </div>
@@ -95,7 +103,9 @@ export default function Entrainlabs({ onOpenConsultation }) {
                 <div className="overflow-hidden mb-4">
                   <img
                     src="/images/logo-card-2.png"
-                    alt="enTrain Corporate Business Cards"
+                    alt="enTrain Executive Business Cards Layout"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block"
                   />
                 </div>
@@ -107,7 +117,9 @@ export default function Entrainlabs({ onOpenConsultation }) {
                 <div className="overflow-hidden mb-4">
                   <img
                     src="/images/logo-card-1.png"
-                    alt="enTrain Correct Logo Usage"
+                    alt="enTrain Collateral and Stationary Print System"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block"
                   />
                 </div>
@@ -124,7 +136,9 @@ export default function Entrainlabs({ onOpenConsultation }) {
                 <div className="w-full rounded-2xl overflow-hidden">
                   <img
                     src="/images/labs-laptop-mockup.png"
-                    alt="enTrain Laptop Mockup"
+                    alt="enTrain Digital Platform Laptop Mockup"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block transform group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>

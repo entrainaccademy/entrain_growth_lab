@@ -66,6 +66,8 @@ export default function Work() {
                     <img
                       src={project.image}
                       alt={`${project.title} website case study`}
+                      loading="lazy"
+                      decoding="async"
                       className={`work-image ${project.contain ? 'work-image-contain' : ''}`}
                     />
                   ) : (

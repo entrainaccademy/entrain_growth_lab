@@ -56,7 +56,9 @@ export default function About({ onOpenConsultation }) {
           <Reveal delay={0.15} className="mt-10 sm:mt-12 lg:mt-14 max-w-6xl mx-auto">
             <img
               src="/images/team2-cutout-cropped.png"
-              alt="The Entrain Growth Lab team"
+              alt="The Entrain Growth Lab strategy and digital marketing team"
+              loading="lazy"
+              decoding="async"
               className="block w-full h-auto object-contain object-bottom"
             />
           </Reveal>
@@ -106,7 +108,13 @@ export default function About({ onOpenConsultation }) {
               <Reveal key={leader.name} delay={index * 0.12}>
                 <article className="group">
                   <div className="relative h-[460px] sm:h-[590px] overflow-hidden rounded-[2rem] bg-[#D7D5CD]">
-                    <img src={leader.image} alt={`${leader.name}, ${leader.role} at Entrain Growth Lab`} className={`h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:grayscale-0 ${leader.position}`} />
+                    <img
+                      src={leader.image}
+                      alt={`${leader.name}, ${leader.role} at Entrain Growth Lab`}
+                      loading="lazy"
+                      decoding="async"
+                      className={`h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:grayscale-0 ${leader.position}`}
+                    />
                     <div className="absolute top-6 right-6 flex h-12 w-12 items-center justify-center rounded-full bg-[#4355A5] text-white text-xs font-bold">0{index + 1}</div>
                   </div>
                   <div className="flex items-end justify-between pt-6 border-b border-[#101827]/20 pb-6">

@@ -1,5 +1,4 @@
 import React from 'react';
-import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { Target, CheckCircle2, Globe, ExternalLink } from 'lucide-react';
@@ -33,7 +32,9 @@ export default function Culinary({ onOpenConsultation }) {
         <div className="w-full rounded-3xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl bg-slate-900/5 mb-16">
           <img
             src="/images/mockup1.png"
-            alt="Entrain Culinary Academy Mockup"
+            alt="Entrain Culinary Academy Digital Platform & Website Case Study"
+            loading="lazy"
+            decoding="async"
             className="w-full h-auto object-contain block"
           />
         </div>

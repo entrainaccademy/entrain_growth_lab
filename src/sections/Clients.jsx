@@ -22,7 +22,12 @@ export default function Clients() {
         {clients.map((client, index) => (
           <Reveal key={client.name} delay={index * 0.07} direction="up">
             <div className="client-logo-card">
-              <img src={client.logo} alt={client.name} />
+              <img
+                src={client.logo}
+                alt={`${client.name} partner logo`}
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </Reveal>
         ))}

@@ -1,5 +1,4 @@
 import React from 'react';
-import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { Target, CheckCircle2, Globe, ExternalLink } from 'lucide-react';
@@ -13,7 +12,7 @@ export default function Cobolt({ onOpenConsultation }) {
             Cobolt Campaign
           </h1>
           <p className="font-sans text-neutral-700 text-lg sm:text-2xl font-light mt-4 max-w-3xl leading-relaxed">
-           Restaurant website development and social media management for Buckeez, focused on building its online presence and promoting its signature food.
+            Industrial brand identity, modern web presence, and digital marketing strategy for Cobolt Machineries.
           </p>
           <div className="mt-6">
             <a
@@ -33,7 +32,9 @@ export default function Cobolt({ onOpenConsultation }) {
         <div className="w-full rounded-3xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl bg-slate-900/5 mb-16">
           <img
             src="/images/coboldipad.png"
-            alt="Cobolt Campaign Mockup"
+            alt="Cobolt Machineries Website & Tablet Showcase"
+            loading="lazy"
+            decoding="async"
             className="w-full h-auto object-contain block"
           />
         </div>

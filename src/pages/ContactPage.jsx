@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import SectionLabel from '../components/SectionLabel';
 import Reveal from '../components/Reveal';
-import Button from '../components/Button';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, Loader2 } from 'lucide-react';
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from 'react-icons/fa6';
 

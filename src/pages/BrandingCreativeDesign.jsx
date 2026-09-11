@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
@@ -92,6 +91,22 @@ export default function BrandingCreativeDesign({ onOpenConsultation }) {
               <div key={idx} className="bg-white p-6 rounded-2xl border border-neutral-200/80 shadow-sm flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-[#4355A5] shrink-0 mt-0.5" />
                 <span className="text-sm font-medium text-[#101827] leading-snug">{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Business Benefits */}
+        <div className="mb-16 bg-white p-8 sm:p-12 rounded-3xl border border-neutral-200/90 shadow-sm">
+          <h2 className="font-display text-3xl font-extrabold text-[#101827] tracking-tight mb-8">
+            Why Choose Our Branding & Creative Design
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {benefits.map((b, idx) => (
+              <div key={idx} className="space-y-2">
+                <div className="font-mono text-sm font-bold text-[#4355A5] uppercase">0{idx + 1}.</div>
+                <h3 className="font-display text-xl font-bold text-[#101827]">{b.title}</h3>
+                <p className="text-sm text-neutral-600 font-light leading-relaxed">{b.desc}</p>
               </div>
             ))}
           </div>

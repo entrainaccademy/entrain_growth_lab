@@ -5,7 +5,7 @@ import AnimatedSection from './AnimatedSection';
 export default function ServiceCard({
   number,
   title,
-  shortTitle,
+  shortTitle: _shortTitle,
   description,
   includes = [],
   icon: Icon,

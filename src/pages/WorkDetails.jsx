@@ -66,7 +66,9 @@ export default function WorkDetails({ onOpenConsultation }) {
                   <div className="w-full aspect-[16/10] rounded-3xl sm:rounded-[1.6rem] overflow-hidden bg-slate-900/5 relative shadow-xl group-hover:shadow-2xl transition-all duration-500 flex items-center justify-center">
                     <img
                       src={project.featuredImage}
-                      alt={project.title}
+                      alt={`${project.title} - ${project.category} case study showcase`}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover object-center transform group-hover:scale-[1.02] transition-transform duration-700 ease-out"
                     />
 

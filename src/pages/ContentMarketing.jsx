@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';

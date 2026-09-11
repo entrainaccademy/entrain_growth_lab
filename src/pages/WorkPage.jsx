@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import SectionLabel from '../components/SectionLabel';
 import Reveal from '../components/Reveal';
 import CTA from '../sections/CTA';
 import Button from '../components/Button';
@@ -138,7 +137,9 @@ export default function WorkPage({ onOpenConsultation }) {
                 <div className="w-full h-auto rounded-3xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl hover:shadow-[0_30px_70px_rgba(0,0,0,0.18)] transition-all duration-500 relative flex items-center justify-center bg-neutral-900/5">
                   <img
                     src={project.featuredImage}
-                    alt={project.title}
+                    alt={`${project.title} - ${project.category} case study`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block transform group-hover:scale-[1.015] transition-transform duration-700 ease-out"
                   />
                   
@@ -285,7 +286,9 @@ export default function WorkPage({ onOpenConsultation }) {
                   <div className="w-full h-auto rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-md">
                     <img 
                       src={selectedProjectModal.featuredImage} 
-                      alt={selectedProjectModal.title}
+                      alt={`${selectedProjectModal.title} showcase visual`}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-auto block object-contain"
                     />
                   </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import SectionLabel from '../components/SectionLabel';
 import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
@@ -38,6 +37,8 @@ export default function Buckeez({ onOpenConsultation }) {
               <img
                 src="/images/buckeezmockup.png"
                 alt="Buckeez Main Digital Mockup"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto object-contain block"
               />
             </div>
@@ -51,6 +52,8 @@ export default function Buckeez({ onOpenConsultation }) {
                   <img
                     src="/images/buckeez-brand-names.png"
                     alt="Buckeez Brand Identity Guidelines"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block transform group-hover:scale-[1.015] transition-transform duration-700"
                   />
                 </div>
@@ -63,6 +66,8 @@ export default function Buckeez({ onOpenConsultation }) {
                   <img
                     src="/images/buckeez-fonts.png"
                     alt="Buckeez Typography & Font System"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto object-contain block transform group-hover:scale-[1.015] transition-transform duration-700"
                   />
                 </div>
@@ -75,6 +80,8 @@ export default function Buckeez({ onOpenConsultation }) {
               <img
                 src="/images/buckeez-color-palette.png"
                 alt="Buckeez Corporate Color Palette"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto object-contain block transform hover:scale-[1.01] transition-transform duration-700"
               />
             </div>
@@ -88,6 +95,8 @@ export default function Buckeez({ onOpenConsultation }) {
                   <img
                     src="/images/buckeez-instagram.png"
                     alt="Buckeez Social Media & Ad Campaign"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-auto max-h-[500px] object-contain block mx-auto transform group-hover:scale-[1.02] transition-transform duration-700"
                   />
                 </div>

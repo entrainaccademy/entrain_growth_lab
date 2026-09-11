@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://entrain-growth-lab.vercel.app/sitemap.xml
+Host: https://entrain-growth-lab.vercel.app

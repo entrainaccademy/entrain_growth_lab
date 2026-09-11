@@ -23,6 +23,8 @@ import Entrainlabs from './pages/Entrainlabs';
 import BlogPage from './pages/BlogPage';
 import BlogPost from './pages/BlogPost';
 import CareersPage from './pages/CareersPage';
+import JobDetail from './pages/JobDetail';
+import NotFound from './pages/NotFound';
 
 // Dedicated 8 Service Detail Pages
 import DigitalMarketing from './pages/DigitalMarketing';
@@ -88,9 +90,11 @@ function AnimatedRoutes({ onOpenConsultation }) {
           <Route path="/blog/:slug" element={<BlogPost onOpenConsultation={onOpenConsultation} />} />
           <Route path="/testimonials" element={<TestimonialsPage onOpenConsultation={onOpenConsultation} />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/careers" element={<CareersPage onOpenConsultation={onOpenConsultation} />} />
+          <Route path="/careers/:slug" element={<JobDetail onOpenConsultation={onOpenConsultation} />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
     </AnimatePresence>

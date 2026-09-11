@@ -1,9 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
-import { ArrowLeft, CheckCircle2, TrendingUp, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
 export default function DigitalMarketing({ onOpenConsultation }) {
   const navigate = useNavigate();

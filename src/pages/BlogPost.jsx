@@ -1,23 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import Reveal from '../components/Reveal';
 import CTA from '../sections/CTA';
 import BlogCover from '../components/BlogCover';
 import { blogPosts, getPostBySlug, categoryIcons } from '../data/blog';
-
-const SITE_URL = 'https://entrain-growth-lab.vercel.app';
-
-function setMeta(selector, attribute, value) {
-  let element = document.head.querySelector(selector);
-  if (!element) {
-    element = document.createElement('meta');
-    const match = selector.match(/meta\[(name|property)="([^"]+)"\]/);
-    if (match) element.setAttribute(match[1], match[2]);
-    document.head.appendChild(element);
-  }
-  element.setAttribute(attribute, value);
-}
 
 function ContentBlock({ block }) {
   switch (block.type) {
@@ -57,29 +44,6 @@ function ContentBlock({ block }) {
 export default function BlogPost({ onOpenConsultation }) {
   const { slug } = useParams();
   const post = getPostBySlug(slug);
-
-  useEffect(() => {
-    if (!post) return;
-    const title = `${post.title} | Entrain Growth Lab`;
-    const canonicalUrl = `${SITE_URL}/blog/${post.slug}`;
-
-    document.title = title;
-    setMeta('meta[name="description"]', 'content', post.excerpt);
-    setMeta('meta[property="og:title"]', 'content', title);
-    setMeta('meta[property="og:description"]', 'content', post.excerpt);
-    setMeta('meta[property="og:url"]', 'content', canonicalUrl);
-    setMeta('meta[property="og:type"]', 'content', 'article');
-    setMeta('meta[name="twitter:title"]', 'content', title);
-    setMeta('meta[name="twitter:description"]', 'content', post.excerpt);
-
-    let canonical = document.head.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.rel = 'canonical';
-      document.head.appendChild(canonical);
-    }
-    canonical.href = canonicalUrl;
-  }, [post]);
 
   if (!post) {
     return <Navigate to="/blog" replace />;

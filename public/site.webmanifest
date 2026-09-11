@@ -1,0 +1,23 @@
+{
+  "name": "Entrain Growth Lab",
+  "short_name": "Entrain",
+  "description": "Strategy-led digital marketing and growth partner.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F3F1EE",
+  "theme_color": "#4355A5",
+  "icons": [
+    {
+      "src": "/entrain-growth-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/entrain-growth-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -8,7 +8,12 @@ export default function OfficeHours() {
       <div className="office-hours-container">
         <Reveal direction="up">
           <div className="office-hours-media">
-            <img src="/images/office2.jpeg" alt="Entrain Academy office building" />
+            <img
+              src="/images/office2.jpeg"
+              alt="Entrain Growth Lab creative office headquarters in Kerala"
+              loading="lazy"
+              decoding="async"
+            />
             <div className="office-hours-overlay" />
 
             <div className="office-hours-copy">
