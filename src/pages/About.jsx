@@ -90,40 +90,63 @@ export default function About({ onOpenConsultation }) {
         </div>
       </section>
 
-      {/* Leadership */}
-      <section className="py-24 sm:py-32 lg:py-40 bg-[#F3F1EE]">
+      {/* Leadership / Founder */}
+      <section className="py-20 sm:py-28 lg:py-32 bg-[#F3F1EE]">
         <div className="max-w-[90rem] mx-auto px-5 sm:px-8 lg:px-12">
-          <div className="mb-14 sm:mb-20 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-           <Reveal delay={0.08}>
-              <h2 className="max-w-4xl font-display text-5xl sm:text-7xl font-semibold tracking-[-0.05em] leading-[0.98]">Built by operators,<br /><span className="text-[#4355A5]">not just marketers.</span></h2>
-            </Reveal>
-            <Reveal delay={0.14} className="text-sm uppercase tracking-[0.16em] text-[#101827]/45 lg:pb-2">Est. 2026 / India</Reveal>
-          </div>
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 items-center">
+            {/* Left Content Column */}
+            <div className="lg:col-span-6 xl:col-span-7">
+              <Reveal delay={0.06}>
+                {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4355A5]/10 text-[#4355A5] text-xs font-semibold uppercase tracking-[0.18em] mb-6">
+                  Founder & Leadership
+                </div> */}
+              </Reveal>
+              <Reveal delay={0.1}>
+                <h2 className="font-display text-4xl sm:text-6xl xl:text-7xl font-semibold tracking-[-0.05em] leading-[0.98]">
+                  Built by operators,<br />
+                  <span className="text-[#4355A5]">not just marketers.</span>
+                </h2>
+              </Reveal>
+              <Reveal delay={0.16}>
+                <p className="mt-6 sm:mt-8 text-lg sm:text-xl text-[#101827]/75 font-light leading-relaxed max-w-2xl">
+                  Entrain Growth Lab was founded on a simple conviction: marketing should be engineered, measurable, and directly tied to revenue — not vanity metrics.
+                </p>
+              </Reveal>
+              <Reveal delay={0.2}>
+                <p className="mt-4 text-base sm:text-lg text-[#101827]/60 leading-relaxed max-w-2xl">
+                  As an operator-led growth partner, our leadership works directly on growth frameworks, unit economics analysis, and high-conviction marketing engines for each brand we partner with.
+                </p>
+              </Reveal>
+              <Reveal delay={0.24}>
+                <div className="mt-8 sm:mt-10 pt-6 border-t border-[#101827]/15 flex items-end justify-between max-w-xl">
+                  <div>
+                    <h3 className="font-display text-3xl sm:text-4xl font-semibold tracking-[-0.03em] text-[#101827]">Noufal</h3>
+                    <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#4355A5] mt-1">Founder / Growth Strategist</p>
+                  </div>
+                  {/* <span className="text-xs uppercase tracking-[0.16em] text-[#101827]/40">Est. 2026 / India</span> */}
+                </div>
+              </Reveal>
+            </div>
 
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
-            {[
-              { name: 'Noufal', role: 'Founder', image: '/images/founder1.jpg', position: 'object-center' },
-              { name: 'Fayiz', role: 'CEO', image: '/images/ceo.jpg', position: 'object-center' },
-            ].map((leader, index) => (
-              <Reveal key={leader.name} delay={index * 0.12}>
+            {/* Right Photo Column */}
+            <div className="lg:col-span-6 xl:col-span-5">
+              <Reveal delay={0.15}>
                 <article className="group">
-                  <div className="relative h-[460px] sm:h-[590px] overflow-hidden rounded-[2rem] bg-[#D7D5CD]">
+                  <div className="relative aspect-[768/884] w-full overflow-hidden rounded-[2rem] bg-[#D7D5CD] shadow-lg border border-[#101827]/10">
                     <img
-                      src={leader.image}
-                      alt={`${leader.name}, ${leader.role} at Entrain Growth Lab`}
+                      src="/images/founder.png"
+                      alt="Noufal, Founder at Entrain Growth Lab"
                       loading="lazy"
                       decoding="async"
-                      className={`h-full w-full object-cover grayscale transition duration-700 ease-out group-hover:scale-[1.035] group-hover:grayscale-0 ${leader.position}`}
+                      className="h-full w-full object-cover object-bottom grayscale transition duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0"
                     />
-                    <div className="absolute top-6 right-6 flex h-12 w-12 items-center justify-center rounded-full bg-[#4355A5] text-white text-xs font-bold">0{index + 1}</div>
-                  </div>
-                  <div className="flex items-end justify-between pt-6 border-b border-[#101827]/20 pb-6">
-                    <h3 className="font-display text-4xl sm:text-5xl font-semibold tracking-[-0.04em]">{leader.name}</h3>
-                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#4355A5]">{leader.role}</p>
+                    {/* <div className="absolute top-5 right-5 px-4 py-1.5 rounded-full bg-[#4355A5] text-white text-xs font-semibold tracking-widest uppercase shadow-md">
+                      Founder
+                    </div> */}
                   </div>
                 </article>
               </Reveal>
-            ))}
+            </div>
           </div>
         </div>
       </section>
