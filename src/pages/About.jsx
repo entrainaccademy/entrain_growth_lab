@@ -43,7 +43,7 @@ export default function About({ onOpenConsultation }) {
             </Reveal>
             <Reveal delay={0.12}>
               <p className="mt-8 text-xl sm:text-2xl leading-relaxed tracking-[-0.02em] text-[#101827]/70">
-                Entrain Growth Lab was founded in 2026 on a simple belief: marketing should be measurable, honest, and built around real growth, not vanity metrics.
+                Entrain Growth Partners was founded in 2026 on a simple belief: marketing should be measurable, honest, and built around real growth, not vanity metrics.
               </p>
             </Reveal>
             <Reveal delay={0.18}>
@@ -56,7 +56,7 @@ export default function About({ onOpenConsultation }) {
           <Reveal delay={0.15} className="mt-10 sm:mt-12 lg:mt-14 max-w-6xl mx-auto">
             <img
               src="/images/team2-cutout-cropped.png"
-              alt="The Entrain Growth Lab strategy and digital marketing team"
+              alt="The Entrain Growth Partners strategy and digital marketing team"
               loading="lazy"
               decoding="async"
               className="block w-full h-auto object-contain object-bottom"
@@ -109,7 +109,7 @@ export default function About({ onOpenConsultation }) {
               </Reveal>
               <Reveal delay={0.16}>
                 <p className="mt-6 sm:mt-8 text-lg sm:text-xl text-[#101827]/75 font-light leading-relaxed max-w-2xl">
-                  Entrain Growth Lab was founded on a simple conviction: marketing should be engineered, measurable, and directly tied to revenue — not vanity metrics.
+                  Entrain Growth Partners was founded on a simple conviction: marketing should be engineered, measurable, and directly tied to revenue — not vanity metrics.
                 </p>
               </Reveal>
               <Reveal delay={0.2}>
@@ -135,7 +135,7 @@ export default function About({ onOpenConsultation }) {
                   <div className="relative aspect-[768/884] w-full overflow-hidden rounded-[2rem] bg-[#D7D5CD] shadow-lg border border-[#101827]/10">
                     <img
                       src="/images/founder.png"
-                      alt="Noufal, Founder at Entrain Growth Lab"
+                      alt="Noufal, Founder at Entrain Growth Partners"
                       loading="lazy"
                       decoding="async"
                       className="h-full w-full object-cover object-bottom grayscale transition duration-700 ease-out group-hover:scale-[1.02] group-hover:grayscale-0"

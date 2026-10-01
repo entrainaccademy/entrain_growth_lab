@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Pages -->
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/</loc>
+    <loc>https://www.entraingrowthpartners.com/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services</loc>
+    <loc>https://www.entraingrowthpartners.com/services</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/about</loc>
+    <loc>https://www.entraingrowthpartners.com/about</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/work</loc>
+    <loc>https://www.entraingrowthpartners.com/work</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/workdetails</loc>
+    <loc>https://www.entraingrowthpartners.com/workdetails</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/blog</loc>
+    <loc>https://www.entraingrowthpartners.com/blog</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/testimonials</loc>
+    <loc>https://www.entraingrowthpartners.com/testimonials</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/contact</loc>
+    <loc>https://www.entraingrowthpartners.com/contact</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers</loc>
+    <loc>https://www.entraingrowthpartners.com/careers</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers/bakery-chef-trainer</loc>
+    <loc>https://www.entraingrowthpartners.com/careers/bakery-chef-trainer</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers/videographer-cum-video-editor</loc>
+    <loc>https://www.entraingrowthpartners.com/careers/videographer-cum-video-editor</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers/social-media-manager</loc>
+    <loc>https://www.entraingrowthpartners.com/careers/social-media-manager</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers/seo-executive-specialist</loc>
+    <loc>https://www.entraingrowthpartners.com/careers/seo-executive-specialist</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -82,49 +82,49 @@
 
   <!-- Dedicated Service Detail Pages -->
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services/digital-marketing</loc>
+    <loc>https://www.entraingrowthpartners.com/services/digital-marketing</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services/social-media-marketing</loc>
+    <loc>https://www.entraingrowthpartners.com/services/social-media-marketing</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services/seo</loc>
+    <loc>https://www.entraingrowthpartners.com/services/seo</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services/performance-marketing</loc>
+    <loc>https://www.entraingrowthpartners.com/services/performance-marketing</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services/content-marketing</loc>
+    <loc>https://www.entraingrowthpartners.com/services/content-marketing</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services/branding-creative-design</loc>
+    <loc>https://www.entraingrowthpartners.com/services/branding-creative-design</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services/website-design-development</loc>
+    <loc>https://www.entraingrowthpartners.com/services/website-design-development</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/services/marketing-strategy-consulting</loc>
+    <loc>https://www.entraingrowthpartners.com/services/marketing-strategy-consulting</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -132,25 +132,25 @@
 
   <!-- Client Work & Case Studies -->
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/buckeez</loc>
+    <loc>https://www.entraingrowthpartners.com/buckeez</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/cobolt</loc>
+    <loc>https://www.entraingrowthpartners.com/cobolt</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/culinary</loc>
+    <loc>https://www.entraingrowthpartners.com/culinary</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/entrainlabs</loc>
+    <loc>https://www.entraingrowthpartners.com/entrainlabs</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -158,71 +158,45 @@
 
   <!-- Insights & Blog Articles -->
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/blog/organic-instagram-growth-case-study</loc>
+    <loc>https://www.entraingrowthpartners.com/blog/organic-instagram-growth-case-study</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/blog/seo-compounding-growth-channel</loc>
+    <loc>https://www.entraingrowthpartners.com/blog/seo-compounding-growth-channel</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/blog/signs-your-website-is-losing-customers</loc>
+    <loc>https://www.entraingrowthpartners.com/blog/signs-your-website-is-losing-customers</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/blog/brand-positioning-101</loc>
+    <loc>https://www.entraingrowthpartners.com/blog/brand-positioning-101</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/blog/paid-ads-vs-organic-which-first</loc>
+    <loc>https://www.entraingrowthpartners.com/blog/paid-ads-vs-organic-which-first</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Careers & Job Openings -->
-  <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers/videographer-cum-video-editor</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers/social-media-manager</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://entrain-growth-lab.vercel.app/careers/seo-executive-specialist</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Legal & Policies -->
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/privacy</loc>
+    <loc>https://www.entraingrowthpartners.com/privacy</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://entrain-growth-lab.vercel.app/terms</loc>
+    <loc>https://www.entraingrowthpartners.com/terms</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

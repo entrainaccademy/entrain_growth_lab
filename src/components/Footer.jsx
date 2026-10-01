@@ -57,7 +57,7 @@ export default function Footer({ onOpenConsultation }) {
         </motion.div>
 
         <div className="footer-center">
-          <span className="footer-kicker">Entrain Growth Lab</span>
+          <span className="footer-kicker">Entrain Growth Partners</span>
           <h2>Ready to grow?</h2>
           <p>Let’s build a clear strategy and turn it into measurable momentum.</p>
 
@@ -84,7 +84,7 @@ export default function Footer({ onOpenConsultation }) {
         </div>
 
         <div className="footer-bottom">
-          <p>© {currentYear} Entrain Growth Lab. All rights reserved.</p>
+          <p>© {currentYear} Entrain Growth Partners. All rights reserved.</p>
           <Magnetic className="footer-top-button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Back to top">
             <ArrowUp />
           </Magnetic>

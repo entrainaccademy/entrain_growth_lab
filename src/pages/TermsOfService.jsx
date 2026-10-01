@@ -18,12 +18,12 @@ export default function TermsOfService() {
           <div className="prose max-w-none bg-white text-[#101827] p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-xl space-y-6 text-sm sm:text-base">
             <h3 className="font-display text-xl font-bold text-[#4355A5]">1. Acceptance of Terms</h3>
             <p className="text-[#607080]">
-              By accessing and navigating the Entrain Growth Lab website, you agree to comply with and be bound by these Terms of Service.
+              By accessing and navigating the Entrain Growth Partners website, you agree to comply with and be bound by these Terms of Service.
             </p>
 
             <h3 className="font-display text-xl font-bold text-[#4355A5]">2. Intellectual Property</h3>
             <p className="text-[#607080]">
-              All content, branding elements, graphics, visual designs, and text on this website are the exclusive property of Entrain Growth Lab. Unauthorized reproduction or redistribution is strictly prohibited.
+              All content, branding elements, graphics, visual designs, and text on this website are the exclusive property of Entrain Growth Partners. Unauthorized reproduction or redistribution is strictly prohibited.
             </p>
 
             <h3 className="font-display text-xl font-bold text-[#4355A5]">3. Scope of Strategy Advice</h3>
@@ -33,7 +33,7 @@ export default function TermsOfService() {
 
             <h3 className="font-display text-xl font-bold text-[#4355A5]">4. Modifications</h3>
             <p className="text-[#607080]">
-              Entrain Growth Lab reserves the right to update these terms at any time without prior notice. Continued use of the website signifies acceptance of updated terms.
+              Entrain Growth Partners reserves the right to update these terms at any time without prior notice. Continued use of the website signifies acceptance of updated terms.
             </p>
           </div>
         </Reveal>

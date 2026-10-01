@@ -13,11 +13,11 @@ export const blogPosts = [
     slug: 'organic-instagram-growth-case-study',
     title: 'Two Brands, Zero Ad Spend: How We Built Instagram Audiences That Actually Convert',
     excerpt:
-      'How Entrain Growth Lab took two client Instagram accounts from a near-blank slate to thriving, highly engaged communities — without putting a single rupee behind ads.',
+      'How Entrain Growth Partners took two client Instagram accounts from a near-blank slate to thriving, highly engaged communities — without putting a single rupee behind ads.',
     category: 'Case Studies',
     date: '2026-08-13',
     readTime: '6 min read',
-    author: 'Entrain Growth Lab',
+    author: 'Entrain Growth Partners',
     image: '/images/blog/instagram-organic-growth.png',
     featured: true,
     content: [
@@ -48,7 +48,7 @@ export const blogPosts = [
     category: 'SEO',
     date: '2026-08-13',
     readTime: '5 min read',
-    author: 'Entrain Growth Lab',
+    author: 'Entrain Growth Partners',
     image: '/images/blog/seo-growth.png',
     featured: false,
     content: [
@@ -77,7 +77,7 @@ export const blogPosts = [
     category: 'Web Design',
     date: '2026-08-13',
     readTime: '5 min read',
-    author: 'Entrain Growth Lab',
+    author: 'Entrain Growth Partners',
     image: '/images/blog/website-conversion.png',
     featured: false,
     content: [
@@ -103,7 +103,7 @@ export const blogPosts = [
     category: 'Branding',
     date: '2026-08-13',
     readTime: '4 min read',
-    author: 'Entrain Growth Lab',
+    author: 'Entrain Growth Partners',
     image: '/images/blog/brand-positioning.png',
     featured: false,
     content: [
@@ -130,7 +130,7 @@ export const blogPosts = [
     category: 'Strategy',
     date: '2026-08-13',
     readTime: '5 min read',
-    author: 'Entrain Growth Lab',
+    author: 'Entrain Growth Partners',
     image: '/images/blog/paid-vs-organic.png',
     featured: false,
     content: [

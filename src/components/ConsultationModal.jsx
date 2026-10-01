@@ -140,7 +140,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
                   Consultation Request Received!
                 </h4>
                 <p className="text-neutral-600 max-w-md mx-auto mb-6 text-xs sm:text-sm font-light leading-relaxed">
-                  Thank you for reaching out to entrain growth labs. Our strategy team will review your details and get back to you within 24 hours.
+                  Thank you for reaching out to Entrain Growth Partners. Our strategy team will review your details and get back to you within 24 hours.
                 </p>
                 <button
                   type="button"

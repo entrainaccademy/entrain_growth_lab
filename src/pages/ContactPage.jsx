@@ -95,7 +95,7 @@ export default function ContactPage() {
                         Message Sent Successfully!
                       </h3>
                       <p className="text-[#202124]/70 text-base max-w-md mx-auto mb-8 font-light">
-                        Thank you for reaching out to Entrain Growth Lab. Our strategy team is reviewing your information and will respond within 24 hours.
+                        Thank you for reaching out to Entrain Growth Partners. Our strategy team is reviewing your information and will respond within 24 hours.
                       </p>
                       <button
                         type="button"

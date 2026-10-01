@@ -18,7 +18,7 @@ export default function CTA({ onOpenConsultation }) {
 
         <Reveal direction="up" delay={0.2}>
           <p className="text-base sm:text-lg text-white/90 max-w-xl mx-auto mb-10 font-light leading-relaxed">
-            Entrain Growth Lab helps businesses build sustainable, organic growth through strategy, consistent execution, and continuous improvement.
+            Entrain Growth Partners helps businesses build sustainable, organic growth through strategy, consistent execution, and continuous improvement.
           </p>
         </Reveal>
 

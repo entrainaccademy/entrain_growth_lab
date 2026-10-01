@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
           <div className="prose max-w-none bg-white text-[#101827] p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-xl space-y-6 text-sm sm:text-base">
             <h3 className="font-display text-xl font-bold text-[#4355A5]">1. Overview</h3>
             <p className="text-[#607080]">
-              Entrain Growth Lab ("we", "our", or "us") respects your privacy and is committed to protecting any personal information collected through our website. This Privacy Policy outlines how we handle data collected during strategy consultations and inquiries.
+              Entrain Growth Partners ("we", "our", or "us") respects your privacy and is committed to protecting any personal information collected through our website. This Privacy Policy outlines how we handle data collected during strategy consultations and inquiries.
             </p>
 
             <h3 className="font-display text-xl font-bold text-[#4355A5]">2. Information We Collect</h3>

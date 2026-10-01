@@ -29,7 +29,7 @@ export default function Hero({ onOpenConsultation }) {
         </Reveal>
         <Reveal direction="up" delay={0.2}>
           <p className="mt-8 max-w-2xl text-lg sm:text-xl text-[#101827]/65 leading-relaxed">
-            Entrain Growth Lab helps businesses build sustainable, organic growth through tailored strategy, consistent execution, and continuous improvement.
+            Entrain Growth Partners helps businesses build sustainable, organic growth through tailored strategy, consistent execution, and continuous improvement.
           </p>
         </Reveal>
         <Reveal direction="up" delay={0.3}>

@@ -47,12 +47,12 @@ export default function TestimonialsPage({ onOpenConsultation }) {
               </div>
 
               <p className="text-[#9AA8B5] text-sm sm:text-base leading-relaxed font-light">
-                Every testimonial and metric published by Entrain Growth Lab will represent verified organic growth performance, real business outcomes, and genuine feedback from active client leadership.
+                Every testimonial and metric published by Entrain Growth Partners will represent verified organic growth performance, real business outcomes, and genuine feedback from active client leadership.
               </p>
 
               <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <span className="text-xs font-mono text-[#9AA8B5]">
-                  // ENTRAIN GROWTH LAB COHORT 2026
+                  // ENTRAIN GROWTH PARTNERS COHORT 2026
                 </span>
                 <Button variant="primary" size="sm" onClick={onOpenConsultation} showArrow={true}>
                   Become a Growth Partner

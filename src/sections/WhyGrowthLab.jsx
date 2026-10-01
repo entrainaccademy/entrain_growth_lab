@@ -42,8 +42,8 @@ export default function WhyGrowthLab() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <SectionHeading
-          badge="Why Growth Lab"
-          title="Why Growth Lab?"
+          badge="Why Entrain"
+          title="Why Entrain Growth Partners?"
           description="We combine strategic discipline with creative marketing tactics to engineer predictable organic growth."
           className="mb-12"
         />

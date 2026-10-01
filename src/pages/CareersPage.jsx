@@ -37,7 +37,7 @@ export default function CareersPage() {
           Join Our Team
         </h1>
         <p className="mt-4 text-base sm:text-lg text-neutral-600 font-light leading-relaxed">
-          Open positions at Entrain Growth Lab in Manjeri, Kerala.
+          Open positions at Entrain Growth Partners in Manjeri, Kerala.
         </p>
       </section>
 

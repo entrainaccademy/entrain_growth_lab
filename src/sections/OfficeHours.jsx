@@ -10,7 +10,7 @@ export default function OfficeHours() {
           <div className="office-hours-media">
             <img
               src="/images/office2.jpeg"
-              alt="Entrain Growth Lab creative office headquarters in Kerala"
+              alt="Entrain Growth Partners creative office headquarters in Kerala"
               loading="lazy"
               decoding="async"
             />
