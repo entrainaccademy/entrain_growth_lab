@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '../lib/router';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUp, ArrowUpRight, Mail, Phone } from 'lucide-react';
 import { mainNavigation, legalNavigation } from '../data/navigation';

@@ -1,25 +1,25 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '../lib/router';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
-export default function WebsiteDesignDevelopment({ onOpenConsultation }) {
+export default function SocialMediaMarketing({ onOpenConsultation }) {
   const navigate = useNavigate();
 
   const features = [
-    'UX strategy, user journey mapping & wireframing',
-    'Custom responsive UI design tailored for desktop, tablet & mobile',
-    'Modern front-end development (React, Vite, Tailwind CSS)',
-    'High-speed optimization, Core Web Vitals & SEO-friendly structure',
-    'Conversion rate optimization & strategic call-to-action placement',
-    'Interactive digital menus, POS triggers & custom integrations'
+    'Platform-specific social content strategy (Instagram, LinkedIn, Facebook)',
+    'High-converting Reels, shorts & video copywriting',
+    'Custom graphic design, motion assets & brand templates',
+    'Content calendar planning & automated scheduling',
+    'Community engagement & active follower management',
+    'Monthly social growth analytics & engagement reporting'
   ];
 
   const benefits = [
-    { title: 'Higher Conversion Rates', desc: 'Turn more site visitors into qualified lead inquiries with optimized UX.' },
-    { title: 'Lightning Fast Performance', desc: 'Deliver instant page load speeds that rank higher on search engines.' },
-    { title: 'Seamless Mobile Experience', desc: 'Provide an intuitive mobile interface for on-the-go users across devices.' }
+    { title: 'Stronger Brand Affinity', desc: 'Build meaningful connections with content people actively follow and share.' },
+    { title: 'Consistent Visibility', desc: 'Stay top-of-mind across major social platforms with disciplined publishing.' },
+    { title: 'Organic Lead Triggers', desc: 'Turn social interactions into qualified business inquiries and sales.' }
   ];
 
   return (
@@ -39,10 +39,10 @@ export default function WebsiteDesignDevelopment({ onOpenConsultation }) {
         {/* Hero Header */}
         <div className="mb-14 pb-8 border-b border-neutral-300/80">
           <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight mb-4">
-            Website Design & Development
+            Social Media Marketing
           </h1>
           <p className="text-neutral-700 text-lg sm:text-2xl font-light max-w-3xl leading-relaxed">
-            Create modern, responsive, conversion-focused websites engineered to showcase your brand, engage visitors, and support your marketing goals.
+            Build a strong social presence through creative content, engaging campaigns, consistent brand communication, and active community growth.
           </p>
         </div>
 
@@ -50,27 +50,27 @@ export default function WebsiteDesignDevelopment({ onOpenConsultation }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] tracking-tight">
-              High-Performing Websites Engineered to Convert
+              Turn Social Attention into Business Value
             </h2>
             <p className="text-neutral-600 text-base sm:text-lg leading-relaxed font-light">
-              Your website is the central engine of your growth strategy. We design and build fast, responsive, and aesthetically stunning web applications designed to communicate your value proposition clearly and guide visitors toward conversion.
+              Social media is your brand’s modern storefront. We craft platform-tailored content calendars, short-form video scripts, and visual design assets that cut through feed noise and foster genuine audience trust.
             </p>
             <p className="text-neutral-600 text-base leading-relaxed font-light">
-              We focus on user experience (UX), clean code architecture, SEO structure, and seamless mobile responsiveness to ensure your site performs flawlessly across viewports.
+              Our team manages your complete social ecosystem—ensuring brand consistency across Instagram, LinkedIn, Facebook, and emerging channels while driving measurable community engagement.
             </p>
           </div>
 
           <div className="lg:col-span-5 bg-white p-8 rounded-3xl border border-neutral-200/90 shadow-sm flex flex-col justify-between">
             <div>
               <h3 className="font-display text-xl font-bold text-[#101827] mb-3">
-                Build a Custom Website Strategy
+                Ready to Elevate Your Social Presence?
               </h3>
               <p className="text-neutral-600 text-sm font-light leading-relaxed mb-6">
-                Consult with our lead web engineers to review your current website performance and redesign goals.
+                Consult with our social strategists to review your channel performance and content direction.
               </p>
             </div>
             <Button variant="primary" size="md" onClick={onOpenConsultation} showArrow={true} className="w-full justify-center">
-              Book Web Consultation
+              Book Strategy Session
             </Button>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function WebsiteDesignDevelopment({ onOpenConsultation }) {
         {/* Business Benefits */}
         <div className="mb-16 bg-white p-8 sm:p-12 rounded-3xl border border-neutral-200/90 shadow-sm">
           <h2 className="font-display text-3xl font-extrabold text-[#101827] tracking-tight mb-8">
-            Why Choose Our Web Development Services
+            Why Choose Our Social Media Marketing
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((b, idx) => (
@@ -115,10 +115,10 @@ export default function WebsiteDesignDevelopment({ onOpenConsultation }) {
         {/* Action Call */}
         <div className="text-center py-10 bg-white rounded-3xl border border-neutral-200/90 shadow-sm mb-16 px-6">
           <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] mb-3">
-            Build Your High-Converting Website Today
+            Scale Your Brand's Social Reach Today
           </h3>
           <Button variant="primary" size="lg" onClick={onOpenConsultation} showArrow={true}>
-            Inquire About Web Development
+            Inquire About Social Media Marketing
           </Button>
         </div>
 

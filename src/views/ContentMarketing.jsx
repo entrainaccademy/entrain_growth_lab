@@ -1,25 +1,25 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '../lib/router';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
-export default function PerformanceMarketing({ onOpenConsultation }) {
+export default function ContentMarketing({ onOpenConsultation }) {
   const navigate = useNavigate();
 
   const features = [
-    'Google Search, Display & Performance Max (PMax) campaign setup',
-    'Meta Ads (Facebook & Instagram) acquisition funnels',
-    'High-converting ad copy & direct response creative design',
-    'Custom audience remarketing & lookalike expansion',
-    'Conversion tracking, pixel setup & CAPI attribution',
-    'Real-time ROAS optimization & budget scaling'
+    'Topical content strategy & editorial roadmap planning',
+    'High-converting blog writing, case studies & whitepapers',
+    'SEO-optimized article writing & long-form guides',
+    'Lead magnet creation (eBooks, checklists, toolkits)',
+    'Content repurposing across social media & newsletter campaigns',
+    'Content engagement & lead conversion tracking'
   ];
 
   const benefits = [
-    { title: 'Immediate Lead Flow', desc: 'Generate qualified customer inquiries from day one of campaign launch.' },
-    { title: 'Measurable Return on Ad Spend', desc: 'Track every dollar spent directly to customer acquisitions and revenue.' },
-    { title: 'Scalable Ad Architecture', desc: 'Scale winning ad creatives systematically without suffering efficiency loss.' }
+    { title: 'Industry Leadership', desc: 'Position your brand as an authoritative, trusted expert in your business niche.' },
+    { title: 'Inbound Lead Generation', desc: 'Educate prospects and earn trust before a sales conversation ever starts.' },
+    { title: 'SEO Asset Value', desc: 'Create evergreen content assets that continuously drive organic traffic for years.' }
   ];
 
   return (
@@ -39,10 +39,10 @@ export default function PerformanceMarketing({ onOpenConsultation }) {
         {/* Hero Header */}
         <div className="mb-14 pb-8 border-b border-neutral-300/80">
           <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight mb-4">
-            Performance Marketing
+            Content Marketing
           </h1>
           <p className="text-neutral-700 text-lg sm:text-2xl font-light max-w-3xl leading-relaxed">
-            Run targeted paid campaigns across Google, Meta, and performance ad channels to generate predictable leads, sales, and measurable revenue.
+            Create valuable, high-engaging content that builds audience trust, strengthens brand authority, and converts readers into long-term clients.
           </p>
         </div>
 
@@ -50,27 +50,27 @@ export default function PerformanceMarketing({ onOpenConsultation }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] tracking-tight">
-              High-ROAS Paid Ad Campaigns Engineered for Results
+              High-Authority Content Built to Educate and Convert
             </h2>
             <p className="text-neutral-600 text-base sm:text-lg leading-relaxed font-light">
-              Performance marketing turns digital media spend into a predictable customer acquisition machine. We engineer high-intent Google Search campaigns and high-converting Meta social ads designed to maximize ROAS.
+              Great content establishes market authority and answers your buyers’ most pressing questions. We develop editorial content roadmaps, in-depth case studies, and conversion copy designed to attract high-intent leads.
             </p>
             <p className="text-neutral-600 text-base leading-relaxed font-light">
-              From creative messaging and landing page conversion optimization to real-time bid adjustments, we ensure your ad dollars target buyers ready to take action.
+              By aligning content strategy with search intent and user journey stages, we help your business build brand equity and turn casual readers into loyal buyers.
             </p>
           </div>
 
           <div className="lg:col-span-5 bg-white p-8 rounded-3xl border border-neutral-200/90 shadow-sm flex flex-col justify-between">
             <div>
               <h3 className="font-display text-xl font-bold text-[#101827] mb-3">
-                Audit Your Ad Account Performance
+                Build Your Content Marketing Plan
               </h3>
               <p className="text-neutral-600 text-sm font-light leading-relaxed mb-6">
-                Let our performance team audit your Google or Meta ad account to identify wasted spend and scaling opportunities.
+                Consult with our content team to structure an editorial roadmap tailored for your audience.
               </p>
             </div>
             <Button variant="primary" size="md" onClick={onOpenConsultation} showArrow={true} className="w-full justify-center">
-              Request Ad Audit
+              Book Strategy Session
             </Button>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function PerformanceMarketing({ onOpenConsultation }) {
         {/* Business Benefits */}
         <div className="mb-16 bg-white p-8 sm:p-12 rounded-3xl border border-neutral-200/90 shadow-sm">
           <h2 className="font-display text-3xl font-extrabold text-[#101827] tracking-tight mb-8">
-            Why Choose Our Performance Marketing
+            Why Choose Our Content Marketing Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((b, idx) => (
@@ -111,13 +111,14 @@ export default function PerformanceMarketing({ onOpenConsultation }) {
             ))}
           </div>
         </div>
+
         {/* Action Call */}
         <div className="text-center py-10 bg-white rounded-3xl border border-neutral-200/90 shadow-sm mb-16 px-6">
           <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] mb-3">
-            Scale Paid Leads & Sales Predictably
+            Strengthen Your Brand's Authority Today
           </h3>
           <Button variant="primary" size="lg" onClick={onOpenConsultation} showArrow={true}>
-            Inquire About Performance Marketing
+            Inquire About Content Marketing
           </Button>
         </div>
 

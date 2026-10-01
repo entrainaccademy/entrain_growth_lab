@@ -1,17 +1,19 @@
-# React + Vite
+# Entrain Growth Partners
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This site is built with Next.js and React. The existing page components, styles, fonts, and animations live in `src/`.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Production check
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run build
+npm run start
+```
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-"# entrain_growth_lab" 
+The App Router entry point is in `app/`. Existing page components live in `src/views/`; routing links are adapted in `src/lib/router.jsx`. The site URL and page metadata are in `src/data/seo.js`.

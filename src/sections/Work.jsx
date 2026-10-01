@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUpRight, ImagePlus } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from '../lib/router';
 import Reveal from '../components/Reveal';
 
 const projects = [

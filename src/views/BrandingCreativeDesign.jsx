@@ -1,25 +1,25 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '../lib/router';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
-export default function MarketingStrategyConsulting({ onOpenConsultation }) {
+export default function BrandingCreativeDesign({ onOpenConsultation }) {
   const navigate = useNavigate();
 
   const features = [
-    'Comprehensive market, competitor & target audience audit',
-    'Custom multi-channel growth roadmap & KPI specification',
-    'Customer journey mapping & acquisition funnel modeling',
-    'Budget allocation, channel prioritization & ROAS forecasting',
-    'Marketing technology stack & automation consulting',
-    'Ongoing executive growth advisory & quarterly strategic reviews'
+    'Brand positioning, mission & verbal identity guidelines',
+    'Logo design & visual brand mark development',
+    'Typography system, font topology & color palette specification',
+    'Brand book documentation & usage rules',
+    'Marketing collateral design (business cards, stationery, pitch decks)',
+    'Social media visual design systems & ad graphic templates'
   ];
 
   const benefits = [
-    { title: 'Clear Growth Roadmap', desc: 'Eliminate wasted spend with a prioritized execution plan tied directly to business goals.' },
-    { title: 'Data-Driven Insights', desc: 'Understand your market opportunities, audience behaviors, and competitor strategies.' },
-    { title: 'Executive Alignment', desc: 'Align your leadership team around actionable growth milestones and revenue targets.' }
+    { title: 'Instant Credibility', desc: 'Present your business with a world-class visual identity that inspires trust.' },
+    { title: 'Market Differentiation', desc: 'Stand out clearly from legacy competitors with a distinctive visual style.' },
+    { title: 'Brand Consistency', desc: 'Ensure your brand looks unified across web, print, social media, and ad channels.' }
   ];
 
   return (
@@ -39,10 +39,10 @@ export default function MarketingStrategyConsulting({ onOpenConsultation }) {
         {/* Hero Header */}
         <div className="mb-14 pb-8 border-b border-neutral-300/80">
           <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight mb-4">
-            Marketing Strategy & Consulting
+            Branding & Creative Design
           </h1>
           <p className="text-neutral-700 text-lg sm:text-2xl font-light max-w-3xl leading-relaxed">
-            Build a clear, actionable marketing roadmap based on your specific business goals, target audience, competitors, and market growth opportunities.
+            Develop a memorable corporate brand identity with strategic visuals, distinctive logo design, typography systems, and consistent brand guidelines.
           </p>
         </div>
 
@@ -50,27 +50,27 @@ export default function MarketingStrategyConsulting({ onOpenConsultation }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] tracking-tight">
-              Strategic Blueprints Built around Your Revenue Targets
+              Shaping Visual Identities People Trust and Remember
             </h2>
             <p className="text-neutral-600 text-base sm:text-lg leading-relaxed font-light">
-              Effective marketing begins with clarity. We evaluate your current market positioning, digital touchpoints, and audience acquisition channels to construct an executive-level growth roadmap.
+              Your brand identity communicates your company’s core value before a sales conversation begins. We create cohesive design systems—including logos, color palettes, typography, and marketing assets—that give your business a modern, premium aesthetic.
             </p>
             <p className="text-neutral-600 text-base leading-relaxed font-light">
-              Whether launching a new business product or scaling an established brand, our strategy consulting provides the clarity and execution frameworks required for sustainable expansion.
+              We deliver complete brand books and digital design guidelines, allowing your team and partners to execute marketing materials with complete visual consistency.
             </p>
           </div>
 
           <div className="lg:col-span-5 bg-white p-8 rounded-3xl border border-neutral-200/90 shadow-sm flex flex-col justify-between">
             <div>
               <h3 className="font-display text-xl font-bold text-[#101827] mb-3">
-                Book a Strategy Advisory Session
+                Rebrand or Build Your Visual Identity
               </h3>
               <p className="text-neutral-600 text-sm font-light leading-relaxed mb-6">
-                Connect directly with our senior growth partners to discuss your business challenges and targets.
+                Connect with our creative directors to review your brand positioning and visual assets.
               </p>
             </div>
             <Button variant="primary" size="md" onClick={onOpenConsultation} showArrow={true} className="w-full justify-center">
-              Book Advisory Session
+              Book Brand Consultation
             </Button>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function MarketingStrategyConsulting({ onOpenConsultation }) {
         {/* Business Benefits */}
         <div className="mb-16 bg-white p-8 sm:p-12 rounded-3xl border border-neutral-200/90 shadow-sm">
           <h2 className="font-display text-3xl font-extrabold text-[#101827] tracking-tight mb-8">
-            Why Choose Our Growth Consulting
+            Why Choose Our Branding & Creative Design
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((b, idx) => (
@@ -111,13 +111,14 @@ export default function MarketingStrategyConsulting({ onOpenConsultation }) {
             ))}
           </div>
         </div>
+
         {/* Action Call */}
         <div className="text-center py-10 bg-white rounded-3xl border border-neutral-200/90 shadow-sm mb-16 px-6">
           <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] mb-3">
-            Build Your Growth Roadmap Today
+            Build a Distinctive Corporate Identity
           </h3>
           <Button variant="primary" size="lg" onClick={onOpenConsultation} showArrow={true}>
-            Inquire About Strategy Consulting
+            Inquire About Branding & Design
           </Button>
         </div>
 

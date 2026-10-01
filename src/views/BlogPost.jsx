@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link, Navigate } from 'react-router-dom';
+import { useParams, Link, Navigate } from '../lib/router';
 import { ArrowLeft } from 'lucide-react';
 import Reveal from '../components/Reveal';
 import CTA from '../sections/CTA';

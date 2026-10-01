@@ -1,25 +1,25 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '../lib/router';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
-export default function ContentMarketing({ onOpenConsultation }) {
+export default function DigitalMarketing({ onOpenConsultation }) {
   const navigate = useNavigate();
 
   const features = [
-    'Topical content strategy & editorial roadmap planning',
-    'High-converting blog writing, case studies & whitepapers',
-    'SEO-optimized article writing & long-form guides',
-    'Lead magnet creation (eBooks, checklists, toolkits)',
-    'Content repurposing across social media & newsletter campaigns',
-    'Content engagement & lead conversion tracking'
+    'Multi-channel growth strategy & campaign planning',
+    'Audience segmentation & buyer persona targeting',
+    'Conversion rate optimization (CRO) & landing page alignment',
+    'Data analytics tracking, attribution & ROI reporting',
+    'Continuous campaign A/B testing & budget scaling',
+    'Omnichannel marketing integration across search & social'
   ];
 
   const benefits = [
-    { title: 'Industry Leadership', desc: 'Position your brand as an authoritative, trusted expert in your business niche.' },
-    { title: 'Inbound Lead Generation', desc: 'Educate prospects and earn trust before a sales conversation ever starts.' },
-    { title: 'SEO Asset Value', desc: 'Create evergreen content assets that continuously drive organic traffic for years.' }
+    { title: 'Higher Conversion Rates', desc: 'Attract qualified traffic that actually converts into paying customers.' },
+    { title: 'Scalable Growth Engine', desc: 'Build repeatable customer acquisition channels with predictable ROAS.' },
+    { title: 'Data-Driven Decisions', desc: 'Eliminate guesswork with real-time marketing attribution & analytics.' }
   ];
 
   return (
@@ -39,10 +39,10 @@ export default function ContentMarketing({ onOpenConsultation }) {
         {/* Hero Header */}
         <div className="mb-14 pb-8 border-b border-neutral-300/80">
           <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight mb-4">
-            Content Marketing
+            Digital Marketing
           </h1>
           <p className="text-neutral-700 text-lg sm:text-2xl font-light max-w-3xl leading-relaxed">
-            Create valuable, high-engaging content that builds audience trust, strengthens brand authority, and converts readers into long-term clients.
+            Grow your online presence with data-driven marketing strategies that attract the right audience, build brand authority, and increase customer conversions.
           </p>
         </div>
 
@@ -50,23 +50,23 @@ export default function ContentMarketing({ onOpenConsultation }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] tracking-tight">
-              High-Authority Content Built to Educate and Convert
+              Strategic Digital Marketing Built to Scale
             </h2>
             <p className="text-neutral-600 text-base sm:text-lg leading-relaxed font-light">
-              Great content establishes market authority and answers your buyers’ most pressing questions. We develop editorial content roadmaps, in-depth case studies, and conversion copy designed to attract high-intent leads.
+              Modern digital marketing requires more than launching isolated ads. We design comprehensive growth ecosystems that connect your audience touchpoints—from initial brand discovery to high-intent conversions and long-term customer retention.
             </p>
             <p className="text-neutral-600 text-base leading-relaxed font-light">
-              By aligning content strategy with search intent and user journey stages, we help your business build brand equity and turn casual readers into loyal buyers.
+              By combining audience behavioral research, continuous A/B testing, precise analytics attribution, and conversion copywriting, we turn marketing spend into a predictable, scalable revenue engine.
             </p>
           </div>
 
           <div className="lg:col-span-5 bg-white p-8 rounded-3xl border border-neutral-200/90 shadow-sm flex flex-col justify-between">
             <div>
               <h3 className="font-display text-xl font-bold text-[#101827] mb-3">
-                Build Your Content Marketing Plan
+                Ready to Accelerate Your Customer Acquisition?
               </h3>
               <p className="text-neutral-600 text-sm font-light leading-relaxed mb-6">
-                Consult with our content team to structure an editorial roadmap tailored for your audience.
+                Book a free 30-minute growth strategy consultation with our senior marketing team to audit your current channels.
               </p>
             </div>
             <Button variant="primary" size="md" onClick={onOpenConsultation} showArrow={true} className="w-full justify-center">
@@ -99,7 +99,7 @@ export default function ContentMarketing({ onOpenConsultation }) {
         {/* Business Benefits */}
         <div className="mb-16 bg-white p-8 sm:p-12 rounded-3xl border border-neutral-200/90 shadow-sm">
           <h2 className="font-display text-3xl font-extrabold text-[#101827] tracking-tight mb-8">
-            Why Choose Our Content Marketing Services
+            Why Choose Our Digital Marketing Approach
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((b, idx) => (
@@ -112,13 +112,16 @@ export default function ContentMarketing({ onOpenConsultation }) {
           </div>
         </div>
 
-        {/* Action Call */}
+        {/* Mid-Page Action Call */}
         <div className="text-center py-10 bg-white rounded-3xl border border-neutral-200/90 shadow-sm mb-16 px-6">
           <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] mb-3">
-            Strengthen Your Brand's Authority Today
+            Let's Build Your Digital Growth Roadmap
           </h3>
+          <p className="text-neutral-600 text-sm sm:text-base max-w-xl mx-auto mb-6 font-light">
+            Schedule a confidential consultation to explore custom marketing packages tailored specifically for your target revenue.
+          </p>
           <Button variant="primary" size="lg" onClick={onOpenConsultation} showArrow={true}>
-            Inquire About Content Marketing
+            Inquire About Digital Marketing
           </Button>
         </div>
 

@@ -3,7 +3,7 @@
 /* Explicit source registration keeps Tailwind's dev compiler in sync when
    section files are replaced while Vite is already running. */
 @source "./components";
-@source "./pages";
+@source "./views";
 @source "./sections";
 @source "./data";
 

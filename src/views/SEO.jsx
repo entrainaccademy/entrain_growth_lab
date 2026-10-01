@@ -1,31 +1,31 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '../lib/router';
 import Button from '../components/Button';
 import CTA from '../sections/CTA';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
-export default function DigitalMarketing({ onOpenConsultation }) {
+export default function SEO({ onOpenConsultation }) {
   const navigate = useNavigate();
 
   const features = [
-    'Multi-channel growth strategy & campaign planning',
-    'Audience segmentation & buyer persona targeting',
-    'Conversion rate optimization (CRO) & landing page alignment',
-    'Data analytics tracking, attribution & ROI reporting',
-    'Continuous campaign A/B testing & budget scaling',
-    'Omnichannel marketing integration across search & social'
+    'Technical site audits & performance optimization',
+    'Targeted keyword strategy & search intent analysis',
+    'On-page SEO & content optimization',
+    'Strategic content creation & blog publishing',
+    'Quality backlink building & authority growth',
+    'Local SEO & Google Business Profile optimization'
   ];
 
   const benefits = [
-    { title: 'Higher Conversion Rates', desc: 'Attract qualified traffic that actually converts into paying customers.' },
-    { title: 'Scalable Growth Engine', desc: 'Build repeatable customer acquisition channels with predictable ROAS.' },
-    { title: 'Data-Driven Decisions', desc: 'Eliminate guesswork with real-time marketing attribution & analytics.' }
+    { title: 'Sustainable Traffic', desc: 'Drive continuous, long-term organic traffic to your website without relying solely on paid ads.' },
+    { title: 'High-Intent Leads', desc: 'Connect with customers at the exact moment they search for your products or services.' },
+    { title: 'Brand Authority', desc: 'Build strong search engine credibility that helps your business outrank competitors.' }
   ];
 
   return (
     <main className="pt-24 sm:pt-32 pb-0 bg-[#F3F1EE] text-[#101827] min-h-screen font-sans">
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        
+
         {/* Back Link */}
         <div className="mb-8">
           <button
@@ -37,40 +37,37 @@ export default function DigitalMarketing({ onOpenConsultation }) {
         </div>
 
         {/* Hero Header */}
-        <div className="mb-14 pb-8 border-b border-neutral-300/80">
-          <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight mb-4">
-            Digital Marketing
+        <div className="mb-10 pb-8 border-b border-neutral-300/80">
+          <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#101827] tracking-tight">
+            Search Engine Optimization (SEO)
           </h1>
-          <p className="text-neutral-700 text-lg sm:text-2xl font-light max-w-3xl leading-relaxed">
-            Grow your online presence with data-driven marketing strategies that attract the right audience, build brand authority, and increase customer conversions.
-          </p>
         </div>
 
         {/* Detailed Service Overview */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] tracking-tight">
-              Strategic Digital Marketing Built to Scale
+              Drive Sustainable Business Growth with Proven SEO Strategies
             </h2>
             <p className="text-neutral-600 text-base sm:text-lg leading-relaxed font-light">
-              Modern digital marketing requires more than launching isolated ads. We design comprehensive growth ecosystems that connect your audience touchpoints—from initial brand discovery to high-intent conversions and long-term customer retention.
+              Search engine optimization is essential for consistent digital growth. We build customized SEO strategies designed to improve your search visibility, attract qualified visitors, and turn search interest into real revenue.
             </p>
             <p className="text-neutral-600 text-base leading-relaxed font-light">
-              By combining audience behavioral research, continuous A/B testing, precise analytics attribution, and conversion copywriting, we turn marketing spend into a predictable, scalable revenue engine.
+              From resolving technical site issues to creating high-ranking content, we ensure your website delivers a seamless user experience that search engines favor and customers trust.
             </p>
           </div>
 
           <div className="lg:col-span-5 bg-white p-8 rounded-3xl border border-neutral-200/90 shadow-sm flex flex-col justify-between">
             <div>
               <h3 className="font-display text-xl font-bold text-[#101827] mb-3">
-                Ready to Accelerate Your Customer Acquisition?
+                Request a Free SEO Site Audit
               </h3>
               <p className="text-neutral-600 text-sm font-light leading-relaxed mb-6">
-                Book a free 30-minute growth strategy consultation with our senior marketing team to audit your current channels.
+                Discover how your website currently performs and uncover key opportunities to improve your search rankings.
               </p>
             </div>
             <Button variant="primary" size="md" onClick={onOpenConsultation} showArrow={true} className="w-full justify-center">
-              Book Strategy Session
+              Request SEO Audit
             </Button>
           </div>
         </div>
@@ -99,7 +96,7 @@ export default function DigitalMarketing({ onOpenConsultation }) {
         {/* Business Benefits */}
         <div className="mb-16 bg-white p-8 sm:p-12 rounded-3xl border border-neutral-200/90 shadow-sm">
           <h2 className="font-display text-3xl font-extrabold text-[#101827] tracking-tight mb-8">
-            Why Choose Our Digital Marketing Approach
+            Why Choose Our SEO Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((b, idx) => (
@@ -111,17 +108,13 @@ export default function DigitalMarketing({ onOpenConsultation }) {
             ))}
           </div>
         </div>
-
-        {/* Mid-Page Action Call */}
+        {/* Action Call */}
         <div className="text-center py-10 bg-white rounded-3xl border border-neutral-200/90 shadow-sm mb-16 px-6">
           <h3 className="font-display text-2xl sm:text-3xl font-extrabold text-[#101827] mb-3">
-            Let's Build Your Digital Growth Roadmap
+            Ready to Grow Your Search Visibility?
           </h3>
-          <p className="text-neutral-600 text-sm sm:text-base max-w-xl mx-auto mb-6 font-light">
-            Schedule a confidential consultation to explore custom marketing packages tailored specifically for your target revenue.
-          </p>
           <Button variant="primary" size="lg" onClick={onOpenConsultation} showArrow={true}>
-            Inquire About Digital Marketing
+            Inquire About SEO Services
           </Button>
         </div>
 
@@ -132,3 +125,4 @@ export default function DigitalMarketing({ onOpenConsultation }) {
     </main>
   );
 }
+
