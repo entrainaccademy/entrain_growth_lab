@@ -2,7 +2,10 @@ import React, { useRef } from 'react';
 import { Link } from '../lib/router';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUp, ArrowUpRight, Mail, Phone } from 'lucide-react';
-import { mainNavigation, legalNavigation } from '../data/navigation';
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa6';
+import { mainNavigation, legalNavigation, socialLinks } from '../data/navigation';
+
+const socialIcons = { Instagram: FaInstagram, Facebook: FaFacebookF, LinkedIn: FaLinkedinIn };
 
 function Magnetic({ children, className = '', to, href, onClick, ...props }) {
   const handleMove = (event) => {
@@ -80,6 +83,17 @@ export default function Footer({ onOpenConsultation }) {
             {legalNavigation.map((item) => (
               <Magnetic key={item.path} to={item.path}>{item.name}</Magnetic>
             ))}
+          </div>
+
+          <div className="footer-link-pills">
+            {socialLinks.map(({ name, url }) => {
+              const Icon = socialIcons[name];
+              return (
+                <Magnetic key={name} className="footer-social-pill" href={url} target="_blank" rel="noopener noreferrer" aria-label={`Entrain Growth Partners on ${name}`}>
+                  <Icon /> {name}
+                </Magnetic>
+              );
+            })}
           </div>
         </div>
 

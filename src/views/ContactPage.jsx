@@ -351,13 +351,13 @@ export default function ContactPage() {
                       CONNECT WITH US
                     </span>
                     <div className="flex items-center gap-3">
-                      <a href="#" onClick={(e) => e.preventDefault()} aria-label="Instagram" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
+                      <a href="https://www.instagram.com/entrain.growth.partners/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
                         <FaInstagram className="w-4 h-4" />
                       </a>
-                      <a href="#" onClick={(e) => e.preventDefault()} aria-label="LinkedIn" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
+                      <a href="https://www.linkedin.com/in/entrain-growth-partners-b64109430" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
                         <FaLinkedinIn className="w-4 h-4" />
                       </a>
-                      <a href="#" onClick={(e) => e.preventDefault()} aria-label="Facebook" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
+                      <a href="https://www.facebook.com/people/Entrain-growth-partners/61593178871374/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
                         <FaFacebookF className="w-4 h-4" />
                       </a>
                     </div>
