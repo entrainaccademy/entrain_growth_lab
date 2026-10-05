@@ -1,25 +1,48 @@
 # Entrain Growth Partners
 
-> Entrain Growth Partners is a digital marketing and growth agency in Kerala, India. Its website describes services in SEO, performance marketing, social media, content, branding, web development, and growth strategy.
+> Entrain Growth Partners is a digital marketing agency that builds tailored, organic-first growth strategies through SEO, performance marketing, social media, web development and strategic digital marketing. Tagline: "Growth Isn't Luck. It's Strategy."
 
-Use the linked pages for current service details, examples, and contact information. Do not treat this overview as a substitute for those pages.
+Website: https://www.entraingrowthpartners.com/
+Twitter/X: @entrain_growth_lab
 
-## About and services
+## Services
 
-- [Home](https://www.entraingrowthpartners.com/): Overview of the agency and its approach.
-- [About](https://www.entraingrowthpartners.com/about): Company background and team.
-- [All services](https://www.entraingrowthpartners.com/services): Overview of available services.
-- [Search engine optimization](https://www.entraingrowthpartners.com/services/seo): SEO services and approach.
-- [Performance marketing](https://www.entraingrowthpartners.com/services/performance-marketing): Paid advertising services.
-- [Social media marketing](https://www.entraingrowthpartners.com/services/social-media-marketing): Social media strategy and content.
-- [Website design and development](https://www.entraingrowthpartners.com/services/website-design-development): Website services.
-- [Marketing strategy consulting](https://www.entraingrowthpartners.com/services/marketing-strategy-consulting): Strategy consulting.
+- [All services](https://www.entraingrowthpartners.com/services): Overview of everything the agency offers.
+- [Digital Marketing](https://www.entraingrowthpartners.com/services/digital-marketing): Integrated digital marketing programs.
+- [Search Engine Optimization](https://www.entraingrowthpartners.com/services/seo): Technical SEO, keyword strategy and competitor research, on-page and content optimization, continuous search performance optimization.
+- [Performance Marketing](https://www.entraingrowthpartners.com/services/performance-marketing): Paid acquisition focused on measurable results.
+- [Social Media Marketing](https://www.entraingrowthpartners.com/services/social-media-marketing): Organic and paid social media growth.
+- [Content Marketing](https://www.entraingrowthpartners.com/services/content-marketing): Content strategy and production to drive organic growth.
+- [Branding & Creative Design](https://www.entraingrowthpartners.com/services/branding-creative-design): Brand identity and creative work.
+- [Website Design & Development](https://www.entraingrowthpartners.com/services/website-design-development): Website design and build.
+- [Marketing Strategy & Consulting](https://www.entraingrowthpartners.com/services/marketing-strategy-consulting): Growth strategy and advisory.
 
-## Work and insights
+## Company and proof
 
-- [Client work](https://www.entraingrowthpartners.com/work): Selected projects and case studies.
-- [Insights](https://www.entraingrowthpartners.com/blog): Articles on growth and marketing.
+- [About](https://www.entraingrowthpartners.com/about): Who the agency is and how it works.
+- [Our work](https://www.entraingrowthpartners.com/work): Portfolio and client results.
+- [Testimonials](https://www.entraingrowthpartners.com/testimonials): Client feedback.
+- [Case study: Buckeez](https://www.entraingrowthpartners.com/buckeez)
+- [Case study: Cobolt](https://www.entraingrowthpartners.com/cobolt)
+- [Case study: Culinary](https://www.entraingrowthpartners.com/culinary)
+- [Case study: Entrain Labs](https://www.entraingrowthpartners.com/entrainlabs)
 
-## Contact
+## Insights (blog)
 
-- [Contact](https://www.entraingrowthpartners.com/contact): How to reach the agency.
+- [Blog index](https://www.entraingrowthpartners.com/blog)
+- [Organic Instagram growth case study](https://www.entraingrowthpartners.com/blog/organic-instagram-growth-case-study)
+- [SEO as a compounding growth channel](https://www.entraingrowthpartners.com/blog/seo-compounding-growth-channel)
+- [Signs your website is losing customers](https://www.entraingrowthpartners.com/blog/signs-your-website-is-losing-customers)
+- [Brand positioning 101](https://www.entraingrowthpartners.com/blog/brand-positioning-101)
+- [Paid ads vs organic: which first?](https://www.entraingrowthpartners.com/blog/paid-ads-vs-organic-which-first)
+
+## Contact and careers
+
+- [Contact](https://www.entraingrowthpartners.com/contact): Get in touch or request a consultation.
+- [Careers](https://www.entraingrowthpartners.com/careers): Open roles, including Social Media Manager, SEO Executive/Specialist, Videographer cum Video Editor, and Bakery Chef Trainer.
+
+## Optional
+
+- [Privacy policy](https://www.entraingrowthpartners.com/privacy)
+- [Terms](https://www.entraingrowthpartners.com/terms)
+- [Sitemap](https://www.entraingrowthpartners.com/sitemap.xml)
