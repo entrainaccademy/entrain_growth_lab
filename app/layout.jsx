@@ -3,8 +3,8 @@ import { SITE_URL } from '../src/data/seo';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: 'Entrain Growth Partners | Digital Marketing Agency',
-  description: 'Entrain Growth Partners builds tailored, organic-first growth strategies through SEO, performance marketing, social media, web development and strategic consulting.',
+  title: 'Digital Marketing Agency in Malappuram, Kerala | Entrain Growth Partners',
+  description: 'Entrain Growth Partners is a digital marketing company in Malappuram, Kerala offering SEO, social media marketing, branding and performance marketing to grow your business.',
   manifest: '/site.webmanifest',
   icons: {
     icon: '/entrain-growth-logo.png',

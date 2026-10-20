@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Reveal from '../components/Reveal';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle2, Loader2 } from 'lucide-react';
-import { FaInstagram, FaLinkedinIn, FaFacebookF } from 'react-icons/fa6';
+import { Mail, Phone, MapPin, Clock, CheckCircle2 } from 'lucide-react';
+import { FaInstagram, FaLinkedinIn, FaFacebookF, FaWhatsapp } from 'react-icons/fa6';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -15,8 +15,8 @@ export default function ContactPage() {
   });
 
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [whatsAppUrl, setWhatsAppUrl] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,29 +48,35 @@ export default function ContactPage() {
       return;
     }
 
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 1000);
+    const message = [
+      'New enquiry from the Entrain Growth Partners website',
+      `Name: ${formData.name.trim()}`,
+      `Email: ${formData.email.trim()}`,
+      `Phone: ${formData.phone.trim()}`,
+      `Company: ${formData.company.trim()}`,
+      formData.website.trim() && `Website: ${formData.website.trim()}`,
+      `Service: ${formData.service}`,
+      `Message: ${formData.message.trim()}`,
+    ].filter(Boolean).join('\n');
+    const url = `https://wa.me/919745235226?text=${encodeURIComponent(message)}`;
+    setWhatsAppUrl(url);
+    window.open(url, '_blank', 'noopener,noreferrer');
+    setIsSubmitted(true);
   };
 
   return (
-    <main className="pt-28 pb-0 text-[#202124] bg-[#F3F1EE]">
+    <main className="pt-20 pb-0 text-[#202124] bg-[#F3F1EE]">
       
       {/* Header Banner */}
-      <section className="py-16 sm:py-20 bg-[#202124] text-[#FFFFFF] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#4355A5_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
+      <section className="py-20 sm:py-28 bg-gradient-to-br from-[#2596BE] via-[#4355A5] to-[#34448F] text-white relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-white/10 rounded-full blur-[150px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <Reveal direction="down" delay={0.1}>
-           
-          </Reveal>
           <Reveal direction="up" delay={0.2}>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#FFFFFF] tracking-tight mb-4">
-              Let's Scale Your <span className="text-[#4355A5]">Growth</span>
+              Let&apos;s <span className="text-[#4355A5] bg-white px-4 py-0.5 rounded-2xl shadow-lg inline-block">Talk.</span>
             </h1>
-            <p className="text-[#E6E5E2] text-lg sm:text-xl max-w-2xl mx-auto font-light">
-              Have a project in mind or want to discuss strategic marketing? Reach out to our team of experts today.
+            <p className="text-white/90 text-lg sm:text-xl max-w-2xl mx-auto font-light">
+              Tell us about your business and the growth you want to build. Reach us by WhatsApp, phone, or email.
             </p>
           </Reveal>
         </div>
@@ -92,11 +98,14 @@ export default function ContactPage() {
                         <CheckCircle2 className="w-10 h-10" />
                       </div>
                       <h3 className="font-display text-3xl font-extrabold text-[#202124] mb-3">
-                        Message Sent Successfully!
+                        Your WhatsApp message is ready
                       </h3>
                       <p className="text-[#202124]/70 text-base max-w-md mx-auto mb-8 font-light">
-                        Thank you for reaching out to Entrain Growth Partners. Our strategy team is reviewing your information and will respond within 24 hours.
+                        Review the message in WhatsApp and tap Send to complete your enquiry.
                       </p>
+                      <a href={whatsAppUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-8 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[#1fb95a]">
+                        <FaWhatsapp className="h-5 w-5" aria-hidden="true" /> Open WhatsApp
+                      </a>
                       <button
                         type="button"
                         onClick={() => {
@@ -111,16 +120,17 @@ export default function ContactPage() {
                             message: '',
                           });
                         }}
-                        className="px-8 py-3.5 rounded-full bg-[#4355A5] text-[#FFFFFF] font-bold text-sm hover:bg-[#34458F] transition-all duration-200 shadow-md shadow-[#4355A5]/25"
+                        className="mt-3 block mx-auto px-8 py-3.5 rounded-full bg-[#4355A5] text-[#FFFFFF] font-bold text-sm hover:bg-[#34458F] transition-all duration-200 shadow-md shadow-[#4355A5]/25"
                       >
-                        Send Another Message
+                        Start Another Enquiry
                       </button>
                     </div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-6">
-                      <h3 className="font-display text-2xl font-bold text-[#202124] mb-6">
-                        Strategy Inquiry Form
-                      </h3>
+                      <div>
+                        <h3 className="font-display text-2xl font-bold text-[#202124] mb-2">Tell us about your project</h3>
+                        <p className="text-sm text-[#202124]/65">This form prepares a WhatsApp message for you to review and send.</p>
+                      </div>
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         {/* Name */}
@@ -173,7 +183,7 @@ export default function ContactPage() {
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            placeholder="+1 (555) 000-0000"
+                            placeholder="+91 97452 35226"
                             className={`w-full px-4 py-3 rounded-xl bg-[#E6E5E2]/50 border text-sm text-[#202124] placeholder-[#202124]/40 focus:bg-[#FFFFFF] focus:outline-none transition-all duration-200 ${
                               errors.phone
                                 ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20'
@@ -231,7 +241,7 @@ export default function ContactPage() {
                           className="w-full px-4 py-3 rounded-xl bg-[#E6E5E2]/50 border border-[#E6E5E2] text-sm text-[#202124] focus:bg-[#FFFFFF] focus:outline-none focus:border-[#4355A5] focus:ring-2 focus:ring-[#4355A5]/20 transition-all duration-200"
                         >
                           <option value="SEO">SEO (Search Engine Optimization)</option>
-                          <option value="Paid Advertising">Paid Advertising (Google & Meta Ads)</option>
+                          <option value="Performance Marketing">Performance Marketing (Google & Meta Ads)</option>
                           <option value="Social Media Marketing">Social Media Marketing</option>
                           <option value="Content Marketing">Content Marketing</option>
                           <option value="Web Design & Development">Web Design & Development</option>
@@ -264,20 +274,10 @@ export default function ContactPage() {
                       <div>
                         <button
                           type="submit"
-                          disabled={isSubmitting}
-                          className="w-full py-4 px-8 rounded-full bg-[#4355A5] text-[#FFFFFF] font-bold text-base hover:bg-[#34458F] active:scale-[0.99] transition-all duration-200 shadow-lg shadow-[#4355A5]/25 hover:shadow-xl hover:shadow-[#4355A5]/35 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
+                          className="w-full py-4 px-8 rounded-full bg-[#4355A5] text-[#FFFFFF] font-bold text-base hover:bg-[#34458F] active:scale-[0.99] transition-all duration-200 shadow-lg shadow-[#4355A5]/25 hover:shadow-xl hover:shadow-[#4355A5]/35 flex items-center justify-center gap-2 cursor-pointer"
                         >
-                          {isSubmitting ? (
-                            <span className="flex items-center gap-2">
-                              <Loader2 className="w-5 h-5 animate-spin" />
-                              Sending Message...
-                            </span>
-                          ) : (
-                            <span className="flex items-center gap-2">
-                              <Send className="w-4 h-4" />
-                              Start the Conversation →
-                            </span>
-                          )}
+                          <FaWhatsapp className="w-5 h-5" aria-hidden="true" />
+                          Continue in WhatsApp
                         </button>
                       </div>
                     </form>
@@ -290,25 +290,21 @@ export default function ContactPage() {
             {/* Right Contact Info */}
             <div className="lg:col-span-5 space-y-8">
               <Reveal direction="up" delay={0.2}>
-                <div className="p-8 sm:p-10 rounded-3xl bg-[#202124] text-[#FFFFFF] space-y-6 shadow-xl border border-[#4355A5]/30 relative overflow-hidden">
-                  <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#4355A5]/20 rounded-full blur-3xl pointer-events-none" />
-
-                  <span className="text-xs font-mono font-bold tracking-widest text-[#4355A5] uppercase block">
-                    // DIRECT CONTACT
-                  </span>
+                <div className="p-8 sm:p-10 rounded-3xl bg-white text-[#202124] space-y-6 shadow-xl shadow-[#4355A5]/5 border border-[#E6E5E2] relative overflow-hidden">
+                  <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#4355A5]/5 rounded-full blur-3xl pointer-events-none" />
                   
-                  <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#FFFFFF]">
+                  <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#202124]">
                     Contact Details
                   </h3>
 
-                  <div className="space-y-6 text-sm text-[#E6E5E2]">
+                  <div className="space-y-6 text-sm text-[#202124]">
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-xl bg-[#4355A5] text-[#FFFFFF] flex items-center justify-center flex-shrink-0 shadow-md shadow-[#4355A5]/30">
                         <Mail className="w-5 h-5" />
                       </div>
                       <div>
-                        <span className="text-xs text-[#E6E5E2] font-mono block uppercase">STRATEGY EMAIL</span>
-                        <span className="text-[#FFFFFF] font-medium text-base">hello@entraingrowthlabs.com</span>
+                        <span className="text-xs text-[#202124]/60 font-mono block uppercase">EMAIL</span>
+                        <a href="mailto:entraingrowthpartners@gmail.com" className="text-[#202124] hover:text-[#4355A5] font-medium text-base break-all transition-colors">entraingrowthpartners@gmail.com</a>
                       </div>
                     </div>
 
@@ -317,9 +313,9 @@ export default function ContactPage() {
                         <Phone className="w-5 h-5" />
                       </div>
                       <div>
-                        <span className="text-xs text-[#E6E5E2] font-mono block uppercase">DIRECT LINE</span>
-                        <a href="tel:9745235226" className="text-[#FFFFFF] hover:text-[#4355A5] font-medium text-base transition-colors cursor-pointer block">
-                          +91 9745235226
+                        <span className="text-xs text-[#202124]/60 font-mono block uppercase">DIRECT LINE</span>
+                        <a href="tel:+919745235226" className="text-[#202124] hover:text-[#4355A5] font-medium text-base transition-colors cursor-pointer block">
+                          +91 97452 35226
                         </a>
                       </div>
                     </div>
@@ -329,8 +325,8 @@ export default function ContactPage() {
                         <MapPin className="w-5 h-5" />
                       </div>
                       <div>
-                        <span className="text-xs text-[#E6E5E2] font-mono block uppercase">OFFICE LOCATION</span>
-                        <span className="text-[#FFFFFF] font-medium text-base">San Francisco, CA & Global Remote</span>
+                        <span className="text-xs text-[#202124]/60 font-mono block uppercase">OFFICE LOCATION</span>
+                        <address className="text-[#202124] font-medium text-base not-italic">Entrain Academy, Veemboor Narukara, Ernad, Malappuram-676122, Kerala, India</address>
                       </div>
                     </div>
 
@@ -339,25 +335,25 @@ export default function ContactPage() {
                         <Clock className="w-5 h-5" />
                       </div>
                       <div>
-                        <span className="text-xs text-[#E6E5E2] font-mono block uppercase">RESPONSE TIME</span>
-                        <span className="text-[#FFFFFF] font-medium text-base">Within 24 Hours</span>
+                        <span className="text-xs text-[#202124]/60 font-mono block uppercase">WORKING HOURS</span>
+                        <span className="text-[#202124] font-medium text-base">Monday to Saturday, 9:00 AM–5:00 PM</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Social Links */}
-                  <div className="pt-6 border-t border-[#E6E5E2]/20 space-y-3">
-                    <span className="text-xs font-mono text-[#E6E5E2] block uppercase tracking-wider">
+                  <div className="pt-6 border-t border-[#4355A5]/20 space-y-3">
+                    <span className="text-xs font-mono text-[#202124]/60 block uppercase tracking-wider">
                       CONNECT WITH US
                     </span>
                     <div className="flex items-center gap-3">
-                      <a href="https://www.instagram.com/entrain.growth.partners/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
+                      <a href="https://www.instagram.com/entrain.growth.partners/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-xl bg-white text-[#4355A5] hover:bg-[#4355A5] hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105">
                         <FaInstagram className="w-4 h-4" />
                       </a>
-                      <a href="https://www.linkedin.com/in/entrain-growth-partners-b64109430" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
+                      <a href="https://www.linkedin.com/in/entrain-growth-partners-b64109430" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-xl bg-white text-[#4355A5] hover:bg-[#4355A5] hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105">
                         <FaLinkedinIn className="w-4 h-4" />
                       </a>
-                      <a href="https://www.facebook.com/people/Entrain-growth-partners/61593178871374/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-xl bg-[#FFFFFF]/10 text-[#FFFFFF] hover:bg-[#4355A5] hover:text-[#FFFFFF] flex items-center justify-center transition-all duration-200 hover:scale-105">
+                      <a href="https://www.facebook.com/people/Entrain-growth-partners/61593178871374/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-xl bg-white text-[#4355A5] hover:bg-[#4355A5] hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-105">
                         <FaFacebookF className="w-4 h-4" />
                       </a>
                     </div>

@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from '../lib/router';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Button from './Button';
 import logo from '../assets/entrain-growth-logo-cropped.png';
 import { mainNavigation } from '../data/navigation';
 
-export default function Navbar({ onOpenConsultation }) {
+export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -44,7 +43,7 @@ export default function Navbar({ onOpenConsultation }) {
           </NavLink>
 
           <nav
-            className={`hidden md:flex items-center gap-1 lg:gap-1.5 p-1 sm:p-1.5 rounded-full border backdrop-blur-md transition-all duration-300 ${
+            className={`hidden lg:flex items-center gap-1 lg:gap-1.5 p-1 sm:p-1.5 rounded-full border backdrop-blur-md transition-all duration-300 ${
               hasReadableBackground
                 ? 'bg-[#F6FAFC] border-slate-200 shadow-inner'
                 : 'bg-white/10 border-white/20'
@@ -69,25 +68,7 @@ export default function Navbar({ onOpenConsultation }) {
             ))}
           </nav>
 
-          <div className="hidden md:block">
-            <Button variant={hasReadableBackground ? 'primary' : 'white'} size="sm" showArrow onClick={onOpenConsultation}>
-              Book a Call
-            </Button>
-          </div>
-
-          <div className="flex items-center gap-2 md:hidden">
-            <a
-              href="tel:9745235226"
-              className={`p-2.5 rounded-xl border transition-all shadow-sm flex items-center justify-center ${
-                hasReadableBackground
-                  ? 'bg-[#4355A5] text-white border-[#4355A5] hover:bg-[#34458F]'
-                  : 'bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-md'
-              }`}
-              aria-label="Call 9745235226"
-            >
-              <Phone className="w-5 h-5" />
-            </a>
-
+          <div className="flex items-center gap-2 lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`p-2.5 rounded-xl border transition-colors focus:outline-none flex items-center justify-center ${
@@ -137,19 +118,6 @@ export default function Navbar({ onOpenConsultation }) {
                 <Phone className="w-4 h-4" />
                 <span>Call Us</span>
               </a>
-              <Button
-                variant="white"
-                size="lg"
-                className="w-full justify-center py-3.5"
-                showArrow
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  onOpenConsultation();
-                }}
-              >
-                Book a Call
-              </Button>
-              
             </div>
           </motion.div>
         )}

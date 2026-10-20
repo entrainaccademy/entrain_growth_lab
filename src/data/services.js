@@ -1,4 +1,4 @@
-import { Search, Palette, Megaphone, MousePointerClick, Share2, Layout } from 'lucide-react';
+import { Search, Palette, Megaphone, Share2, Layout } from 'lucide-react';
 
 export const services = [
   {
@@ -37,40 +37,23 @@ export const services = [
   },
   {
     number: '03',
-    id: 'meta-ads',
-    title: 'Meta Ads',
-    shortTitle: 'Facebook & Instagram Ads',
-    tagline: 'Turn social attention into qualified leads and sales.',
-    description: 'We plan, launch, and optimize Facebook and Instagram campaigns with precise audiences, compelling creative, and conversion-focused funnels.',
+    id: 'performance-marketing',
+    title: 'Performance Marketing',
+    shortTitle: 'Google Ads & Meta Ads',
+    tagline: 'Turn paid campaigns into qualified leads and sales.',
+    description: 'We plan, launch, and optimize Google Ads and Meta Ads campaigns to reach high-intent audiences and generate measurable results.',
     icon: Megaphone,
     deliverables: [
-      'Campaign & funnel strategy',
+      'Google Search, Display & Performance Max campaigns',
+      'Facebook & Instagram ad campaigns',
       'Audience research and targeting',
       'Ad creative & conversion copy',
-      'Retargeting and lookalike campaigns',
-      'Performance reporting & optimization',
+      'Conversion tracking & performance optimization',
     ],
-    whyItMatters: 'Meta advertising combines strong creative with powerful targeting to generate demand and scale customer acquisition efficiently.',
+    whyItMatters: 'Google Ads captures existing demand while Meta Ads helps generate demand and expand customer acquisition.',
   },
   {
     number: '04',
-    id: 'google-ads',
-    title: 'Google Ads',
-    shortTitle: 'High-Intent Search Campaigns',
-    tagline: 'Reach customers at the exact moment they are searching.',
-    description: 'We create high-intent Google Search, Display, and Performance Max campaigns engineered to generate qualified traffic and measurable returns.',
-    icon: MousePointerClick,
-    deliverables: [
-      'Search campaign strategy',
-      'Keyword and competitor research',
-      'Ad copy & landing-page alignment',
-      'Conversion tracking & attribution',
-      'Bid and budget optimization',
-    ],
-    whyItMatters: 'Google Ads captures existing demand, putting your business in front of people who are actively looking for your solution.',
-  },
-  {
-    number: '05',
     id: 'social-media-marketing',
     title: 'Social Media Marketing',
     shortTitle: 'Content & Community Growth',
@@ -87,7 +70,7 @@ export const services = [
     whyItMatters: 'Consistent social content keeps your brand visible, builds relationships at scale, and creates demand before customers are ready to buy.',
   },
   {
-    number: '06',
+    number: '05',
     id: 'web-design-development',
     title: 'Web Design & Development',
     shortTitle: 'Conversion-Focused Websites',

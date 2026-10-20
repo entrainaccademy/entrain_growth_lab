@@ -1,22 +1,19 @@
 import React from 'react';
 import Reveal from '../components/Reveal';
-import Button from '../components/Button';
+import HomeEnquiryForm from '../components/HomeEnquiryForm';
 import { motion } from 'framer-motion';
 
-export default function BigStatement({ onOpenConsultation }) {
+export default function BigStatement() {
   return (
-    <section className="py-20 sm:py-28 bg-[#101827] text-white relative overflow-hidden">
-      {/* Background Animated Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-white/10 rounded-full blur-[160px] pointer-events-none" />
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F1F4FF] via-[#F8F9FE] to-white py-20 text-[#101827] sm:py-28">
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#DDE5FF]/50 blur-[160px]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         
         {/* Oversized Statement */}
         <Reveal direction="up" delay={0.2}>
-          <h2 className="font-display text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-[-0.04em] leading-[1.05] text-white mb-8">
-            Your next stage <br />
-            of growth starts <br />
-            <span className="text-[#7E91F2] inline-block mt-2">with a strategy.</span>
+          <h2 className="mb-8 font-display text-3xl font-semibold leading-[1.1] tracking-[-0.045em] sm:text-4xl md:whitespace-nowrap md:text-[clamp(1.25rem,2.6vw,2.6rem)]">
+            Your next stage of growth starts <span className="text-[#4355A5]">with a strategy.</span>
           </h2>
         </Reveal>
 
@@ -32,16 +29,7 @@ export default function BigStatement({ onOpenConsultation }) {
         </div>
 
         <Reveal direction="up" delay={0.3}>
-          <div className="pt-4">
-            <Button
-              variant="white"
-              size="lg"
-              showArrow={true}
-              onClick={onOpenConsultation}
-            >
-              Book a Free Consultation
-            </Button>
-          </div>
+          <HomeEnquiryForm />
         </Reveal>
 
       </div>

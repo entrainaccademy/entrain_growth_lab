@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Link } from '../lib/router';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowUp, ArrowUpRight, Mail, Phone } from 'lucide-react';
+import { ArrowUp, ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa6';
 import { mainNavigation, legalNavigation, socialLinks } from '../data/navigation';
 
@@ -75,6 +75,11 @@ export default function Footer({ onOpenConsultation }) {
               <Phone /> +91 97452 35226
             </Magnetic>
           </div>
+
+          <address className="footer-address">
+            <MapPin aria-hidden="true" />
+            <span>Entrain Academy, Veemboor Narukara, Ernad, Malappuram-676122, Kerala, India</span>
+          </address>
 
           <div className="footer-link-pills">
             {mainNavigation.map((item) => (

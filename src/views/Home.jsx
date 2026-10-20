@@ -4,6 +4,7 @@ import Intro from '../sections/Intro';
 import Clients from '../sections/Clients';
 // import WhyEntrain from '../sections/WhyEntrain';
 import OfficeHours from '../sections/OfficeHours';
+import Faq from '../sections/Faq';
 import Services from '../sections/Services';
 import Process from '../sections/Process';
 import Work from '../sections/Work';
@@ -21,8 +22,9 @@ export default function Home({ onOpenConsultation }) {
       <Process />
       <Work onOpenConsultation={onOpenConsultation} />
       <OfficeHours />
+      <Faq />
       {/* <Testimonials /> */}
-      <BigStatement onOpenConsultation={onOpenConsultation} />
+      <BigStatement />
     </main>
   );
 }

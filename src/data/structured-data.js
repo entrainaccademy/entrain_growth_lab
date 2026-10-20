@@ -1,4 +1,5 @@
 import { SITE_URL, DEFAULT_IMAGE, staticPages } from './seo';
+import { homeFaqs } from './faq';
 
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -41,7 +42,7 @@ export function getStructuredData(page) {
   const webPageId = `${canonicalUrl}#webpage`;
   const graph = [
     {
-      '@type': 'Organization',
+      '@type': 'ProfessionalService',
       '@id': ORG_ID,
       name: 'Entrain Growth Partners',
       alternateName: 'Entrain Growth',
@@ -59,10 +60,18 @@ export function getStructuredData(page) {
       slogan: "Growth Isn't Luck. It's Strategy.",
       address: {
         '@type': 'PostalAddress',
-        addressLocality: 'Kozhikode',
+        streetAddress: 'Entrain Academy, Veemboor Narukara, Ernad',
+        addressLocality: 'Malappuram',
         addressRegion: 'Kerala',
+        postalCode: '676122',
         addressCountry: 'IN',
       },
+      openingHoursSpecification: [{
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '09:00',
+        closes: '17:00',
+      }],
       sameAs: [
         'https://www.instagram.com/entrain.growth.partners/',
         'https://www.facebook.com/people/Entrain-growth-partners/61593178871374/',
@@ -107,6 +116,17 @@ export function getStructuredData(page) {
   if (page.path === '/') {
     webPage.about = { '@id': ORG_ID };
     webPage.primaryImageOfPage = { '@id': LOGO_ID };
+    webPage.hasPart = { '@id': `${canonicalUrl}#faq` };
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      url: `${canonicalUrl}#faq`,
+      mainEntity: homeFaqs.map(({ question, answer }) => ({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: { '@type': 'Answer', text: answer },
+      })),
+    });
   }
   if (page.path === '/contact') {
     webPage.about = {

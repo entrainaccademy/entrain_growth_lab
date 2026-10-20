@@ -10,42 +10,35 @@ export default function WhatWeOffer({ bg = "bg-[#F3F1EE]" }) {
       number: '01',
       title: 'Search Engine Optimization',
       route: '/services/seo',
-      // desc: 'We build sustainable organic traffic through technical SEO, strategic keywords, authoritative content, and continuous search performance optimization.',
+      desc: 'Build sustainable organic traffic through technical SEO, strategic keywords, and content optimization.',
       accent: 'text-[#D62828]'
     },
     {
       number: '02',
       title: 'Branding',
       route: '/services/branding-creative-design',
-      // desc: 'We shape distinctive brand identities that clarify your positioning, create instant credibility, and give your business a consistent presence everywhere.',
+      desc: 'Create a distinctive identity and a consistent presence across every channel.',
       accent: 'text-[#D62828]'
     },
     {
       number: '03',
-      title: 'Meta Ads',
+      title: 'Performance Marketing',
       route: '/services/performance-marketing',
-      // desc: 'We plan, launch, and optimize Facebook and Instagram campaigns with precise audiences, compelling creative, and conversion-focused funnels.',
+      desc: 'Google Ads and Meta Ads for measurable leads, sales, and growth.',
       accent: 'text-[#D62828]'
     },
     {
       number: '04',
-      title: 'Google Ads',
-      route: '/services/performance-marketing',
-      // desc: 'We create high-intent Google Search, Display, and Performance Max campaigns engineered to generate qualified traffic and measurable returns.',
+      title: 'Social Media Marketing',
+      route: '/services/social-media-marketing',
+      desc: 'Grow your audience with platform-specific content and community strategy.',
       accent: 'text-[#D62828]'
     },
     {
       number: '05',
-      title: 'Social Media Marketing',
-      route: '/services/social-media-marketing',
-      // desc: 'We create platform-specific content and social strategies that grow your audience, strengthen brand authority, and turn engagement into business opportunities.',
-      accent: 'text-[#D62828]'
-    },
-    {
-      number: '06',
       title: 'Web Design & Development',
       route: '/services/website-design-development',
-      // desc: 'We design and develop responsive, high-performing websites that communicate your value clearly and turn more visitors into qualified enquiries.',
+      desc: 'Build a responsive website that communicates clearly and turns visits into enquiries.',
       accent: 'text-[#D62828]'
     }
   ];

@@ -32,64 +32,6 @@ export default function About({ onOpenConsultation }) {
         </div>
       </section>
 
-      {/* Our story */}
-      <section className="pt-24 sm:pt-32 lg:pt-36 pb-0 bg-[#F3F1EE] border-b border-[#101827]/15">
-        <div className="max-w-[90rem] mx-auto px-5 sm:px-8 lg:px-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <Reveal delay={0.05}>
-              <h2 className="font-display text-5xl sm:text-7xl lg:text-[6.2rem] font-semibold leading-[0.94] tracking-[-0.055em]">
-                <span className="text-[#101827]">Founded on</span> <span className="text-[#667085]">Business Impact</span>
-              </h2>
-            </Reveal>
-            <Reveal delay={0.12}>
-              <p className="mt-8 text-xl sm:text-2xl leading-relaxed tracking-[-0.02em] text-[#101827]/70">
-                Entrain Growth Partners was founded in 2026 on a simple belief: marketing should be measurable, honest, and built around real growth, not vanity metrics.
-              </p>
-            </Reveal>
-            <Reveal delay={0.18}>
-              <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg leading-8 text-[#101827]/55">
-                We built it as business owners who know the difference between marketing that moves revenue and marketing that only looks good in a report.
-              </p>
-            </Reveal>
-          </div>
-
-          <Reveal delay={0.15} className="mt-10 sm:mt-12 lg:mt-14 max-w-6xl mx-auto">
-            <img
-              src="/images/team2-cutout-cropped.png"
-              alt="The Entrain Growth Partners strategy and digital marketing team"
-              loading="lazy"
-              decoding="async"
-              className="block w-full h-auto object-contain object-bottom"
-            />
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Mission */}
-      <section className="relative bg-[#101827] text-white py-16 sm:py-20 lg:py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: `linear-gradient(to right, ${PAPER} 1px, transparent 1px), linear-gradient(to bottom, ${PAPER} 1px, transparent 1px)`, backgroundSize: '64px 64px' }} />
-        <div className="absolute -right-32 -bottom-44 w-[460px] h-[460px] rounded-full border-[72px] border-[#4355A5]/20" />
-        <div className="relative max-w-[90rem] mx-auto px-5 sm:px-8 lg:px-12">
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
-            <Reveal className="lg:col-span-5">
-              <h2 className="font-display text-4xl sm:text-5xl font-semibold tracking-[-0.045em] leading-none">Growth,<br /><span className="text-[#7E91F2]">built to last.</span></h2>
-            </Reveal>
-            <div className="lg:col-span-7">
-              <Reveal delay={0.1}>
-                <p className="text-xl sm:text-2xl leading-[1.4] tracking-[-0.02em] text-white/90">
-                  To help businesses grow through sustainable strategies built on understanding, consistency, and continuous improvement, with organic content as the foundation, not a shortcut.
-                </p>
-              </Reveal>
-              <Reveal delay={0.18}>
-                <blockquote className="mt-8 sm:mt-10 border-l-2 border-[#7E91F2] pl-6 sm:pl-8 font-display text-xl sm:text-2xl italic leading-snug text-white">
-                  &ldquo;We&apos;re not marketers who studied business. We&apos;re business owners who mastered marketing.&rdquo;
-                </blockquote>
-              </Reveal>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Leadership / Founder */}
       <section className="py-20 sm:py-28 lg:py-32 bg-[#F3F1EE]">
         <div className="max-w-[90rem] mx-auto px-5 sm:px-8 lg:px-12">
@@ -145,6 +87,64 @@ export default function About({ onOpenConsultation }) {
                     </div> */}
                   </div>
                 </article>
+              </Reveal>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our story */}
+      <section className="pt-24 sm:pt-32 lg:pt-36 pb-0 bg-[#F3F1EE] border-b border-[#101827]/15">
+        <div className="max-w-[90rem] mx-auto px-5 sm:px-8 lg:px-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <Reveal delay={0.05}>
+              <h2 className="font-display text-5xl sm:text-7xl lg:text-[6.2rem] font-semibold leading-[0.94] tracking-[-0.055em]">
+                <span className="text-[#101827]">Founded on</span> <span className="text-[#667085]">Business Impact</span>
+              </h2>
+            </Reveal>
+            <Reveal delay={0.12}>
+              <p className="mt-8 text-xl sm:text-2xl leading-relaxed tracking-[-0.02em] text-[#101827]/70">
+                Entrain Growth Partners was founded in 2026 on a simple belief: marketing should be measurable, honest, and built around real growth, not vanity metrics.
+              </p>
+            </Reveal>
+            <Reveal delay={0.18}>
+              <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg leading-8 text-[#101827]/55">
+                We built it as business owners who know the difference between marketing that moves revenue and marketing that only looks good in a report.
+              </p>
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.15} className="mt-10 sm:mt-12 lg:mt-14 max-w-6xl mx-auto">
+            <img
+              src="/images/team2-cutout-cropped.png"
+              alt="The Entrain Growth Partners strategy and digital marketing team"
+              loading="lazy"
+              decoding="async"
+              className="block w-full h-auto object-contain object-bottom"
+            />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Mission */}
+      <section className="relative bg-[#101827] text-white py-16 sm:py-20 lg:py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: `linear-gradient(to right, ${PAPER} 1px, transparent 1px), linear-gradient(to bottom, ${PAPER} 1px, transparent 1px)`, backgroundSize: '64px 64px' }} />
+        <div className="absolute -right-32 -bottom-44 w-[460px] h-[460px] rounded-full border-[72px] border-[#4355A5]/20" />
+        <div className="relative max-w-[90rem] mx-auto px-5 sm:px-8 lg:px-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
+            <Reveal className="lg:col-span-5">
+              <h2 className="font-display text-4xl sm:text-5xl font-semibold tracking-[-0.045em] leading-none">Growth,<br /><span className="text-[#7E91F2]">built to last.</span></h2>
+            </Reveal>
+            <div className="lg:col-span-7">
+              <Reveal delay={0.1}>
+                <p className="text-xl sm:text-2xl leading-[1.4] tracking-[-0.02em] text-white/90">
+                  To help businesses grow through sustainable strategies built on understanding, consistency, and continuous improvement, with organic content as the foundation, not a shortcut.
+                </p>
+              </Reveal>
+              <Reveal delay={0.18}>
+                <blockquote className="mt-8 sm:mt-10 border-l-2 border-[#7E91F2] pl-6 sm:pl-8 font-display text-xl sm:text-2xl italic leading-snug text-white">
+                  &ldquo;We&apos;re not marketers who studied business. We&apos;re business owners who mastered marketing.&rdquo;
+                </blockquote>
               </Reveal>
             </div>
           </div>

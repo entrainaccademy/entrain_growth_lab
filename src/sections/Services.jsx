@@ -31,7 +31,7 @@ export default function Services() {
     <section
       ref={sectionRef}
       id="services-section"
-      className="relative h-[600vh] bg-[#E9ECF7] text-[#111827] border-y border-[#111827]/10"
+      className="relative h-[500vh] bg-[#E9ECF7] text-[#111827] border-y border-[#111827]/10"
     >
       <div className="services-sticky overflow-hidden">
         <div className="services-stage">

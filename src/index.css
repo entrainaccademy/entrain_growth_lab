@@ -560,6 +560,8 @@
 .footer-primary-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.85rem; margin-top: 2.5rem; }
 .footer-primary-pill { display: flex; align-items: center; gap: 0.65rem; padding: 1.1rem 1.6rem; border-radius: 999px; font-size: 0.84rem; font-weight: 700; }
 .footer-primary-pill svg { width: 18px; height: 18px; }
+.footer-address { display: flex; align-items: flex-start; justify-content: center; gap: 0.6rem; max-width: 440px; margin-top: 1.25rem; color: rgb(255 255 255 / 0.66); font-size: 0.8rem; font-style: normal; line-height: 1.6; }
+.footer-address svg { width: 17px; height: 17px; flex: none; margin-top: 0.15rem; color: #c7ff3d; }
 .footer-link-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; margin-top: 1rem; }
 .footer-link-pills .footer-glass-pill { padding: 0.65rem 1rem; border-radius: 999px; font-size: 0.72rem; }
 .footer-social-pill { display: inline-flex; align-items: center; gap: 0.45rem; }
@@ -998,3 +1000,9 @@
   .philosophy-foot span { display: block; margin-bottom: 0.8rem; }
   .philosophy-foot p { font-size: 0.95rem; }
 }
+
+/* Homepage FAQ */
+.faq-simple summary::-webkit-details-marker { display: none; }
+.faq-simple summary:focus-visible { outline: 2px solid #4355a5; outline-offset: 4px; }
+.faq-simple-toggle { transition: transform 200ms ease; }
+.faq-simple details[open] .faq-simple-toggle { transform: rotate(45deg); }

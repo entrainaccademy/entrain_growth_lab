@@ -4,8 +4,8 @@ export const DEFAULT_IMAGE = `${SITE_URL}/entrain-growth-logo.png`;
 // Primary static pages metadata
 export const staticPages = {
   '/': {
-    title: 'Entrain Growth Partners | Digital Marketing Agency',
-    description: 'Entrain Growth Partners builds tailored, organic-first growth strategies through SEO, performance marketing, social media, web development and strategic consulting.',
+    title: 'Digital Marketing Agency in Malappuram, Kerala | Entrain Growth Partners',
+    description: 'Entrain Growth Partners is a digital marketing company in Malappuram, Kerala offering SEO, social media marketing, branding and performance marketing to grow your business.',
     type: 'website',
   },
   '/about': {
@@ -194,8 +194,8 @@ export const staticPages = {
     ],
   },
   '/contact': {
-    title: 'Contact Us | Book a Growth Strategy Consultation | Entrain Growth Partners',
-    description: 'Connect with Entrain Growth Partners for a 30-minute growth strategy consultation. Discuss SEO, performance marketing, or custom web development.',
+    title: 'Contact Entrain Growth Partners | Let’s Talk Growth',
+    description: 'Contact Entrain Growth Partners in Malappuram, Kerala about SEO, branding, performance marketing, social media, and web development. Call, email, or message us on WhatsApp.',
     type: 'website',
     breadcrumb: [
       { name: 'Home', url: '/' },
