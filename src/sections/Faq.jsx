@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from '../lib/router';
 import { homeFaqs } from '../data/faq';
 
+function renderFaqText(text) {
+  return text.split(/(Entrain Growth Partners|case studies)/g).map((part, index) => {
+    if (part === 'Entrain Growth Partners') return <strong key={index} className="font-semibold">{part}</strong>;
+    if (part === 'case studies') return <Link key={index} to="/work" className="font-semibold text-[#4355A5] underline underline-offset-4">{part}</Link>;
+    return part;
+  });
+}
+
 export default function Faq() {
   return (
     <section id="faq" className="faq-simple bg-white px-5 py-20 text-[#101827] sm:px-8 sm:py-28" aria-labelledby="faq-heading">
@@ -19,10 +27,10 @@ export default function Faq() {
           {homeFaqs.map(({ question, answer }) => (
             <details key={question} className="group">
               <summary className="grid cursor-pointer list-none grid-cols-[1fr_2rem] items-center gap-3 py-6 text-left sm:py-8">
-                <span className="font-display text-lg font-medium leading-snug tracking-[-0.02em] sm:text-2xl">{question}</span>
+                <span className="font-display text-lg font-medium leading-snug tracking-[-0.02em] sm:text-2xl">{renderFaqText(question)}</span>
                 <span className="faq-simple-toggle text-center text-2xl font-light text-[#4355A5]" aria-hidden="true">+</span>
               </summary>
-              <p className="max-w-3xl pb-7 pr-8 text-sm leading-relaxed text-[#101827]/65 sm:pb-9 sm:text-base">{answer}</p>
+              <p className="max-w-3xl pb-7 pr-8 text-sm leading-relaxed text-[#101827]/65 sm:pb-9 sm:text-base">{renderFaqText(answer)}</p>
             </details>
           ))}
         </div>

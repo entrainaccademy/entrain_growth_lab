@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Reveal from '../components/Reveal';
 import { Mail, Phone, MapPin, Clock, CheckCircle2 } from 'lucide-react';
 import { FaInstagram, FaLinkedinIn, FaFacebookF, FaWhatsapp } from 'react-icons/fa6';
+import { submitLead } from '../lib/submitLead';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -16,7 +17,8 @@ export default function ContactPage() {
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [whatsAppUrl, setWhatsAppUrl] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,7 +42,7 @@ export default function ContactPage() {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
@@ -48,20 +50,16 @@ export default function ContactPage() {
       return;
     }
 
-    const message = [
-      'New enquiry from the Entrain Growth Partners website',
-      `Name: ${formData.name.trim()}`,
-      `Email: ${formData.email.trim()}`,
-      `Phone: ${formData.phone.trim()}`,
-      `Company: ${formData.company.trim()}`,
-      formData.website.trim() && `Website: ${formData.website.trim()}`,
-      `Service: ${formData.service}`,
-      `Message: ${formData.message.trim()}`,
-    ].filter(Boolean).join('\n');
-    const url = `https://wa.me/919745235226?text=${encodeURIComponent(message)}`;
-    setWhatsAppUrl(url);
-    window.open(url, '_blank', 'noopener,noreferrer');
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitError('');
+    try {
+      await submitLead({ ...formData, source: 'Contact form' });
+      setIsSubmitted(true);
+    } catch (error) {
+      setSubmitError(error.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -98,14 +96,11 @@ export default function ContactPage() {
                         <CheckCircle2 className="w-10 h-10" />
                       </div>
                       <h3 className="font-display text-3xl font-extrabold text-[#202124] mb-3">
-                        Your WhatsApp message is ready
+                        Your enquiry has been received
                       </h3>
                       <p className="text-[#202124]/70 text-base max-w-md mx-auto mb-8 font-light">
-                        Review the message in WhatsApp and tap Send to complete your enquiry.
+                        Thanks for reaching out. Our team will review your details and contact you soon.
                       </p>
-                      <a href={whatsAppUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-8 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[#1fb95a]">
-                        <FaWhatsapp className="h-5 w-5" aria-hidden="true" /> Open WhatsApp
-                      </a>
                       <button
                         type="button"
                         onClick={() => {
@@ -129,7 +124,7 @@ export default function ContactPage() {
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div>
                         <h3 className="font-display text-2xl font-bold text-[#202124] mb-2">Tell us about your project</h3>
-                        <p className="text-sm text-[#202124]/65">This form prepares a WhatsApp message for you to review and send.</p>
+                        <p className="text-sm text-[#202124]/65">Send your details and our team will contact you.</p>
                       </div>
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -272,12 +267,13 @@ export default function ContactPage() {
 
                       {/* Submit button */}
                       <div>
+                        {submitError && <p role="alert" className="mb-3 text-sm text-red-600">{submitError}</p>}
                         <button
                           type="submit"
-                          className="w-full py-4 px-8 rounded-full bg-[#4355A5] text-[#FFFFFF] font-bold text-base hover:bg-[#34458F] active:scale-[0.99] transition-all duration-200 shadow-lg shadow-[#4355A5]/25 hover:shadow-xl hover:shadow-[#4355A5]/35 flex items-center justify-center gap-2 cursor-pointer"
+                          disabled={isSubmitting}
+                          className="w-full py-4 px-8 rounded-full bg-[#4355A5] text-[#FFFFFF] font-bold text-base hover:bg-[#34458F] active:scale-[0.99] transition-all duration-200 shadow-lg shadow-[#4355A5]/25 hover:shadow-xl hover:shadow-[#4355A5]/35 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
                         >
-                          <FaWhatsapp className="w-5 h-5" aria-hidden="true" />
-                          Continue in WhatsApp
+                          {isSubmitting ? 'Sending...' : 'Send enquiry'}
                         </button>
                       </div>
                     </form>

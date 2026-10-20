@@ -1,25 +1,34 @@
 import React, { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import { FaWhatsapp } from 'react-icons/fa6';
+import { submitLead } from '../lib/submitLead';
 
 const inputClass = 'w-full rounded-xl border border-[#D9DFEF] bg-white px-4 py-3 text-sm text-[#101827] placeholder:text-[#101827]/40 focus:outline-none focus:ring-2 focus:ring-[#4355A5]';
 
 export default function HomeEnquiryForm() {
-  const [whatsAppUrl, setWhatsAppUrl] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const message = [
-      'New enquiry from the Entrain Growth Partners homepage',
-      `Name: ${String(form.get('name')).trim()}`,
-      `Phone: ${String(form.get('phone')).trim()}`,
-      form.get('email') && `Email: ${String(form.get('email')).trim()}`,
-      `Business goals: ${String(form.get('message')).trim()}`,
-    ].filter(Boolean).join('\n');
-    const url = `https://wa.me/919745235226?text=${encodeURIComponent(message)}`;
-    setWhatsAppUrl(url);
-    window.open(url, '_blank', 'noopener,noreferrer');
+    const formElement = event.currentTarget;
+    const form = new FormData(formElement);
+    setIsSubmitting(true);
+    setStatus('');
+    try {
+      await submitLead({
+        name: String(form.get('name')).trim(),
+        phone: String(form.get('phone')).trim(),
+        email: String(form.get('email') || '').trim(),
+        message: String(form.get('message')).trim(),
+        source: 'Homepage form',
+      });
+      formElement.reset();
+      setStatus('Thanks! Your enquiry has been received. We’ll be in touch soon.');
+    } catch (error) {
+      setStatus(error.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -42,17 +51,13 @@ export default function HomeEnquiryForm() {
           <textarea id="home-enquiry-message" name="message" rows="3" required className={inputClass} placeholder="Tell us a little about your business and goals" />
         </div>
         <div className="flex flex-col gap-4 sm:col-span-2 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-sm text-xs leading-relaxed text-[#64748B]">This opens a prepared WhatsApp message. Review it and tap Send to contact us.</p>
-          <button type="submit" className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#4355A5] px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[#344590] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4355A5]">
-            <FaWhatsapp className="h-5 w-5" aria-hidden="true" /> Continue in WhatsApp <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+          <p className="max-w-sm text-xs leading-relaxed text-[#64748B]">Send your details and our team will contact you.</p>
+          <button type="submit" disabled={isSubmitting} className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#4355A5] px-6 py-3.5 text-sm font-bold text-white transition-colors hover:bg-[#344590] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4355A5] disabled:opacity-60">
+            {isSubmitting ? 'Sending...' : 'Send enquiry'} <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
           </button>
         </div>
       </form>
-      {whatsAppUrl && (
-        <p role="status" className="mt-5 border-t border-[#E0E5F1] pt-4 text-sm text-[#475569]">
-          WhatsApp didn&apos;t open? <a href={whatsAppUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#4355A5] underline underline-offset-4">Open your prepared message</a>.
-        </p>
-      )}
+      {status && <p role="status" className="mt-5 border-t border-[#E0E5F1] pt-4 text-sm text-[#475569]">{status}</p>}
     </div>
   );
 }

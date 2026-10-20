@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle2, Send, Loader2 } from 'lucide-react';
+import { submitLead } from '../lib/submitLead';
 
 export default function ConsultationModal({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
@@ -15,6 +16,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   if (!isOpen) return null;
 
@@ -40,7 +42,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
@@ -50,33 +52,15 @@ export default function ConsultationModal({ isOpen, onClose }) {
 
     setIsSubmitting(true);
 
-    const emailSubject = `New Consultation Request - ${formData.name}`;
-    const emailBody =
-      `New Strategy Session Request Details:\n\n` +
-      `Full Name: ${formData.name}\n` +
-      `Business Email: ${formData.email}\n` +
-      `Phone Number: ${formData.phone}\n` +
-      `Company Name: ${formData.company}\n\n` +
-      `Growth Goals / Message:\n${formData.message}`;
-
-    const mailtoUrl = `mailto:entraingrowthpartners@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-
-    const messageText =
-      `*New Consultation Request*\n\n` +
-      `*Name:* ${formData.name}\n` +
-      `*Email:* ${formData.email}\n` +
-      `*Phone:* ${formData.phone}\n` +
-      `*Company:* ${formData.company}\n` +
-      `*Message:* ${formData.message}`;
-
-    const whatsappUrl = `https://wa.me/919745235226?text=${encodeURIComponent(messageText)}`;
-
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setSubmitError('');
+    try {
+      await submitLead({ ...formData, source: 'Consultation modal' });
       setIsSubmitted(true);
-      window.location.href = mailtoUrl;
-      window.open(whatsappUrl, '_blank');
-    }, 600);
+    } catch (error) {
+      setSubmitError(error.message);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleReset = () => {
@@ -256,6 +240,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
 
                 {/* Submit Button */}
                 <div className="pt-2">
+                  {submitError && <p role="alert" className="mb-3 text-xs text-red-600">{submitError}</p>}
                   <button
                     type="submit"
                     disabled={isSubmitting}
