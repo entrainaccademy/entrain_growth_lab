@@ -1,6 +1,6 @@
 export const homeFaqs = [
   {
-    question: 'What is digital marketing in Kerala?',
+    question: 'What is digital marketing?',
     answer: 'Digital marketing is promoting a business online to attract and convert customers. It includes SEO, paid ads, social media, content, email and website optimisation, with results you can track in real time, such as clicks, enquiries and sales.',
   },
   {

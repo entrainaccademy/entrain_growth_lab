@@ -34,7 +34,7 @@ export default function Hero({ onOpenConsultation }) {
         </Reveal>
         <Reveal direction="up" delay={0.25}>
           <p className="mt-4 sm:mt-6 max-w-2xl text-base sm:text-lg lg:text-xl text-[#101827]/65 leading-relaxed">
-            We help businesses build visibility, attract customers, and generate leads through tailored digital marketing and strategy.
+            We help businesses build visibility, attract customers, and generate leads through tailored digital marketing strategy.
           </p>
         </Reveal>
         <Reveal direction="up" delay={0.3}>
