@@ -794,6 +794,70 @@
   .process-heading p { font-size: 0.95rem; }
 }
 
+/* Editorial introduction after the growth process */
+.why-choose-section {
+  padding: clamp(5rem, 8vw, 8.5rem) 0;
+  color: #101827;
+  background: #f8f7f4;
+  border-bottom: 1px solid rgb(16 24 39 / 0.1);
+}
+
+.why-choose-container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  gap: clamp(3rem, 7vw, 8rem);
+  align-items: start;
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.why-choose-heading { max-width: 530px; }
+
+.why-choose-eyebrow {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #5968ad;
+  font-family: monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.why-choose-heading h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 3.8vw, 4rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+
+.why-choose-copy {
+  max-width: 640px;
+  padding-top: 2.2rem;
+  color: #4b5563;
+  font-size: clamp(1rem, 1.15vw, 1.1rem);
+  line-height: 1.8;
+}
+
+.why-choose-copy p + p { margin-top: 1.65rem; }
+.why-choose-copy strong { color: #101827; font-weight: 700; }
+
+@media (max-width: 900px) {
+  .why-choose-container { grid-template-columns: 1fr; gap: 2.25rem; }
+  .why-choose-heading { max-width: 780px; }
+  .why-choose-copy { max-width: 780px; padding-top: 0; }
+}
+
+@media (max-width: 767px) {
+  .why-choose-section { padding: 5rem 0; }
+  .why-choose-container { padding: 0 1.25rem; }
+  .why-choose-heading h2 { font-size: clamp(2.25rem, 9vw, 3.2rem); }
+  .why-choose-copy { line-height: 1.75; }
+  .why-choose-copy p + p { margin-top: 1.5rem; }
+}
+
 /* Office hours showcase */
 .office-hours-section {
   padding: clamp(3rem, 5vw, 5rem) max(1.25rem, calc((100vw - 1100px) / 2));
