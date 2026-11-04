@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams, Link, Navigate } from '../lib/router';
 import { ArrowLeft } from 'lucide-react';
 import Reveal from '../components/Reveal';
-import CTA from '../sections/CTA';
 import BlogCover from '../components/BlogCover';
 import { blogPosts, getPostBySlug, categoryIcons } from '../data/blog';
 
@@ -119,7 +118,6 @@ export default function BlogPost({ onOpenConsultation }) {
         </div>
       </article>
 
-      <CTA onOpenConsultation={onOpenConsultation} />
     </main>
   );
 }

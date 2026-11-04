@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from '../lib/router';
 import { ArrowUpRight } from 'lucide-react';
 import Reveal from '../components/Reveal';
-import CTA from '../sections/CTA';
 import BlogCover from '../components/BlogCover';
 import { blogPosts, categoryIcons } from '../data/blog';
 
@@ -59,7 +58,6 @@ export default function BlogPage({ onOpenConsultation }) {
 
       </section>
 
-      <CTA onOpenConsultation={onOpenConsultation} />
     </main>
   );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Reveal from '../components/Reveal';
 import Button from '../components/Button';
-import CTA from '../sections/CTA';
 import { Target, CheckCircle2, Globe, ExternalLink } from 'lucide-react';
 
 export default function Entrainlabs({ onOpenConsultation }) {
@@ -190,7 +189,6 @@ export default function Entrainlabs({ onOpenConsultation }) {
         </div>
       </section>
 
-      <CTA onOpenConsultation={onOpenConsultation} />
     </main>
   );
 }

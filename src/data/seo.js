@@ -9,8 +9,10 @@ export const staticPages = {
     type: 'website',
   },
   '/about': {
-    title: 'About Us | Strategy-Led Growth Partners | Entrain Growth Partners',
-    description: 'Learn about Entrain Growth Partners, an honest, strategy-led growth partner helping ambitious businesses achieve sustainable compounding revenue and brand reach.',
+    title: 'About Entrain Growth Partners | Digital Marketing, Malappuram',
+    ogTitle: 'About Entrain Growth Partners | Digital Marketing Agency, Malappuram',
+    description: 'Meet the founder-led team behind Entrain Growth Partners, a digital marketing agency in Malappuram, Kerala. See how we plan, run and measure growth.',
+    image: '/images/founder.png',
     type: 'website',
     breadcrumb: [
       { name: 'Home', url: '/' },

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Link } from '../lib/router';
+import { Link, useLocation } from '../lib/router';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUp, ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa6';
@@ -34,7 +34,29 @@ function Magnetic({ children, className = '', to, href, onClick, ...props }) {
   return <button type="button" {...shared}>{children}</button>;
 }
 
+const defaultCta = {
+  heading: 'Ready to grow?',
+  text: 'Let’s build a clear strategy and turn it into measurable momentum.',
+};
+
+const pageCtas = {
+  '/services': { heading: 'Which service fits you?', text: 'Tell us where your business is today and we’ll recommend the right mix of services.' },
+  '/work': { heading: 'Want results like these?', text: 'Let’s plan the strategy that gets your brand there.' },
+  '/testimonials': { heading: 'Want to be our next success story?', text: 'Join the businesses growing steadily with Entrain.' },
+  '/blog': { heading: 'Need advice for your business?', text: 'Skip the guesswork and talk to our team about a plan that fits.' },
+  '/services/seo': { heading: 'Ready to grow your search visibility?', text: 'Get a clear SEO plan that brings in the right traffic.' },
+  '/services/performance-marketing': { heading: 'Ready to scale your ad results?', text: 'Let’s build campaigns that turn spend into measurable returns.' },
+  '/services/social-media-marketing': { heading: 'Ready to grow your social presence?', text: 'Let’s build content and campaigns your audience engages with.' },
+  '/services/content-marketing': { heading: 'Ready to tell your story?', text: 'Let’s create content that earns attention and drives action.' },
+  '/services/digital-marketing': { heading: 'Ready to grow online?', text: 'Let’s build a digital strategy that delivers measurable momentum.' },
+  '/services/branding-creative-design': { heading: 'Ready to build a stronger brand?', text: 'Let’s craft a brand identity that people remember.' },
+  '/services/marketing-strategy-consulting': { heading: 'Ready for a clear growth plan?', text: 'Let’s map the strategy that moves your business forward.' },
+  '/services/website-design-development': { heading: 'Ready for a website that converts?', text: 'Let’s design and build a site that works as hard as you do.' },
+};
+
 export default function Footer({ onOpenConsultation }) {
+  const { pathname } = useLocation();
+  const cta = pageCtas[pathname.replace(/\/$/, '')] || defaultCta;
   const wrapperRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: wrapperRef,
@@ -61,8 +83,8 @@ export default function Footer({ onOpenConsultation }) {
 
         <div className="footer-center">
           <span className="footer-kicker">Entrain Growth Partners</span>
-          <h2>Ready to grow?</h2>
-          <p>Let’s build a clear strategy and turn it into measurable momentum.</p>
+          <h2>{cta.heading}</h2>
+          <p>{cta.text}</p>
 
           <div className="footer-primary-actions">
             <Magnetic className="footer-primary-pill" onClick={onOpenConsultation}>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from '../lib/router';
 import Button from '../components/Button';
-import CTA from '../sections/CTA';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 
 export default function SocialMediaMarketing({ onOpenConsultation }) {
@@ -124,8 +123,6 @@ export default function SocialMediaMarketing({ onOpenConsultation }) {
 
       </section>
 
-      {/* Connect With Us Section */}
-      <CTA onOpenConsultation={onOpenConsultation} />
     </main>
   );
 }

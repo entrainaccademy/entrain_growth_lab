@@ -1,7 +1,6 @@
 import React from 'react';
 import Reveal from '../components/Reveal';
 import Process from '../sections/Process';
-import CTA from '../sections/CTA';
 import WhatWeOffer from '../sections/WhatWeOffer';
 
 export default function ServicesPage({ onOpenConsultation }) {
@@ -24,8 +23,6 @@ export default function ServicesPage({ onOpenConsultation }) {
       {/* Process Component */}
       <Process />
 
-      {/* CTA Section */}
-      <CTA onOpenConsultation={onOpenConsultation} />
     </main>
   );
 }

@@ -65,7 +65,7 @@ export async function generateMetadata({ params }) {
     alternates: { canonical: url },
     robots: { index: true, follow: true, googleBot: { 'max-image-preview': 'large' } },
     openGraph: {
-      title: page.title, description: page.description, url,
+      title: page.ogTitle || page.title, description: page.description, url,
       siteName: 'Entrain Growth Partners', type: page.type || 'website',
       locale: 'en_US', images: [{ url: image, alt: page.title }],
     },

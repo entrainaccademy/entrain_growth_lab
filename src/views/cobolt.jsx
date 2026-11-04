@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../components/Button';
-import CTA from '../sections/CTA';
 import { Target, CheckCircle2, Globe, ExternalLink } from 'lucide-react';
 
 export default function Cobolt({ onOpenConsultation }) {
@@ -78,7 +77,6 @@ export default function Cobolt({ onOpenConsultation }) {
         </div>
       </section>
 
-      <CTA onOpenConsultation={onOpenConsultation} />
     </main>
   );
 }

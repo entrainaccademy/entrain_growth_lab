@@ -10,21 +10,25 @@ function renderFaqText(text) {
   });
 }
 
-export default function Faq() {
+export default function Faq({
+  faqs = homeFaqs,
+  heading = 'Frequently asked questions.',
+  intro = 'A few helpful answers before we start working together.',
+}) {
   return (
     <section id="faq" className="faq-simple bg-white px-5 py-20 text-[#101827] sm:px-8 sm:py-28" aria-labelledby="faq-heading">
       <div className="mx-auto max-w-6xl">
         <div className="border-b border-[#101827]/20 pb-10 md:pb-14">
           <h2 id="faq-heading" className="max-w-2xl font-display text-4xl font-semibold leading-tight tracking-[-0.045em] sm:text-5xl">
-            Frequently asked questions.
+            {heading}
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-[#101827]/60">
-            A few helpful answers before we start working together.
+            {intro}
           </p>
         </div>
 
         <div className="divide-y divide-[#101827]/15">
-          {homeFaqs.map(({ question, answer }) => (
+          {faqs.map(({ question, answer }) => (
             <details key={question} className="group">
               <summary className="grid cursor-pointer list-none grid-cols-[1fr_2rem] items-center gap-3 py-6 text-left sm:py-8">
                 <span className="font-display text-lg font-medium leading-snug tracking-[-0.02em] sm:text-2xl">{renderFaqText(question)}</span>

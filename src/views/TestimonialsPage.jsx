@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionLabel from '../components/SectionLabel';
 import Testimonials from '../sections/Testimonials';
-import CTA from '../sections/CTA';
 import Reveal from '../components/Reveal';
 import Button from '../components/Button';
 import { ShieldCheck } from 'lucide-react';
@@ -64,8 +63,6 @@ export default function TestimonialsPage({ onOpenConsultation }) {
         </div>
       </section>
 
-      {/* CTA */}
-      <CTA onOpenConsultation={onOpenConsultation} />
 
     </main>
   );

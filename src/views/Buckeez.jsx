@@ -1,7 +1,6 @@
 import React from 'react';
 import Reveal from '../components/Reveal';
 import Button from '../components/Button';
-import CTA from '../sections/CTA';
 import WhatWeOffer from '../sections/WhatWeOffer';
 import { Globe, ExternalLink } from 'lucide-react';
 
@@ -126,7 +125,6 @@ export default function Buckeez({ onOpenConsultation }) {
         </div>
       </section>
 
-      <CTA onOpenConsultation={onOpenConsultation} />
     </main>
   );
 }

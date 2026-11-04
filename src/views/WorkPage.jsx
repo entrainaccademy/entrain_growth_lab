@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Reveal from '../components/Reveal';
-import CTA from '../sections/CTA';
 import Button from '../components/Button';
 import { 
   ArrowUpRight, 
@@ -367,8 +366,6 @@ export default function WorkPage({ onOpenConsultation }) {
         )}
       </AnimatePresence>
 
-      {/* Main Footer CTA */}
-      <CTA onOpenConsultation={onOpenConsultation} />
 
     </main>
   );

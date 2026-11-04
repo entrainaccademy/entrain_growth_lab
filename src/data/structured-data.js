@@ -105,7 +105,7 @@ export function getStructuredData(page) {
   ];
 
   const webPage = {
-    '@type': page.path === '/contact' ? 'ContactPage' : 'WebPage',
+    '@type': { '/contact': 'ContactPage', '/about': 'AboutPage' }[page.path] || 'WebPage',
     '@id': webPageId,
     url: canonicalUrl,
     name: page.title,
@@ -126,6 +126,19 @@ export function getStructuredData(page) {
         name: question,
         acceptedAnswer: { '@type': 'Answer', text: answer },
       })),
+    });
+  }
+  if (page.path === '/about') {
+    const founderId = `${canonicalUrl}#founder`;
+    webPage.about = { '@id': ORG_ID };
+    webPage.mainEntity = { '@id': founderId };
+    graph.push({
+      '@type': 'Person',
+      '@id': founderId,
+      name: 'Noufal',
+      jobTitle: 'Founder and Growth Strategist',
+      worksFor: { '@id': ORG_ID },
+      image: `${SITE_URL}/images/founder.png`,
     });
   }
   if (page.path === '/contact') {

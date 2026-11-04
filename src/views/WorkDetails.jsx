@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from '../lib/router';
 import Reveal from '../components/Reveal';
-import CTA from '../sections/CTA';
 import { ArrowUpRight } from 'lucide-react';
 
 export default function WorkDetails({ onOpenConsultation }) {
@@ -99,7 +98,6 @@ export default function WorkDetails({ onOpenConsultation }) {
         </div>
       </section>
 
-      <CTA onOpenConsultation={onOpenConsultation} />
     </main>
   );
 }
