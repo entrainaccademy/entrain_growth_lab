@@ -1,12 +1,15 @@
 import React from 'react';
 import { useParams, Link, Navigate } from '../lib/router';
 import { ArrowLeft } from 'lucide-react';
-import Reveal from '../components/Reveal';
 import BlogCover from '../components/BlogCover';
 import { blogPosts, getPostBySlug, categoryIcons } from '../data/blog';
 
 function ContentBlock({ block }) {
   switch (block.type) {
+    case 'h3':
+      return <h3 className="font-display text-xl sm:text-2xl font-bold text-[#111111] mt-8 mb-3">{block.text}</h3>;
+    case 'link':
+      return <p className="mb-6"><Link to={block.href} className="font-semibold text-[#4355A5] hover:underline">{block.text} ↗</Link></p>;
     case 'h2':
       return (
         <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-[#111111] tracking-tight mt-10 mb-4">
@@ -56,7 +59,7 @@ export default function BlogPost({ onOpenConsultation }) {
       <article className="px-4 sm:px-6 lg:px-8 pb-20 sm:pb-28">
         <div className="max-w-3xl mx-auto">
 
-          <Reveal direction="down" delay={0.05}>
+          <div>
             <Link
               to="/blog"
               className="inline-flex items-center gap-2 text-sm font-bold text-neutral-500 hover:text-[#4355A5] transition-colors mb-6"
@@ -64,9 +67,9 @@ export default function BlogPost({ onOpenConsultation }) {
               <ArrowLeft className="w-4 h-4" />
               Back to Insights
             </Link>
-          </Reveal>
+          </div>
 
-          <Reveal direction="up" delay={0.12}>
+          <div>
             <BlogCover
               category={post.category}
               iconName={categoryIcons[post.category]}
@@ -74,30 +77,30 @@ export default function BlogPost({ onOpenConsultation }) {
               alt={`${post.title} illustration`}
               className="aspect-[3/2] rounded-3xl mb-8 shadow-lg"
             />
-          </Reveal>
+          </div>
 
-          <Reveal direction="up" delay={0.15}>
+          <div>
             <h1 className="font-display text-3xl sm:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-6">
               {post.title}
             </h1>
-          </Reveal>
+          </div>
 
-          <Reveal direction="up" delay={0.2}>
+          <div>
             <div className="text-sm font-mono pb-6 mb-8 border-b border-neutral-300/50">
               <span className="font-semibold text-neutral-800">{post.author}</span>
             </div>
-          </Reveal>
+          </div>
 
-          <Reveal direction="up" delay={0.25}>
+          <div>
             <div>
               {post.content.map((block, i) => (
                 <ContentBlock key={i} block={block} />
               ))}
             </div>
-          </Reveal>
+          </div>
 
           {relatedPosts.length > 0 && (
-            <Reveal direction="up" delay={0.1} className="mt-16 pt-10 border-t border-neutral-300/50">
+            <div className="mt-16 pt-10 border-t border-neutral-300/50">
               <h3 className="font-display text-lg font-bold text-[#111111] mb-5">More on {post.category}</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {relatedPosts.map((rp) => (
@@ -112,7 +115,7 @@ export default function BlogPost({ onOpenConsultation }) {
                   </Link>
                 ))}
               </div>
-            </Reveal>
+            </div>
           )}
 
         </div>

@@ -1,3 +1,6 @@
+import { newBlogPosts } from './newBlogPosts';
+import { pastedBlogContent } from './pastedBlogContent';
+
 export const blogCategories = ['Case Studies', 'SEO', 'Web Design', 'Branding', 'Strategy'];
 
 export const categoryIcons = {
@@ -8,7 +11,10 @@ export const categoryIcons = {
   Strategy: 'Target',
 };
 
-export const blogPosts = [
+export const blogPosts = [...newBlogPosts.map((post) => ({
+  ...post,
+  content: pastedBlogContent[post.slug] || post.content,
+})),
   {
     slug: 'organic-instagram-growth-case-study',
     title: 'Two Brands, Zero Ad Spend: How We Built Instagram Audiences That Actually Convert',
