@@ -11,8 +11,8 @@ import Faq from '../sections/Faq';
 import { seoKeralaFaqs } from '../data/seoKeralaFaq';
 import { submitLead } from '../lib/submitLead';
 
-const WHATSAPP = 'https://wa.me/919745235226?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20SEO%20for%20my%20business';
-const PHONE_HREF = 'tel:+919745235226';
+const WHATSAPP = 'https://wa.me/919995103013?text=Hi%2C%20I%27d%20like%20to%20talk%20about%20SEO%20for%20my%20business';
+const PHONE_HREF = 'tel:+919995103013';
 
 const eyebrow = 'text-xs font-mono font-bold tracking-widest text-[#4355A5] uppercase block mb-3';
 const h2 = 'font-display text-3xl sm:text-5xl font-extrabold text-[#101827] tracking-tight leading-[1.08]';
@@ -174,7 +174,7 @@ function AuditForm({ id, tone = 'light' }) {
             </button>
           </form>
           {/* <p className="mt-4 text-center text-xs text-neutral-500">
-            Prefer to talk? <a href={PHONE_HREF} className="font-semibold text-[#4355A5] hover:underline">Call +91 97452 35226</a>
+            Prefer to talk? <a href={PHONE_HREF} className="font-semibold text-[#4355A5] hover:underline">Call +91 99951 03013</a>
           </p> */}
         </>
       )}
@@ -508,7 +508,7 @@ export default function SeoServicesKerala({ onOpenConsultation }) {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Button variant="white" size="lg" href={WHATSAPP} target="_blank" rel="noopener noreferrer">WhatsApp us now</Button>
               <Button variant="outline" size="lg"  showArrow={false}>
-                Call +91 97452 35226
+                Call +91 99951 03013
               </Button>
             </div>
           </div>

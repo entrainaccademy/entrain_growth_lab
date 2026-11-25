@@ -94,8 +94,8 @@ export default function Footer({ onOpenConsultation }) {
             <Magnetic className="footer-primary-pill" href="mailto:entraingrowthpartners@gmail.com">
               <Mail /> Email Us
             </Magnetic>
-            <Magnetic className="footer-primary-pill" href="tel:+919745235226">
-              <Phone /> +91 97452 35226
+            <Magnetic className="footer-primary-pill" href="tel:+919995103013">
+              <Phone /> +91 99951 03013
             </Magnetic>
           </div>
 

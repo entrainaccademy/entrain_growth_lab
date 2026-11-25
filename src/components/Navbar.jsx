@@ -114,7 +114,7 @@ export default function Navbar() {
             </div>
 
             <div className="space-y-3 pt-6">
-              <a href="tel:9745235226" className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full bg-[#4355A5] text-white font-bold text-sm hover:bg-[#34458F] transition-all shadow-lg shadow-[#4355A5]/25">
+              <a href="tel:9995103013" className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-full bg-[#4355A5] text-white font-bold text-sm hover:bg-[#34458F] transition-all shadow-lg shadow-[#4355A5]/25">
                 <Phone className="w-4 h-4" />
                 <span>Call Us</span>
               </a>

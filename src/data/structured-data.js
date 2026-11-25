@@ -55,7 +55,7 @@ export function getStructuredData(page) {
         caption: 'Entrain Growth Partners',
       },
       image: DEFAULT_IMAGE,
-      telephone: '+91 97452 35226',
+      telephone: '+91 99951 03013',
       email: 'entraingrowthpartners@gmail.com',
       description: 'Entrain Growth Partners is a digital marketing agency that builds tailored, organic-first growth strategies through SEO, performance marketing, social media, web development and strategic digital marketing.',
       slogan: "Growth Isn't Luck. It's Strategy.",
@@ -172,7 +172,7 @@ export function getStructuredData(page) {
         '@type': 'ContactPoint',
         contactType: 'sales',
         email: 'entraingrowthpartners@gmail.com',
-        telephone: '+91-97452-35226',
+        telephone: '+91-99951-03013',
         availableLanguage: ['English'],
       },
     };

@@ -1645,7 +1645,7 @@ export const pastedBlogContent = {
     },
     {
       "type": "callout",
-      "text": "Start with a free consultation: [**+91 97452 35226**](tel:+919745235226) or [**entraingrowthpartners@gmail.com**](mailto:entraingrowthpartners@gmail.com)."
+      "text": "Start with a free consultation: [**+91 99951 03013**](tel:+919995103013) or [**entraingrowthpartners@gmail.com**](mailto:entraingrowthpartners@gmail.com)."
     },
     {
       "type": "h2",

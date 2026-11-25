@@ -178,7 +178,7 @@ export default function ContactPage() {
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            placeholder="+91 97452 35226"
+                            placeholder="+91 99951 03013"
                             className={`w-full px-4 py-3 rounded-xl bg-[#E6E5E2]/50 border text-sm text-[#202124] placeholder-[#202124]/40 focus:bg-[#FFFFFF] focus:outline-none transition-all duration-200 ${
                               errors.phone
                                 ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-500/20'
@@ -310,8 +310,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <span className="text-xs text-[#202124]/60 font-mono block uppercase">DIRECT LINE</span>
-                        <a href="tel:+919745235226" className="text-[#202124] hover:text-[#4355A5] font-medium text-base transition-colors cursor-pointer block">
-                          +91 97452 35226
+                        <a href="tel:+919995103013" className="text-[#202124] hover:text-[#4355A5] font-medium text-base transition-colors cursor-pointer block">
+                          +91 99951 03013
                         </a>
                       </div>
                     </div>
