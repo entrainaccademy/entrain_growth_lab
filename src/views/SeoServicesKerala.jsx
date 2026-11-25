@@ -355,7 +355,9 @@ export default function SeoServicesKerala({ onOpenConsultation }) {
           <span className={eyebrow}>What we do</span>
           <h2 className={`${h2} max-w-3xl`}>SEO, GEO, AEO & GMB services in Kerala</h2>
           <p className={`${lead} mt-5`}>
-            One team covering everything that gets you found, from classic Google rankings and Maps to the AI answers your customers now rely on.
+            One team covering everything that gets you found, from classic Google rankings and Maps to the AI answers your customers now rely on. Entrain Growth Partners is the{' '}
+            <Link to="/" className="font-semibold text-[#4355A5] underline underline-offset-4">best digital marketing agency in Kerala</Link>{' '}
+            for businesses that want measurable growth.
           </p>
 
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -461,7 +463,7 @@ export default function SeoServicesKerala({ onOpenConsultation }) {
       </section>
 
       {/* ================= COVERAGE ================= */}
-      <section className={`${section} py-16 sm:py-24`}>
+      {/* <section className={`${section} py-16 sm:py-24`}>
         <span className={eyebrow}>Where we work</span>
         <h2 className={h2}>SEO for businesses across every district of Kerala</h2>
         <p className={`${lead} mt-5`}>
@@ -487,7 +489,7 @@ export default function SeoServicesKerala({ onOpenConsultation }) {
             Read the full case studies <ArrowUpRight className="w-4 h-4" />
           </Link>
         </p>
-      </section>
+      </section> */}
 
       {/* ================= FAQ ================= */}
       <Faq
