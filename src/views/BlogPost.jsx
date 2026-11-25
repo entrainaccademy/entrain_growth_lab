@@ -27,6 +27,43 @@ function ContentBlock({ block }) {
           ))}
         </ul>
       );
+    case 'table':
+      return (
+        <div className="my-8 overflow-x-auto rounded-2xl border border-neutral-300/60 bg-white">
+          <table className="w-full min-w-[520px] text-left text-sm sm:text-base">
+            <thead className="bg-[#4355A5] text-white">
+              <tr>
+                {block.headers.map((h) => (
+                  <th key={h} className="px-4 py-3 font-semibold">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, r) => (
+                <tr key={r} className="border-t border-neutral-200 align-top">
+                  {row.map((cell, c) => (
+                    <td key={c} className={`px-4 py-3 text-neutral-700 ${c === 0 ? 'font-semibold text-[#111111]' : ''}`}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    case 'faq':
+      return (
+        <div className="faq-simple my-6 divide-y divide-[#101827]/15 border-y border-[#101827]/20">
+          {block.items.map(({ question, answer }) => (
+            <details key={question} className="group">
+              <summary className="grid cursor-pointer list-none grid-cols-[1fr_2rem] items-center gap-3 py-5 text-left sm:py-6">
+                <span className="font-display text-lg font-medium leading-snug tracking-[-0.02em] text-[#101827] sm:text-xl">{question}</span>
+                <span className="faq-simple-toggle text-center text-2xl font-light text-[#4355A5]" aria-hidden="true">+</span>
+              </summary>
+              <p className="max-w-3xl pb-6 pr-8 text-sm leading-relaxed text-[#101827]/70 sm:pb-8 sm:text-base">{answer}</p>
+            </details>
+          ))}
+        </div>
+      );
     case 'quote':
       return (
         <blockquote className="my-8 pl-6 border-l-4 border-[#4355A5] text-xl sm:text-2xl font-serif italic text-[#101827]">

@@ -1,7 +1,7 @@
 export const newBlogPosts = [
   {
     slug: 'kerala-digital-marketing-case-studies',
-    title: 'Digital Marketing in Action: Entrain Academy, Cobolt Machineries, and Buckeez',
+    title: 'Best Digital Marketing Agency in Kerala: Why Businesses Choose Entrain Growth Partners',
     excerpt: 'Three Kerala brands, three different growth challenges: culinary education, commercial kitchen equipment, and a new restaurant.',
     category: 'Case Studies',
     date: '2026-11-24',
