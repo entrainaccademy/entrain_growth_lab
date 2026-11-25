@@ -554,7 +554,7 @@ export const pastedBlogContent = {
     },
     {
       "type": "p",
-      "text": "The best digital marketing agency in Kerala is not necessarily the one with the highest ratings or the most awards. It is the agency that understands your business goals, offers suitable services, and can demonstrate results through genuine client work. There is no single official ranking that determines which agency is best for every business."
+      "text": "The [best digital marketing agency in Kerala](/) is not necessarily the one with the highest ratings or the most awards. It is the agency that understands your business goals, offers suitable services, and can demonstrate results through genuine client work. There is no single official ranking that determines which agency is best for every business."
     },
     {
       "type": "p",
@@ -871,7 +871,7 @@ export const pastedBlogContent = {
     },
     {
       "type": "p",
-      "text": "These are approximate planning ranges based on published 2026 pricing from Kerala agencies and broader Indian market data. They are not fixed rates or Entrain Growth Partners quotations. Advertising spend, GST, and additional production costs may be charged separately."
+      "text": "These are approximate planning ranges based on published 2026 pricing from Kerala agencies and broader Indian market data. They are not fixed rates or [**Entrain Growth Partners**](/) quotations. Advertising spend, GST, and additional production costs may be charged separately."
     },
     {
       "type": "h3",
@@ -956,118 +956,6 @@ export const pastedBlogContent = {
     {
       "type": "p",
       "text": "The best pricing plan is not necessarily the cheapest. Choose a package that matches your business needs and provides clear, measurable deliverables."
-    },
-    {
-      "type": "h2",
-      "text": "12 Questions to Ask a Digital Marketing Agency Before Hiring"
-    },
-    {
-      "type": "p",
-      "text": "Before hiring a digital marketing agency in Kerala, ask questions that reveal how the agency works, measures performance, and handles your business accounts. Clear answers help you compare agencies, understand their responsibilities, and avoid unexpected problems after signing a contract."
-    },
-    {
-      "type": "p",
-      "text": "Here are 12 important questions to ask during your first consultation."
-    },
-    {
-      "type": "h3",
-      "text": "1. Can you show case studies from businesses similar to mine?"
-    },
-    {
-      "type": "p",
-      "text": "Ask for examples of previous projects, including the client's challenges, marketing strategies, and measurable outcomes. Relevant experience is more useful than a portfolio filled with attractive designs alone."
-    },
-    {
-      "type": "h3",
-      "text": "2. Who will manage my account and execute the work?"
-    },
-    {
-      "type": "p",
-      "text": "Find out who handles strategy, SEO, advertising, content creation, and reporting. Ask whether these tasks are managed by in-house employees or external freelancers."
-    },
-    {
-      "type": "h3",
-      "text": "3. Who owns the website, advertising accounts, and marketing data?"
-    },
-    {
-      "type": "p",
-      "text": "Confirm that your business retains appropriate ownership and administrative access to its website, domain, Google Analytics, Google Ads, Meta Business assets, and customer data. Access arrangements should be documented before work begins."
-    },
-    {
-      "type": "h3",
-      "text": "4. What exactly is included in the service package?"
-    },
-    {
-      "type": "p",
-      "text": "Request a written list of deliverables, such as monthly posts, videos, SEO activities, advertising management, and reports. Clarify revision limits and services that require additional payment."
-    },
-    {
-      "type": "h3",
-      "text": "5. How will you measure marketing performance?"
-    },
-    {
-      "type": "p",
-      "text": "Ask which key performance indicators (KPIs) the agency will track. Depending on your goals, these may include qualified leads, website enquiries, conversion rates, cost per lead, or online sales."
-    },
-    {
-      "type": "h3",
-      "text": "6. What is your plan for the first 30, 60, and 90 days?"
-    },
-    {
-      "type": "p",
-      "text": "A practical plan should explain the initial audit and setup, campaign implementation, and performance review. It should also identify milestones without promising unrealistic results."
-    },
-    {
-      "type": "h3",
-      "text": "7. How do you develop and approve creative content?"
-    },
-    {
-      "type": "p",
-      "text": "Understand how the agency researches your audience, prepares content ideas, creates designs and videos, and collects feedback. Ask who approves content before publication."
-    },
-    {
-      "type": "h3",
-      "text": "8. How often will we communicate and review progress?"
-    },
-    {
-      "type": "p",
-      "text": "Confirm the reporting schedule, meeting frequency, main contact person, and response expectations. Regular communication helps identify problems and make timely improvements."
-    },
-    {
-      "type": "h3",
-      "text": "9. How will customer leads and enquiries be handled?"
-    },
-    {
-      "type": "p",
-      "text": "Ask how enquiries from websites, advertisements, and social media will reach your team. Clarify whether the agency provides lead tracking, CRM integration, or follow-up support."
-    },
-    {
-      "type": "h3",
-      "text": "10. Do you understand the marketing rules that apply to my industry?"
-    },
-    {
-      "type": "p",
-      "text": "Different industries have specific advertising requirements. For example, healthcare, finance, education, and food businesses may need additional checks for promotional claims, privacy, and platform advertising policies."
-    },
-    {
-      "type": "h3",
-      "text": "11. What are the contract duration and cancellation terms?"
-    },
-    {
-      "type": "p",
-      "text": "Review the minimum commitment, notice period, renewal conditions, and early termination charges. Ask what happens to unfinished work and prepaid services if the agreement ends."
-    },
-    {
-      "type": "h3",
-      "text": "12. What will happen to our accounts, content, and data if we stop working together?"
-    },
-    {
-      "type": "p",
-      "text": "Confirm how website files, creative assets, campaign records, reports, and account access will be transferred. A clear handover process helps your business continue marketing without unnecessary disruption."
-    },
-    {
-      "type": "p",
-      "text": "These questions help you evaluate an agency beyond its pricing and promotional promises. Before making a decision, request written answers, review the proposed scope of work, and confirm that the agency's approach matches your business goals."
     },
     {
       "type": "h2",
@@ -1756,8 +1644,8 @@ export const pastedBlogContent = {
       "text": "Entrain Growth Partners (Malappuram, Kerala) is built around the exact proof-and-transparency standard this checklist sets. Its four-step process — Study and Understand, Strategic Blueprint, Disciplined Execution, Optimize and Scale — starts by studying the business before recommending any service mix, rather than selling a fixed package. On pricing, it avoids the \"unscoped pricing\" red flag above directly: no packages are published; a written scope and fee are provided only after a free consultation, so terms are clear before work begins. On results, progress is tracked against enquiries, leads, sales, and organic traffic rather than likes or impressions, with monthly reports covering insights and next actions — and realistic timelines are set upfront (typically 3–6 months for clear SEO gains, with some technical fixes showing sooner). Case studies span education, food, and manufacturing (Entrain Academy, Cobolt Machineries, Buckeez), reflecting an organic-first, multi-channel approach rather than single-channel specialism."
     },
     {
-      "type": "p",
-      "text": "Start with a free consultation: +91 97452 35226 or entraingrowthpartners@gmail.com."
+      "type": "callout",
+      "text": "Start with a free consultation: [**+91 97452 35226**](tel:+919745235226) or [**entraingrowthpartners@gmail.com**](mailto:entraingrowthpartners@gmail.com)."
     },
     {
       "type": "h2",
@@ -1767,36 +1655,52 @@ export const pastedBlogContent = {
       "type": "faq",
       "items": [
         {
-          "question": "Is there an official \"best agency\" ranking in Kerala?",
-          "answer": "No independent or government body ranks digital marketing agencies in Kerala. \"Best\" should mean the agency with the clearest, checkable proof for your specific industry and budget — not a claimed title or badge."
+          "question": "1. Can you show case studies from businesses similar to mine?",
+          "answer": "Ask for examples of previous projects, including the client's challenges, marketing strategies, and measurable outcomes. Relevant experience is more useful than a portfolio filled with attractive designs alone."
         },
         {
-          "question": "Should I choose an industry specialist or a generalist agency?",
-          "answer": "Both can work. A specialist (only SEO, or only paid ads) suits a single clear priority; a full-service agency suits businesses that need multiple channels coordinated under one strategy. Evidence of results in your situation matters more than the label."
+          "question": "2. Who will manage my account and execute the work?",
+          "answer": "Find out who handles strategy, SEO, advertising, content creation, and reporting. Ask whether these tasks are managed by in-house employees or external freelancers."
         },
         {
-          "question": "Do Google Partner or Meta Business badges matter?",
-          "answer": "They're a mild positive signal — the agency has active ad spend and basic platform training — but they aren't proof of strategic skill or results. Treat them as one data point, not a deciding factor."
+          "question": "3. Who owns the website, advertising accounts, and marketing data?",
+          "answer": "Confirm that your business retains appropriate ownership and administrative access to its website, domain, Google Analytics, Google Ads, Meta Business assets, and customer data. Access arrangements should be documented before work begins."
         },
         {
-          "question": "How long before I should judge results?",
-          "answer": "Paid ads usually show early signals within about 30 days; steadier, more reliable numbers take 60–90 days. SEO is slower — meaningful ranking and traffic movement typically takes 3–6 months, sometimes longer in competitive categories."
+          "question": "4. What exactly is included in the service package?",
+          "answer": "Request a written list of deliverables, such as monthly posts, videos, SEO activities, advertising management, and reports. Clarify revision limits and services that require additional payment."
         },
         {
-          "question": "Is it a red flag if an agency won't name past clients?",
-          "answer": "Not necessarily — some clients require confidentiality (NDAs, sensitive industries). Anonymised results, dated metrics, and references you can call privately can be just as credible as public case studies. A flat refusal to show any proof at all is the real red flag."
+          "question": "5. How will you measure marketing performance?",
+          "answer": "Ask which key performance indicators (KPIs) the agency will track. Depending on your goals, these may include qualified leads, website enquiries, conversion rates, cost per lead, or online sales."
         },
         {
-          "question": "What if my current agency owns my ad accounts?",
-          "answer": "Request a transfer to accounts under your own business name, in writing, and make account ownership a standard contract clause with any agency going forward. Owning your own ad accounts, pixels, and data protects you if you switch agencies later."
+          "question": "6. What is your plan for the first 30, 60, and 90 days?",
+          "answer": "A practical plan should explain the initial audit and setup, campaign implementation, and performance review. It should also identify milestones without promising unrealistic results."
         },
         {
-          "question": "How much should I budget monthly for digital marketing in Kerala?",
-          "answer": "Budgets vary by scope, competition, and city, but most small and mid-sized businesses keep the agency's management fee and the ad-spend budget separate — ad spend is paid directly to Google/Meta, never bundled into the agency's fee. Get a written, itemized quote before comparing numbers across agencies."
+          "question": "7. How do you develop and approve creative content?",
+          "answer": "Understand how the agency researches your audience, prepares content ideas, creates designs and videos, and collects feedback. Ask who approves content before publication."
         },
         {
-          "question": "Should I hire an agency, a freelancer, or build an in-house team?",
-          "answer": "It depends on budget, channel count, and workload: a freelancer suits a single channel on a tight budget, an agency suits multi-channel campaigns needing a coordinated team, and an in-house team makes sense once marketing spend and activity are large enough to justify full-time staff. Many businesses start with an agency and move to a hybrid model as they grow."
+          "question": "8. How often will we communicate and review progress?",
+          "answer": "Confirm the reporting schedule, meeting frequency, main contact person, and response expectations. Regular communication helps identify problems and make timely improvements."
+        },
+        {
+          "question": "9. How will customer leads and enquiries be handled?",
+          "answer": "Ask how enquiries from websites, advertisements, and social media will reach your team. Clarify whether the agency provides lead tracking, CRM integration, or follow-up support."
+        },
+        {
+          "question": "10. Do you understand the marketing rules that apply to my industry?",
+          "answer": "Different industries have specific advertising requirements. For example, healthcare, finance, education, and food businesses may need additional checks for promotional claims, privacy, and platform advertising policies."
+        },
+        {
+          "question": "11. What are the contract duration and cancellation terms?",
+          "answer": "Review the minimum commitment, notice period, renewal conditions, and early termination charges. Ask what happens to unfinished work and prepaid services if the agreement ends."
+        },
+        {
+          "question": "12. What will happen to our accounts, content, and data if we stop working together?",
+          "answer": "Confirm how website files, creative assets, campaign records, reports, and account access will be transferred. A clear handover process helps your business continue marketing without unnecessary disruption."
         }
       ]
     }

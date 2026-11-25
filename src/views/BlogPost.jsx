@@ -4,6 +4,23 @@ import { ArrowLeft } from 'lucide-react';
 import BlogCover from '../components/BlogCover';
 import { blogPosts, getPostBySlug, categoryIcons } from '../data/blog';
 
+// Inline markup in text: [link text](/path) and **bold**
+function renderInline(text, onDark = false) {
+  return text.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return part;
+    const [, label, href] = match;
+    const bold = /^\*\*(.+)\*\*$/.exec(label);
+    const className = onDark
+      ? 'text-white underline underline-offset-4 hover:text-white/80'
+      : 'text-[#4355A5] underline underline-offset-4 hover:text-[#34448F]';
+    const content = bold ? <strong className="font-bold">{bold[1]}</strong> : label;
+    return /^(tel:|mailto:|https?:)/.test(href)
+      ? <a key={i} href={href} className={className}>{content}</a>
+      : <Link key={i} to={href} className={className}>{content}</Link>;
+  });
+}
+
 function ContentBlock({ block }) {
   switch (block.type) {
     case 'h3':
@@ -22,7 +39,7 @@ function ContentBlock({ block }) {
           {block.items.map((item, i) => (
             <li key={i} className="flex items-start gap-3 text-neutral-700 text-base sm:text-lg leading-relaxed font-light">
               <span className="w-1.5 h-1.5 rounded-full bg-[#4355A5] mt-3 flex-shrink-0" />
-              <span>{item}</span>
+              <span>{renderInline(item)}</span>
             </li>
           ))}
         </ul>
@@ -64,6 +81,14 @@ function ContentBlock({ block }) {
           ))}
         </div>
       );
+    case 'callout':
+      return (
+        <div className="my-10 rounded-3xl bg-[#4355A5] px-6 py-6 sm:px-8 sm:py-7 text-white shadow-lg shadow-[#4355A5]/20">
+          <p className="font-display text-lg sm:text-2xl font-semibold leading-snug tracking-tight">
+            {renderInline(block.text, true)}
+          </p>
+        </div>
+      );
     case 'quote':
       return (
         <blockquote className="my-8 pl-6 border-l-4 border-[#4355A5] text-xl sm:text-2xl font-serif italic text-[#101827]">
@@ -74,7 +99,7 @@ function ContentBlock({ block }) {
     default:
       return (
         <p className="text-neutral-700 text-base sm:text-lg leading-relaxed font-light mb-6">
-          {block.text}
+          {renderInline(block.text)}
         </p>
       );
   }

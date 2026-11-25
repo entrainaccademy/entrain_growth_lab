@@ -7,11 +7,12 @@ export const services = [
     title: 'Search Engine Optimization',
     shortTitle: 'SEO & Organic Growth',
     tagline: 'Rank higher and get discovered by the right audience.',
-    description: 'We build sustainable organic traffic through technical SEO, strategic keywords, authoritative content, and continuous search performance optimization.',
+    description: 'We build sustainable organic traffic through technical SEO, strategic keywords, authoritative content, and continuous search performance optimization, plus AEO, GEO, and Google Business Profile (GMB) services to get you found in AI answers and on Google Maps.',
     icon: Search,
     deliverables: [
       'Keyword strategy & competitor research',
       'On-page SEO & content optimization',
+      'AEO, GEO & GMB services',
       'Technical SEO audits & fixes',
       'Link building & authority growth',
       'Local SEO & Google Business optimization',

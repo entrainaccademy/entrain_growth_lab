@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUp, ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa6';
 import { mainNavigation, legalNavigation, socialLinks } from '../data/navigation';
+import { serviceGroups } from '../data/serviceCatalog';
 
 const socialIcons = { Instagram: FaInstagram, Facebook: FaFacebookF, LinkedIn: FaLinkedinIn };
 
@@ -102,6 +103,19 @@ export default function Footer({ onOpenConsultation }) {
             <MapPin aria-hidden="true" />
             <span>Entrain Academy, Veemboor Narukara, Ernad, Malappuram-676122, Kerala, India</span>
           </address>
+
+          <nav className="footer-services" aria-label="Services">
+            {serviceGroups.map((group) => (
+              <div key={group.title} className="footer-services-col">
+                <Link to={group.route} className="footer-services-title">{group.title}</Link>
+                <ul>
+                  {group.items.filter((item) => item.inFooter !== false).map((item) => (
+                    <li key={item.title}><Link to={item.route}>{item.title}</Link></li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </nav>
 
           <div className="footer-link-pills">
             {mainNavigation.map((item) => (
