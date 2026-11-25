@@ -440,6 +440,7 @@ export const pastedBlogContent = {
       "type": "p",
       "text": "This project highlights how a well-planned restaurant marketing strategy can build early awareness, connect with food lovers, and support a growing food business without relying on paid advertising."
     },
+    /* FAQ section temporarily commented out
     {
       "type": "h2",
       "text": "Frequently Asked Questions"
@@ -480,6 +481,7 @@ export const pastedBlogContent = {
       "type": "p",
       "text": "Tell us your current business stage, and we'll recommend the right mix of SEO, performance marketing, branding, social media marketing, and web design and development. Book a free consultation to get a written scope and plan before any work begins."
     },
+    */
     {
       "type": "p",
       "text": "Entrain Growth Partners — Entrain Academy, Veemboor Narukara, Ernad, Malappuram, Kerala, India | entraingrowthpartners@gmail.com | +91 97452 35226"
