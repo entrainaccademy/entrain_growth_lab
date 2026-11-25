@@ -16,6 +16,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NKGFK7Q7"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            `,
+          }}
+        />
         <meta name="google-site-verification" content="aK7a9fF9OpGCScXWPFONTXnUHa03x4PJF58a1CF9ihY" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
