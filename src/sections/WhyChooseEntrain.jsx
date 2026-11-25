@@ -15,7 +15,7 @@ export default function WhyChooseEntrain() {
             At <strong>Entrain Growth Partners</strong>, we combine strategy, data, and tailored digital marketing to reach the right audience, strengthen your online presence, and turn opportunities into measurable growth.
           </p>
           <p>
-            Our organic-first approach combines <Link to="/seo-services-in-kerala" className="font-semibold underline underline-offset-4">SEO services in Kerala</Link>, content strategy, social media marketing, and paid advertising with your business goals to improve search visibility, attract relevant visitors, and generate qualified leads.
+            Our organic-first approach combines <Link to="/seo-company-in-kerala" className="font-semibold underline underline-offset-4">SEO services in Kerala</Link>, content strategy, social media marketing, and paid advertising with your business goals to improve search visibility, attract relevant visitors, and generate qualified leads.
           </p>
           <p>
             Every strategy reflects your industry, customers, and priorities. We monitor performance and refine campaigns with data to support better decisions and sustainable growth.

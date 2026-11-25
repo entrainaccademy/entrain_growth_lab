@@ -4,7 +4,7 @@ export const serviceGroups = [
     title: 'Digital marketing services',
     route: '/services/digital-marketing',
     items: [
-      { title: 'SEO, AEO & GEO', route: '/services/seo', desc: 'Rank in Google, Maps and AI answers with technical SEO, answer-ready content, and Google Business Profile optimization.' },
+      { title: 'SEO, AEO & GEO', route: '/seo-company-in-kerala', desc: 'Rank in Google, Maps and AI answers with technical SEO, answer-ready content, and Google Business Profile optimization.' },
       { title: 'Social Media Marketing', route: '/services/social-media-marketing', desc: 'Grow your audience with platform-specific content and community strategy.' },
       { title: 'Performance Marketing', route: '/services/performance-marketing', desc: 'Google Ads and Meta Ads for measurable leads, sales, and growth.' },
       { title: 'Content Marketing', route: '/services/content-marketing', desc: 'Useful, search-friendly content that educates buyers and builds authority.' },

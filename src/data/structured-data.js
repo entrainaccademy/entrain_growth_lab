@@ -10,10 +10,10 @@ const LOGO_ID = `${SITE_URL}/#logo`;
 const services = {
   '/services/digital-marketing': { name: 'Digital Marketing', serviceType: 'Digital marketing' },
   '/services/social-media-marketing': { name: 'Social Media Marketing', serviceType: 'Social media marketing' },
-  '/services/seo': {
-    name: 'Search Engine Optimization (SEO)',
-    serviceType: 'Search engine optimization',
-    description: 'Sustainable organic traffic through technical SEO, strategic keywords, authoritative content, and continuous search performance optimization. Includes keyword strategy and competitor research, on-page SEO and content optimization, and technical SEO audits and fixes.',
+  '/seo-company-in-kerala': {
+    name: 'SEO Services in Kerala',
+    serviceType: ['Search engine optimization', 'Generative engine optimization', 'Answer engine optimization', 'Google Business Profile optimization', 'Local SEO'],
+    areaServed: ['Kochi', 'Thiruvananthapuram', 'Kozhikode', 'Thrissur', 'Kollam', 'Kannur', 'Kottayam', 'Malappuram', 'Alappuzha', 'Palakkad', 'Kerala'].map((name) => ({ '@type': 'Place', name })),
   },
   '/services/performance-marketing': { name: 'Performance Marketing', serviceType: 'Performance marketing' },
   '/services/content-marketing': { name: 'Content Marketing', serviceType: 'Content marketing' },
@@ -33,7 +33,7 @@ function serviceNode(path) {
     description: service.description || staticPages[path]?.description,
     url,
     provider: { '@id': ORG_ID },
-    areaServed: 'Global',
+    areaServed: service.areaServed || 'Global',
   };
 }
 
@@ -129,7 +129,7 @@ export function getStructuredData(page) {
       })),
     });
   }
-  if (page.path === '/seo-services-in-kerala') {
+  if (page.path === '/seo-company-in-kerala') {
     webPage.hasPart = { '@id': `${canonicalUrl}#faq` };
     graph.push({
       '@type': 'FAQPage',
@@ -140,16 +140,6 @@ export function getStructuredData(page) {
         name: question,
         acceptedAnswer: { '@type': 'Answer', text: answer },
       })),
-    });
-    graph.push({
-      '@type': 'Service',
-      '@id': `${canonicalUrl}#service`,
-      name: 'SEO Services in Kerala',
-      serviceType: ['Search engine optimization', 'Generative engine optimization', 'Answer engine optimization', 'Google Business Profile optimization', 'Local SEO'],
-      description: page.description,
-      url: canonicalUrl,
-      provider: { '@id': ORG_ID },
-      areaServed: ['Kochi', 'Thiruvananthapuram', 'Kozhikode', 'Thrissur', 'Kollam', 'Kannur', 'Kottayam', 'Malappuram', 'Alappuzha', 'Palakkad', 'Kerala'].map((name) => ({ '@type': 'Place', name })),
     });
   }
   if (page.path === '/about') {

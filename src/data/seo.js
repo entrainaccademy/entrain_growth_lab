@@ -51,25 +51,14 @@ export const staticPages = {
       { name: 'Social Media Marketing', url: '/services/social-media-marketing' },
     ],
   },
-  '/services/seo': {
-    title: 'Search Engine Optimization (SEO) Agency | Entrain Growth Partners',
-    description: 'Drive compounding, high-intent organic traffic through rigorous technical SEO audits, intent-based keyword research, on-page optimization, and earned authority.',
-    type: 'website',
-    serviceType: 'Search Engine Optimization (SEO)',
-    breadcrumb: [
-      { name: 'Home', url: '/' },
-      { name: 'Services', url: '/services' },
-      { name: 'SEO', url: '/services/seo' },
-    ],
-  },
-  '/seo-services-in-kerala': {
+  '/seo-company-in-kerala': {
     title: 'SEO Services in Kerala | AEO, GEO & Local SEO',
     description: 'Grow your business with expert SEO services in Kerala, including AEO, GEO and GMB optimization. Improve Google rankings, AI visibility and organic leads.',
     type: 'website',
     serviceType: 'SEO, GEO, AEO and Google Business Profile optimization',
     breadcrumb: [
       { name: 'Home', url: '/' },
-      { name: 'SEO Services in Kerala', url: '/seo-services-in-kerala' },
+      { name: 'SEO Company in Kerala', url: '/seo-company-in-kerala' },
     ],
   },
   '/services/performance-marketing': {

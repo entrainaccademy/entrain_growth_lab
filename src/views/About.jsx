@@ -109,7 +109,7 @@ export default function About() {
             </p>
             <p>
               We work with education institutes, food and beverage brands and manufacturers as well as growing local businesses. Our services include{' '}
-              <Link to="/services/seo" className={inlineLink}>SEO</Link>,{' '}
+              <Link to="/seo-company-in-kerala" className={inlineLink}>SEO</Link>,{' '}
               <Link to="/services/social-media-marketing" className={inlineLink}>social media marketing</Link>,{' '}
               <Link to="/services/performance-marketing" className={inlineLink}>Meta and Google Ads</Link>,{' '}
               <Link to="/services/branding-creative-design" className={inlineLink}>branding</Link>, content marketing and{' '}

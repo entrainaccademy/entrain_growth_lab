@@ -283,7 +283,7 @@ export default function SeoServicesKerala({ onOpenConsultation }) {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 pb-16 sm:pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7">
             <h1 className="font-display text-[clamp(2.6rem,5.6vw,5rem)] font-semibold tracking-[-0.05em] leading-[1.02]">
-              SEO Services in Kerala
+              SEO Company in Kerala
             </h1>
             <p className="mt-4 sm:mt-5 font-display text-[clamp(1.6rem,3.4vw,3rem)] font-medium tracking-[-0.035em] leading-[1.1] text-[#4355A5]">
               That bring you customers, not just traffic.

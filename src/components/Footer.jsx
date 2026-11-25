@@ -45,7 +45,7 @@ const pageCtas = {
   '/work': { heading: 'Want results like these?', text: 'Let’s plan the strategy that gets your brand there.' },
   '/testimonials': { heading: 'Want to be our next success story?', text: 'Join the businesses growing steadily with Entrain.' },
   '/blog': { heading: 'Need advice for your business?', text: 'Skip the guesswork and talk to our team about a plan that fits.' },
-  '/services/seo': { heading: 'Ready to grow your search visibility?', text: 'Get a clear SEO plan that brings in the right traffic.' },
+  '/seo-company-in-kerala': { heading: 'Ready to grow your search visibility?', text: 'Get a clear SEO plan that brings in the right traffic.' },
   '/services/performance-marketing': { heading: 'Ready to scale your ad results?', text: 'Let’s build campaigns that turn spend into measurable returns.' },
   '/services/social-media-marketing': { heading: 'Ready to grow your social presence?', text: 'Let’s build content and campaigns your audience engages with.' },
   '/services/content-marketing': { heading: 'Ready to tell your story?', text: 'Let’s create content that earns attention and drives action.' },
