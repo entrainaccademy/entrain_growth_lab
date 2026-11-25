@@ -62,6 +62,16 @@ export const staticPages = {
       { name: 'SEO', url: '/services/seo' },
     ],
   },
+  '/seo-services-in-kerala': {
+    title: 'SEO Services in Kerala | AEO, GEO & Local SEO',
+    description: 'Grow your business with expert SEO services in Kerala, including AEO, GEO and GMB optimization. Improve Google rankings, AI visibility and organic leads.',
+    type: 'website',
+    serviceType: 'SEO, GEO, AEO and Google Business Profile optimization',
+    breadcrumb: [
+      { name: 'Home', url: '/' },
+      { name: 'SEO Services in Kerala', url: '/seo-services-in-kerala' },
+    ],
+  },
   '/services/performance-marketing': {
     title: 'Performance Marketing (Meta & Google Ads) | Entrain Growth Partners',
     description: 'Launch high-performing Meta Ads and Google Ads campaigns engineered for measurable ROAS, rigorous A/B creative testing, and multi-touch attribution.',

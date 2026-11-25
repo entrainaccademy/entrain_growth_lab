@@ -32,6 +32,7 @@ import NotFound from './views/NotFound';
 import DigitalMarketing from './views/DigitalMarketing';
 import SocialMediaMarketing from './views/SocialMediaMarketing';
 import SeoService from './views/SEO';
+import SeoServicesKerala from './views/SeoServicesKerala';
 import PerformanceMarketing from './views/PerformanceMarketing';
 import ContentMarketing from './views/ContentMarketing';
 import BrandingCreativeDesign from './views/BrandingCreativeDesign';
@@ -45,6 +46,7 @@ const pages = {
   '/services/digital-marketing': DigitalMarketing,
   '/services/social-media-marketing': SocialMediaMarketing,
   '/services/seo': SeoService,
+  '/seo-services-in-kerala': SeoServicesKerala,
   '/services/performance-marketing': PerformanceMarketing,
   '/services/content-marketing': ContentMarketing,
   '/services/branding-creative-design': BrandingCreativeDesign,

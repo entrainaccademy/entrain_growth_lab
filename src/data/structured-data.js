@@ -1,5 +1,6 @@
 import { SITE_URL, DEFAULT_IMAGE, staticPages } from './seo';
 import { homeFaqs } from './faq';
+import { seoKeralaFaqs } from './seoKeralaFaq';
 
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -126,6 +127,29 @@ export function getStructuredData(page) {
         name: question,
         acceptedAnswer: { '@type': 'Answer', text: answer },
       })),
+    });
+  }
+  if (page.path === '/seo-services-in-kerala') {
+    webPage.hasPart = { '@id': `${canonicalUrl}#faq` };
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      url: `${canonicalUrl}#faq`,
+      mainEntity: seoKeralaFaqs.map(({ question, answer }) => ({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: { '@type': 'Answer', text: answer },
+      })),
+    });
+    graph.push({
+      '@type': 'Service',
+      '@id': `${canonicalUrl}#service`,
+      name: 'SEO Services in Kerala',
+      serviceType: ['Search engine optimization', 'Generative engine optimization', 'Answer engine optimization', 'Google Business Profile optimization', 'Local SEO'],
+      description: page.description,
+      url: canonicalUrl,
+      provider: { '@id': ORG_ID },
+      areaServed: ['Kochi', 'Thiruvananthapuram', 'Kozhikode', 'Thrissur', 'Kollam', 'Kannur', 'Kottayam', 'Malappuram', 'Alappuzha', 'Palakkad', 'Kerala'].map((name) => ({ '@type': 'Place', name })),
     });
   }
   if (page.path === '/about') {

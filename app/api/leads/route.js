@@ -49,7 +49,7 @@ export async function POST(request) {
   const lead = Object.fromEntries(Object.entries(limits).map(([key, limit]) => [key, clean(body[key], limit)]));
   if (!lead.name || !/^[+\d][\d\s()+.-]{6,39}$/.test(lead.phone) || !lead.message ||
       (lead.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(lead.email)) ||
-      !['Homepage form', 'Contact form', 'Consultation modal'].includes(lead.source)) {
+      !['Homepage form', 'Contact form', 'Consultation modal', 'SEO landing page'].includes(lead.source)) {
     return Response.json({ error: 'Please check the required fields and try again.' }, { status: 400 });
   }
 
