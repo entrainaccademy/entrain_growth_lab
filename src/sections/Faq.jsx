@@ -22,9 +22,11 @@ export default function Faq({
           <h2 id="faq-heading" className="max-w-2xl font-display text-4xl font-semibold leading-tight tracking-[-0.045em] sm:text-5xl">
             {heading}
           </h2>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-[#101827]/60">
-            {intro}
-          </p>
+          {intro && (
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-[#101827]/60">
+              {intro}
+            </p>
+          )}
         </div>
 
         <div className="divide-y divide-[#101827]/15">

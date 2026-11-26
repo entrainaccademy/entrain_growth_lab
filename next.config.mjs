@@ -8,6 +8,8 @@ export default {
   outputFileTracingRoot: root,
   async redirects() {
     return [
+      { source: '/blog/kerala-digital-marketing-case-studies', destination: '/blog/why-businesses-choose-entrain-growth-partners', permanent: true },
+      { source: '/blog/kerala-digital-marketing-case-studies/', destination: '/blog/why-businesses-choose-entrain-growth-partners', permanent: true },
       { source: '/services/seo', destination: '/seo-company-in-kerala', permanent: true },
       { source: '/services/seo/', destination: '/seo-company-in-kerala', permanent: true },
       { source: '/seo-services-in-kerala', destination: '/seo-company-in-kerala', permanent: true },

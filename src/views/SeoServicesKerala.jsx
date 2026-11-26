@@ -289,7 +289,7 @@ export default function SeoServicesKerala({ onOpenConsultation }) {
               That bring you customers, not just traffic.
             </p>
             <p className="mt-6 max-w-2xl text-base sm:text-lg text-[#101827]/65 leading-relaxed">
-              When people in Kochi, Trivandrum, Kozhikode or anywhere in Kerala search for what you sell, your business should be the one they find, call and choose. Today that means showing up in Google, Google Maps and AI answers from ChatGPT, Gemini and AI Overviews.
+              When people search for what you sell — whether they're in India or anywhere else — your business should be the one they find, call and choose. Today that means showing up in Google, Google Maps, and AI answers from ChatGPT, Gemini, and AI Overviews.
             </p>
             <ul className="mt-7 space-y-3">
               {heroPoints.map((point) => (

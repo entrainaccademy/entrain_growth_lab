@@ -1,5 +1,5 @@
 export const pastedBlogContent = {
-  "kerala-digital-marketing-case-studies": [
+  "why-businesses-choose-entrain-growth-partners": [
     {
       "type": "p",
       "text": "Entrain Growth Partners is a digital marketing agency in Kerala helping businesses in education, food service, manufacturing, and retail grow through SEO, performance marketing, branding, social media marketing, and web design and development. If you're comparing agencies to find the best digital marketing agency in Kerala, the short answer is this: look for a partner who ties every campaign to measurable business outcomes — enquiries, admissions, and sales — not just impressions. That is the standard we hold ourselves to for every client, from Entrain Culinary Academy in Manjeri to Cobolt Machineries and Buckeez. Below, we break down why businesses choose us, the results we've delivered, and answer the questions you're likely asking before hiring a digital marketing partner in Kerala."
@@ -10,7 +10,7 @@ export const pastedBlogContent = {
     },
     {
       "type": "p",
-      "text": "Entrain Growth Partners stands out as the best digital marketing agency in Kerala because we pair strategic planning with disciplined, measurable execution instead of generic packages. Our team covers the full digital marketing stack: technical and local SEO, performance marketing on Google Ads and Meta Ads, branding and identity design, social media marketing, content strategy and video production, and web design and development built for conversion."
+      "text": "Entrain Growth Partners stands out as the [best digital marketing agency in Kerala](/) because we pair strategic planning with disciplined, measurable execution instead of generic packages. Our team covers the full digital marketing stack: technical and local SEO, performance marketing on Google Ads and Meta Ads, branding and identity design, social media marketing, content strategy and video production, and web design and development built for conversion."
     },
     {
       "type": "p",
@@ -236,7 +236,7 @@ export const pastedBlogContent = {
     },
     {
       "type": "p",
-      "text": "We built a consistent social media presence to introduce Cobolt Machineries and showcase its commercial kitchen equipment."
+      "text": "Through our [social media marketing services](/services/social-media-marketing), we built a consistent online presence for Cobolt Machineries to showcase its commercial kitchen equipment and strengthen brand awareness."
     },
     {
       "type": "p",

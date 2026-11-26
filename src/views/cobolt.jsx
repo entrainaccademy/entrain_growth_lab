@@ -1,10 +1,15 @@
 import React from 'react';
 import Button from '../components/Button';
+import { Link } from '../lib/router';
 
 const services = ['Digital Marketing Strategy', 'Social Media Management', 'Meta Ads', 'Website Development', 'Search Engine Optimization (SEO)', 'Product Photography', 'Content Creation'];
 
 const initiatives = [
-  ['Social Media Marketing & Brand Awareness', "We built a consistent social media presence to introduce Cobolt Machineries and showcase its commercial kitchen equipment. Our content focused on product highlights, equipment features, manufacturing capabilities, and practical solutions for professional kitchens. Through creative posters and regular updates, we worked to improve brand visibility and audience engagement."],
+  ['Social Media Marketing & Brand Awareness', [
+    <>Through our <Link to="/services/social-media-marketing" className="font-semibold text-[#4355A5] underline underline-offset-4 hover:text-[#34448F]">social media marketing services</Link>, we built a consistent online presence for Cobolt Machineries to showcase its commercial kitchen equipment and strengthen brand awareness.</>,
+    'Our content strategy focused on product highlights, equipment features, manufacturing capabilities, and practical solutions for professional kitchens.',
+    'Through creative posters and regular social media updates, we worked to improve brand visibility and audience engagement.',
+  ]],
   ['Product Photography & Creative Content', "We created product-focused visual content to present Cobolt's equipment clearly and professionally. Our photography and designs highlighted commercial cooking ranges, bakery equipment, stainless steel workstations, shawarma machines, and customized kitchen solutions. This helped potential customers understand the products and their applications."],
   ['Website Development & SEO', "We developed a professional website to showcase Cobolt Machineries' products, services, and manufacturing expertise. Our SEO strategy focused on relevant commercial kitchen equipment keywords, product information, and search visibility. We structured the website to help restaurant owners, bakery businesses, and other buyers explore equipment options and contact the company."],
   ['Meta Ads & Audience Targeting', 'We used Meta advertising campaigns to reach audiences interested in commercial kitchen equipment and food business operations. Our strategy focused on increasing brand exposure, promoting products, and creating opportunities for customer enquiries.']
@@ -63,7 +68,9 @@ export default function Cobolt({ onOpenConsultation }) {
             <div className="grid sm:grid-cols-2 gap-5 mt-8">{initiatives.map(([title, description]) => (
               <div key={title} className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
                 <h3 className="font-display text-xl font-bold text-[#101827] mb-3">{title}</h3>
-                <p className="text-base">{description}</p>
+                {Array.isArray(description)
+                  ? description.map((paragraph, i) => <p key={i} className="text-base mb-3 last:mb-0">{paragraph}</p>)
+                  : <p className="text-base">{description}</p>}
               </div>
             ))}</div>
           </section>

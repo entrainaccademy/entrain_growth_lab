@@ -1,6 +1,7 @@
 import { SITE_URL, DEFAULT_IMAGE, staticPages } from './seo';
 import { homeFaqs } from './faq';
 import { seoKeralaFaqs } from './seoKeralaFaq';
+import { socialMediaFaqs } from './socialMediaFaq';
 
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -136,6 +137,19 @@ export function getStructuredData(page) {
       '@id': `${canonicalUrl}#faq`,
       url: `${canonicalUrl}#faq`,
       mainEntity: seoKeralaFaqs.map(({ question, answer }) => ({
+        '@type': 'Question',
+        name: question,
+        acceptedAnswer: { '@type': 'Answer', text: answer },
+      })),
+    });
+  }
+  if (page.path === '/services/social-media-marketing') {
+    webPage.hasPart = { '@id': `${canonicalUrl}#faq` };
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      url: `${canonicalUrl}#faq`,
+      mainEntity: socialMediaFaqs.map(({ question, answer }) => ({
         '@type': 'Question',
         name: question,
         acceptedAnswer: { '@type': 'Answer', text: answer },
